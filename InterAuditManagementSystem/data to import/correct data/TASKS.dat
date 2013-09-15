@@ -1,0 +1,179 @@
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+14, 'Planning-budget', 'Planning-budget', '4000', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+15, 'Preparation des confirmations', 'banques , avocats, cadastre', '4001', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+16, 'Preparation lancement du dossier (DA,LS)', 'Preparation lancement du dossier (DA,LS)'
+, '4002', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+17, 'Dossier administratif', 'Dossier administratif', '4003', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+18, 'Compte annuels', 'controle: report,sommes pointage B/G', '4004', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+19, 'Prise de connaissance du dossier - repartition du travail', 'Prise de connaissance du dossier - repartition du travail'
+, '4005', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+20, 'Suivi du dossier chez le client/Supervision', 'Suivi du dossier chez le client/Supervision'
+, '4006', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+21, 'Frais d''établissement', 'Frais d''établissement', '4007', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+22, 'Immobilisations incorporelles', 'Immobilisations incorporelles', '4008', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+23, 'Immobilisations corporelles', 'Immobilisations corporelles', '4009', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+24, 'Immobilisations financieres', 'Immobilisations financieres', '4010', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+25, 'Stock-Inventaire physique', 'Stock-Inventaire physique', '4011', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+26, 'Stock-Audit de la section', 'Stock-Audit de la section', '4012', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+27, 'Client-Preparation et suivi de la circularisation', 'Client-Preparation et suivi de la circularisation'
+, '4013', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+28, 'Client-Audit de la section', 'Client-Audit de la section', '4014', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+29, 'Creances sur des entreprises liees', 'Creances sur des entreprises liees', '4015'
+, 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+30, 'Autres creances', 'Autres creances', '4016', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+31, 'Valeurs mobilieres', 'Valeurs mobilieres', '4017', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+32, 'Avoirs en banques et encaisses', 'Avoirs en banques et encaisses', '4018', 1
+, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+33, 'Compte de regularisation actif', 'Compte de regularisation actif', '4019', 1
+, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+34, 'Capitaux propres', 'Capitaux propres', '4020', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+35, 'Provisions pour risques et charges', 'Provisions pour risques et charges', '4021'
+, 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+36, 'Dettes envers ets de credit', 'Dettes envers ets de credit', '4022', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+37, 'Fournisseurs-preparation et suivi de la circularisation', 'Fournisseurs-preparation et suivi de la circularisation'
+, '4023', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+38, 'Fournisseurs-audit de la section', 'Fournisseurs-audit de la section', '4024'
+, 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+39, 'Dettes sur des entreprises liees', 'Dettes sur des entreprises liees', '4025'
+, 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+40, 'Autres dettes', 'Autres dettes', '4026', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+41, 'Compte de regularisation passif', 'Compte de regularisation passif', '4027', 1
+, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+42, 'Compte de pertes et profits', 'Compte de pertes et profits', '4028', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+43, 'Compte de pertes et profits-Resultats brut', 'Compte de pertes et profits-Resultats brut'
+, '4029', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+44, 'Compte de pertes et profits-Frais de personnel', 'Compte de pertes et profits-Frais de personnel'
+, '4030', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+45, 'Compte de pertes et profits-Autres charges déxploitation', 'Compte de pertes et profits-Autres charges déxploitation'
+, '4031', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+46, 'Compte de pertes et profits-Produits provenant de participations', 'Compte de pertes et profits-Produits provenant de participations'
+, '4032', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+47, 'Compte de pertes et profits-Resultat financier', 'Compte de pertes et profits-Resultat financier'
+, '4033', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+48, 'Compte de pertes et profits-Resultat exceptionel', 'Compte de pertes et profits-Resultat exceptionel'
+, '4034', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+49, 'Compte de pertes et profits-Impots', 'Compte de pertes et profits-Impots', '4035'
+, 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+50, 'Engagements hors bilan', 'Engagements hors bilan', '4036', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+51, 'Review', 'Review', '4037', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+52, 'Copie de controle', 'Copie de controle', '4038', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+53, 'Travail specifique ', 'Travail specifique', '4039', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+54, 'Relation client ', 'Relation client', '4040', 1, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+55, 'Datev', 'Datev', '4041', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+56, 'Organisation/Administration', 'Planning, organisation travail, releves conges/TS, evaluation'
+, '4042', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+57, 'Formation ', 'IRE/KLUWER/KPMG Tax', '4043', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+58, 'Litterature/Formation interne ', 'Litterature/Formation interne sur dossier'
+, '4044', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+59, 'Divers', 'Reunion, secretariat, verre, repas client, informatique, ctl Q', '4045'
+, 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+60, 'Conge legal', 'Conge legal', '4046', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+61, 'Ferie', 'Ferie', '4047', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+62, 'Formation dispense en interne a collegues', 'Formation dispense en interne a collegues'
+, '4048', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+63, 'Divers 2 ', 'decompte client, facturation, offre niveau client IRL, suivi MPI'
+, '4049', 0, 0); 
+INSERT INTO TASKS ( ID, NAME, DESCRIPTION, CODEPRESTATION, CHARGEABLE,
+VERSION ) VALUES ( 
+64, 'Maladie /medecin ', 'Maladie /medecin', '4050', 0, 0); 
+commit;
+ 

@@ -1,0 +1,31 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Project;
+
+public class ProjectActionPlanView {
+
+    private ActionPlan actionPlan;
+    
+    //the projects that are allowed to be added to the action plan
+    private List<Project> projects;
+
+    public ActionPlan getActionPlan() {
+        return actionPlan;
+    }
+
+    public void setActionPlan(ActionPlan actionPlan) {
+        this.actionPlan = actionPlan;
+    }
+
+	public List<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(List<Project> projects) {
+		this.projects = projects;
+	}
+
+}

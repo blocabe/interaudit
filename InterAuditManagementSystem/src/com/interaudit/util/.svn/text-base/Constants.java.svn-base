@@ -1,0 +1,171 @@
+package lu.intrasoft.jaspers.util;
+
+import java.text.Format;
+import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.birt.report.engine.api.RenderOption;
+
+public class Constants {
+    private Constants() {
+        
+    }
+    
+    public static final String ALL_VALUES = "*";
+
+    public static final Format YEAR_SEQUENCE_FORMATTER = new MessageFormat("{0,number,000}");
+    public static final String REPORT_OUTPUT_FORMAT_HTML = "html";
+    public static final String REPORT_OUTPUT_FORMAT_PDF = "pdf";
+
+    public static final Map<String, String> BIRT_OUTPUT_FORMATS = new HashMap<String, String>();
+
+    static {
+        BIRT_OUTPUT_FORMATS.put(REPORT_OUTPUT_FORMAT_HTML, RenderOption.OUTPUT_FORMAT_HTML);
+        BIRT_OUTPUT_FORMATS.put(REPORT_OUTPUT_FORMAT_PDF, RenderOption.OUTPUT_FORMAT_PDF);
+    }
+
+    public static final Integer VERSION_NUMBER_FIRST_VALUE = new Integer(1);
+
+    //The below group of constants should refer to the contents of R_USER_ROLES reference table
+    public static final String ROLE_NAME_OPERATIONAL_MANAGER = "OPRM";
+    public static final String ROLE_NAME_SECTOR_MANAGER = "SECTM";
+    public static final String ROLE_NAME_TASK_MANAGER = "TASKM";
+    public static final String ROLE_NAME_TEAM_MEMBER = "TEAMM";
+    public static final String ROLE_NAME_VISITOR = "VISITOR";
+    public static final String ROLE_NAME_ADMIN = "ADMIN";
+    public static final String ROLE_NAME_HEAD_OF_OFFICE = "HEADOF";
+    public static final String ROLE_NAME_SENIOR_CADRE = "SENCD";
+    public static final String ROLE_NAME_FINANCIAL_MANAGER = "FINMAN";
+    public static final String ROLE_NAME_CONTRACT_MANAGER = "CNTRM";
+
+    //The below group of constants should refer to the contents of R_TASK_TYPE reference table
+    public static final String TASK_TYPE_CODE_PROJECT = "PT";
+    public static final String TASK_TYPE_CODE_OTHER = "OE";
+
+//    public static final Long PROJECT_CE_STATE_ID_NOT_APPLICABLE = 1L;
+
+    //The below group of constants should refer to the contents of R_PROJECT_EVL reference table
+    public static final String PROJECT_EVOLUTION_CODE_NOT_APPLICABLE ="NONE";
+    public static final String PROJECT_EVOLUTION_CODE_0="P000";
+    public static final String PROJECT_EVOLUTION_CODE_25="P025";
+    public static final String PROJECT_EVOLUTION_CODE_50="P050";
+    public static final String PROJECT_EVOLUTION_CODE_75="P075";
+    public static final String PROJECT_EVOLUTION_CODE_COMPLETION_NOTE_SUBMITTED="CNSB";
+    public static final String PROJECT_EVOLUTION_CODE_COMPLETION_NOTE_VALIDATED="CNVD";
+
+    //The below group of constants should refer to the contents of R_PROJECT_STATUS reference table
+    public static final String PROJECT_STATUS_CODE_REQUESTED = "RQST";
+    public static final String PROJECT_STATUS_CODE_ACCEPTED = "ACCP";
+    public static final String PROJECT_STATUS_CODE_COMPLETED = "COMP";
+    public static final String PROJECT_STATUS_CODE_REJECTED = "RJCD";
+    public static final String PROJECT_STATUS_CODE_SUSPENDED = "SUSP";
+    public static final String PROJECT_STATUS_CODE_CANCELLED = "CANC";
+    public static final String PROJECT_STATUS_CODE_ONGOING = "ONGO";
+    public static final String PROJECT_STATUS_CODE_HOLD = "HOLD";
+
+    //The below group of constants should refer to the contents of R_PROJECT_CE_STATE table
+    public static final String PROJECT_CE_STATE_CODE_NA="NONE";
+    public static final String PROJECT_CE_STATE_CODE_APPROVED="APRV";
+    public static final String PROJECT_CE_STATE_CODE_SUBMITTED="SBMT";
+    public static final String PROJECT_CE_STATE_CODE_PREFEASIBILITY_COMPLETED="PFSC";
+    public static final String PROJECT_CE_STATE_CODE_CONCEPT_STAGE="CNST";
+    public static final String PROJECT_CE_STATE_CODE_FEASIBILITY_EIA_APP_COMPLETED="FEAC";
+    public static final String PROJECT_CE_STATE_CODE_FEASIBILITY_EIA_APP_ONGOING="FEAO";
+    public static final String PROJECT_CE_STATE_CODE_APPLICATION_REJECTED="APRJ";
+
+    public static final String PROJECT_SEARCH_SCOPE = "project";
+    public static final String ACTION_PLAN_SEARCH_SCOPE = "actionPlan";
+//    public static final Long NULL_ENTITY_ID = -1000L;
+
+    public static final String SESSION_JASPERS_USER = "jaspersUser";
+
+    public static final SimpleDateFormat DEFAULT_DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
+    public static final SimpleDateFormat DEFAULT_DATE_TIME_FORMAT = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+    //The below group of constants should refer to the contents of R_STANDARD_TASK reference table
+    public static final String STANDARD_TASK_CODE_DATE_EXPECTED_COMPLETION = "DJAEC";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_ACCEPTED = "SJAAC";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_SUSPENDED = "SJASP";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_CANCELLED = "SJACL";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_COMPLETED = "SJACM";
+    public static final String STANDARD_TASK_CODE_STATUS_PROJECT = "STSPJ";
+    public static final String STANDARD_TASK_CODE_MISSION_REPORT = "MSSRP";
+    public static final String STANDARD_TASK_CODE_MISSION_SITE_VISITE = "MSSSV";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_NOT_APPLICABLE = "STPNA";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_0 = "STP00";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_25 = "STP25";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_50 = "STP50";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_75 = "STP75";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_COMPLETION_SUBMITTED = "STPSB";
+    public static final String STANDARD_TASK_CODE_EVOLUTION_PROJECT_COMPLETION_VALIDATED = "STPVD";
+    public static final String STANDARD_TASK_CODE_MONTHLY_OBJECTIVES = "MNOBJ";
+    public static final String STANDARD_TASK_CODE_DRAFTS_FS = "DRFFS";
+    public static final String STANDARD_TASK_CODE_FINAL_FS = "FINFS";
+    public static final String STANDARD_TASK_CODE_DRAFTS_ECON_FIN_ANALYSIS = "DREFA";
+    public static final String STANDARD_TASK_CODE_FINAL_ECON_FIN_ANALYSIS = "FIEFA";
+    public static final String STANDARD_TASK_CODE_EIA = "EIA00";
+    public static final String STANDARD_TASK_CODE_DRAFT_APPLICATION_FORM = "DRFAF";
+    public static final String STANDARD_TASK_CODE_FINAL_APPLICATION = "FINAP";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_ONGOING = "SJAOG";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_REQUESTED = "SJARQ";
+    public static final String STANDARD_TASK_CODE_STATUS_JASPERS_REJECTED = "SJARJ";
+
+    public static final String COUNTRY_ISO_CODE_MULTI = "MULT";
+    
+    //This refers to the JASPERS_USERS table record which represents the external user
+    public static final Long JASPERS_USER_ID_EXTERNAL = 2L;
+
+    //The below group of constants should refer to the contents of R_ACTION_PLAN_STATUS table
+    public static final String CODE_ACTION_PLAN_STATUS_REQUESTED = "REQ";
+    public static final String CODE_ACTION_PLAN_STATUS_ACCEPTED = "ACC";
+
+    public static final String PROJECT_TEMPORARY_REFERENCE_PREFIX = "TEMP";
+    public static final String PROJECT_REFERENCE_SEPARATOR = " ";
+
+    
+    //The below group should refer to the R_TIMESHEET_TYPE reference table
+    public static final Long TIMESHEET_ROW_TYPE_ID_PROJECT = 1L;
+    public static final Long TIMESHEET_ROW_TYPE_ID_ACTION_PLAN = 2L;
+    
+    //The below group should refer to the R_TIMESHEET_STATUS reference table
+    public static final Long TIMESHEET_STATUS_ID_DRAFT = 1L;
+    public static final Long TIMESHEET_STATUS_ID_SUBMITTED = 2L;
+    public static final Long TIMESHEET_STATUS_ID_VALIDATED = 3L;
+    
+    //The below group of constants should refer to the contents of R_CONTACT_TYPE reference table
+    public static final String CONTACT_TYPE_CODE_JASPERS = "J";
+    public static final String CONTACT_TYPE_CODE_EUROPEAN_COMISSION = "EC";
+    public static final String CONTACT_TYPE_CODE_BENEFICIARY = "B";
+    public static final String CONTACT_TYPE_CODE_EIB = "EIB";
+    public static final String CONTACT_TYPE_CODE_OTHER = "OTH";
+    public static final String CONTACT_TYPE_CODE_EBRD = "EBRD";
+    
+    //The below group of constants should refer to the contents of R_USER_TYPE reference table
+    public static final String USER_TYPE_JASPERS = "J";
+    public static final String USER_TYPE_EUROPEAN_COMMISION = "EC";
+    public static final String USER_TYPE_BENEFICIARY = "B";
+    public static final String USER_TYPE_EIB = "EIB";
+    public static final String USER_TYPE_OTHERS = "OTH";
+    public static final String USER_TYPE_EBRD = "EBRD";
+
+    // Jaspers entities codes. this codes are used in spring-config.xml too.
+    public static final String JASPERS_ENTITY_CODE_ACTION_PLAN = "AP";
+    public static final String JASPERS_ENTITY_CODE_ACCOUNTING = "ACCT";
+    public static final String JASPERS_ENTITY_CODE_CONTRACT = "CTRT";
+    public static final String JASPERS_ENTITY_CODE_PROJECT = "PJ";
+    public static final String JASPERS_ENTITY_CODE_GENERAL = "GNRL";
+    public static final String JASPERS_ENTITY_CODE_TEMPLATE = "TMPLT";
+    public static final String JASPERS_ENTITY_CODE_PERSONAL = "PRSNL";
+    
+    //The below group of constants should refer to the contents of R_PROJECT_TYPE reference table
+    public static final String PROJECT_TYPE_CODE_MAJOR = "MAJP";
+    public static final String PROJECT_TYPE_CODE_SMALL = "SMLP";
+    public static final String PROJECT_TYPE_CODE_HORIZONTAL = "HRZP";
+
+    //The below group of constants should refer to the contents of R_PROJECT_CONTACT_CATHEGORY table
+    public static final String PROJECT_CONTACT_CATHEGORY_CODE_OFFICIAL = "OFC";
+    public static final String PROJECT_CONTACT_CATHEGORY_CODE_GENERAL  = "GEN";
+
+}

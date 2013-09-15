@@ -1,0 +1,409 @@
+
+body {
+	/*background-image: url(bg/header.gif);
+	background-repeat: repeat-x;*/
+	font-family: helvetica, arial, sans-serif;
+	/*font-size: .7em;*/
+	/*color: #848484;*/
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/******** Application ******/
+#ODBB_HEADER {
+  /* background-color: #FFFFFF;*/
+  
+   border-bottom: solid #0066aa 1px;
+  
+}
+#ODBB_MENU {
+	float: left;
+	width: 250px;
+	
+	background-color: #5563a0;
+	
+}
+#ODBB_MENU_BACKGROUND{
+	background-repeat:no-repeat;
+	background-position:bottom;
+	
+}
+
+
+
+#ODBB_FOOTER {
+	float: left;
+	background-color: #5563a4;
+	
+	color:#D1D3FD;
+}
+/******** Main window sizes ******/
+#ODBB {
+	float: left;
+	background-color: white;
+
+}
+#ODBB_MAIN {
+	
+	background-color: white;
+	
+	 
+}
+
+
+
+
+
+#ODBB_MAIN_START {
+	float:left;
+	
+
+}
+
+
+
+/*
+#ODBB_MENU A:Visited  {
+	color : orange;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-weight:normal;
+	}
+	*/
+
+/******** Links *****/
+
+#ODBB_MENU A	    {	
+	color : white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-weight:normal;
+	text-decoration: none;
+	}
+	
+#ODBB_MENU A:Active   {
+	color : #D1D3FD;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-weight:normal;
+	}
+#ODBB_MENU A:Hover    {
+	color : white;
+	text-decoration : none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-size-adjust:none;
+	font-weight:normal;
+	}
+/******** BODY ******/
+
+
+/******** CONTENT FOOTER******/
+
+/** Width to set the size in css - panel width does not work*/
+TABLE.CONTENT_FOOTER {
+        width:100%;
+		border-top: 1px solid lightgrey;
+		border-bottom: 1px solid lightgrey;
+}
+TABLE.CONTENT_FOOTER_CONTENT {
+       
+}
+
+/******** CONTENT ******/
+
+
+
+
+
+
+/******** Menu ******/
+TABLE.MENU {
+		
+		font-weight: normal;
+		text-align : left;
+		
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+TH.MENU  {
+		color      : #FFFFFF;
+		background-color : #274465;
+		font-weight: bold;
+		text-align : left;
+	
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+TD.MENU  {
+		font-weight: normal;
+		text-align : left;
+		
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+P.MENU  {
+		font-weight: normal;
+		text-align : left;
+		
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+#main {
+	padding: 15;
+	margin: 15px 0 0 0;
+}
+
+
+	#main_left {
+		float: left;
+		width: 525px;
+	}
+
+
+		.welcome {
+			height: 230px;
+			background-image: url(img/image1.jpg);
+			background-repeat: no-repeat;
+			padding: 40px 0 0 0;
+			margin: 0;
+		}
+
+
+			.welc1 {
+				font-size: 1.6em;
+				color: #000;
+				padding: 20px 15px 0 15px;
+				margin: 0 0 25px 0;
+			}
+
+
+			.welc2 {
+				color: #000;
+				padding: 15px 10px 15px 15px;
+			}
+
+
+
+		#market {
+			float: left;
+			width: 160px;
+			height: 177px;
+			background-image: url(bg/market.jpg);
+			background-repeat: no-repeat;
+			color: #fff;
+			padding: 20px;
+			margin: 0 30px 0 0;
+		}
+
+
+			#market h3 {
+				color: #fff;
+				margin: 0 0 10px 0;
+			}
+
+
+			#market a { color: #fff; text-decoration: none; }
+			#market a:hover { color: #fff; text-decoration: underline; }
+
+
+
+
+		#latest {
+			float: left;
+			width: 505px;
+		}
+
+
+			#latest ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+				#latest a { color: #3774be; text-decoration: none; }
+				#latest a:hover { color: #3774be; text-decoration: underline; }
+
+				#latest li {
+					padding: 7px 15px 7px 15px;
+					margin: 0;
+				}
+
+				#latest li.even {
+					background-color: #f1f1f1;
+				}
+
+
+		#mainbox {
+			clear: both;
+		}
+
+
+			.titlel {
+				float: left;
+				width: 6px;
+				height: 29px;
+				background-image: url(bg/titlel.gif);
+				background-repeat: no-repeat;
+				padding: 0;
+				margin: 0;
+				
+				
+				
+			}
+
+
+			.title {
+				float: left;
+				
+				height: 29px;
+				background-image: url(bg/title.gif);
+				background-repeat: repeat-x;
+				font-size: .9em;
+				font-family: helvetica, arial, sans-serif;
+				font-weight: bold;
+				color: #fff;
+				text-transform: uppercase;
+				padding: 9px 0 0 10px;
+				margin: 0;
+			}
+
+
+			.titler {
+				float: left;
+				width: 6px;
+				height: 29px;
+				background-image: url(bg/titler.gif);
+				background-repeat: no-repeat;
+				padding: 0;
+				margin: 0;
+			}
+
+
+			.box_large {
+				clear: both;
+				border-top: 1px solid #ddd;
+				border-left: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				text-align: justify;
+				padding: 15px 15px 10px 15px;
+				margin: 0 0 25px 0;
+			}
+
+
+
+	#main_right {
+		float: right;
+		width: 275px;
+		padding: 0;
+		margin: 0;
+	}
+
+
+
+		.boxtop {
+			height: 29px;
+			background-image: url(bg/boxtop.gif);
+			background-repeat: no-repeat;
+			font-size: .9em;
+			font-family: helvetica, arial, sans-serif;
+			font-weight: bold;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 9px 0 0 16px;
+			margin: 0;
+		}
+
+
+		.box {
+			clear: both;
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			padding: 15px 15px 10px 15px;
+			margin: 0 0 25px 0;
+		}
+
+
+		#infobox {
+			height: 80px;
+			background-image: url(bg/info.jpg);
+			background-repeat: no-repeat;
+			color: #fff;
+			padding: 20px 0 0 95px;
+			margin: 0;
+		}
+
+
+			#infobox h3 {
+				color: #fff;
+				margin: 0 0 10px 0;
+			}
+
+
+			#infobox a { color: #fff; text-decoration: none; }
+			#infobox a:hover { color: #fff; text-decoration: underline; }
+
+
+
+	#news {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+
+		#news li {
+			padding: 0 0 10px 0;
+			margin: 0 0 10px 0;
+			border-bottom: 1px solid #eee;
+		}
+
+
+
+		.date {
+			text-transform: uppercase;
+			margin: 0 0 3px 0;
+		}
+		
+		
+		#spacer { clear: both; height: 0px; }
+#footer {
+	clear: both;
+	height: 30px;
+	background-image: url(bg/footer.gif);
+	background-repeat: repeat-x;
+	/*padding: 10px 7px 0 7px;*/
+}
+
+
+	#footer a { color: #848484; text-decoration: none; }
+	#footer a:hover { color: #848484; text-decoration: underline; }
+
+
+	.lfooter {
+		float: left;
+		width: 45%;
+	}
+
+
+	.rfooter {
+		float: right;
+		width: 45%;
+		text-align: right;
+	}
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+package com.interaudit.util;
+
+public class BusinessMessagesConstants {
+
+    public static final String ERROR_TASK_CONCURRENT_UPDATE = "errors.task.concurent.update";
+    public static final String ERROR_PROJECT_CONCURRENT_UPDATE = "errors.project.concurent.update";
+    public static final String ERROR_ACTION_PLAN_CONCURRENT_VALIDATE = "errors.actionplan.concurent.validate";
+    public static final String ERROR_ACTION_PLAN_CONCURRENT_UPDATE = "errors.actionplan.concurent.update";
+    public static final String ERROR_CONTACT_CONCURRENT_UPDATE = "errors.contact.concurent.update";
+    public static final String ERROR_CONTACT_NOT_FOUND = "error.contact.not.found";
+    public static final String ERROR_ADD_CONTACTS_NOT_FOUND = "error.add.contacts.not.found";
+    public static final String ERROR_ACTIVATE_CONTACTS_NOT_FOUND = "error.activate.contacts.not.found";
+    public static final String ERROR_DEACTIVATE_CONTACTS_NOT_FOUND = "error.deactivate.contacts.not.found";
+    public static final String ERROR_ADD_CONTACTS_DEACTIVATED = "error.add.contacts.deactivated";
+    
+    public static final String ERROR_ACTION_PLAN_NOT_UNIQUE = "errors.action.plan.not.unique";
+    public static final String ERROR_ACTION_PLAN_EMPTY_COUNTRY = "errors.action.plan.empty.country";
+    public static final String ERROR_ACTION_PLAN_EMPTY_YEAR = "errors.action.plan.empty.year";
+    
+    public static final String ERROR_PROJECT_EMPTY_TITLE = "errors.project.empty.title";
+    public static final String ERROR_PROJECT_EMPTY_YEAR = "errors.project.empty.year";
+    public static final String ERROR_PROJECT_EMPTY_COUNTRY = "errors.project.empty.country";
+    public static final String ERROR_PROJECT_EMPTY_SECTOR = "errors.project.empty.sector";
+    public static final String ERROR_PROJECT_EMPTY_SUBSECTOR = "errors.project.empty.subsector";
+    public static final String ERROR_PROJECT_EMPTY_OFFICE = "errors.project.empty.office";
+    public static final String ERROR_PROJECT_EMPTY_REGIONAL_MANAGER = "errors.project.empty.regional.manager";
+    public static final String ERROR_PROJECT_EMPTY_SECTOR_MANAGER = "errors.project.empty.sector.manager";
+    public static final String ERROR_PROJECT_EMPTY_ACTION_PLAN = "errors.project.empty.action.plan";
+    public static final String ERROR_PROJECT_EMPTY_PROJECT_TYPE = "errors.project.empty.project.type";
+
+    public static final String ERROR_DOCUMENT_INVALID_FILE_TYPE = "errors.document.invalid.file.type";
+    public static final String ERROR_DOCUMENT_EXTERNAL_ACCESS_NOT_ALLOWED = "errors.document.external.access.not.allowed";
+    public static final String ERROR_FILE_NOT_UPLOADED = "errors.file.not.uploaded";
+    public static final String ERROR_FILE_ALREADY_EXISTS = "errors.file.already.exists";
+    public static final String ERROR_FILE_TOO_LARGE = "errors.file.too.large";
+    
+    public static final String ERROR_DOCUMENT_DELETE_NOT_ALLOWED = "error.document.delete.not.allowed";
+    
+    public static final String ERROR_FILE_SYSTEM_ENTITY_ROOT_DIRECTORY_NOT_FOUND = "errors.file.system.entity.root.directory.not.found";
+    
+    public static final String WARNING_FILE_ALREADY_EXISTS = "warning.file.already.exists";
+
+    public static final String ERROR_TOO_MANY_EBRD_CONTACTS = "error.too.many.ebrd.contacts";
+    public static final String ERROR_TOO_MANY_EIB_CONTACTS = "error.too.many.eib.contacts";
+    public static final String ERROR_TOO_MANY_EC_CONTACTS = "error.too.many.ec.contacts";
+    public static final String ERROR_CONTACT_TYPE_CHANGED = "error.contact.type.changed";
+    
+    public static final String ERROR_WEEKPLANNING_NOT_FOUND = "error.no.weekplanning.found";
+    public static final String ERROR_INVALID_START_DATE_FOR_ASSIGNMENT= "error.invalid.startdate.for.assignment";
+    public static final String ERROR_INVALID_END_DATE_FOR_ASSIGNMENT= "error.invalid.end.for.assignment";
+    public static final String ERROR_USER_ALREADY_ASSIGNED_FOR_PERIOD= "error.user.already.assigned.for.period";    
+    public static final String ERROR_MISSION_NOT_FOUND= "error.no.mission.found";
+    public static final String ERROR_TEAMMEMBER_NOT_FOUND= "error.no.teammember.found";
+    public static final String ERROR_TEAMMEMBER_NOT_IN_PROJECT= "error.no.teammember.found.in.project";
+	
+}

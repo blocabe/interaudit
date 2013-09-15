@@ -1,0 +1,22 @@
+package lu.intrasoft.jaspers.service.view;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Document;
+
+public class DocumentsView {
+    private ActionPlan actionPlan;
+    private Document document;
+
+    public ActionPlan getActionPlan() {
+        return actionPlan;
+    }
+    public void setActionPlan(ActionPlan actionPlan) {
+        this.actionPlan = actionPlan;
+    }
+    public Document getDocument() {
+        return document;
+    }
+    public void setDocument(Document document) {
+        this.document = document;
+    }
+}

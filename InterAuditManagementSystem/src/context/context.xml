@@ -1,0 +1,46 @@
+<Context antiJARLocking="true">
+
+   <!-- POSTGRESQL DB >
+  <Resource name="jdbc/interAudit"
+            uniqueResourceName="jdbc/interAudit"
+            auth="Container"
+            type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+            driverClassName="org.postgresql.Driver"
+            loginTimeout="10"
+            maxWait="5000"
+            username="postgres"
+            password="admin"
+            testOnBorrow="true"
+            url="jdbc:postgresql://127.0.0.1:5433/interAudit"
+  /-->
+  
+
+
+  
+   <Resource
+      name="jdbc/interAudit"  
+      auth="Container"
+      type="com.mchange.v2.c3p0.ComboPooledDataSource"
+      factory="org.apache.naming.factory.BeanFactory" 
+      description="DB Connection" 
+      driverClass="org.postgresql.Driver"
+      jdbcUrl="jdbc:postgresql://127.0.0.1:5433/postgres"
+      loginTimeout="10"
+      user="postgres"
+      password="admin" 
+      maxIdleTime="10"
+      maxConnectionAge="10"
+      maxIdleTimeExcessConnections="5"
+      maxPoolSize="15" 
+      minPoolSize="3" 
+      acquireIncrement="3"/>
+    <ResourceLink
+        global="jdbc/interAudit"
+        name="jdbc/interAudit"
+        type="javax.sql.DataSource" />
+    
+  <Transaction factory="com.atomikos.icatch.jta.UserTransactionFactory" />
+
+</Context> 
+

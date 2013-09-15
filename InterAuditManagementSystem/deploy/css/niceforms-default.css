@@ -1,0 +1,31 @@
+/*Defaults Styling
+body {font:12px/17px Arial, Helvetica, sans-serif; color:#333; background:#ccc; padding:40px 20px 20px 20px;}*/
+fieldset {background:#839DCF; /*padding:10px;*/ border:0px solid #fff; border-color:#fff #666661 #666661 #fff;/* margin-bottom:10px;*/ width:600px;}
+form.niceform input, textarea, select { font:12px/12px Arial, Helvetica, sans-serif;}
+form.niceform input, textarea,  {width:300px;}
+fieldset.action {text-align:right; background:#9da2a6; border-color:#e5e5e5 #797c80 #797c80 #e5e5e5;/* margin-top:-20px;*/}
+legend {background: #274465; color:#fff; font:17px/21px Calibri, Arial, Helvetica, sans-serif; padding:0 10px; margin:-26px 0 0 -16px; font-weight:bold; border:1px solid #fff; border-color:#e5e5c3 #505014 #505014 #e5e5c3;}
+label {font-size:11px; font-weight:bold; color:black;}
+label.opt {font-weight:normal;}
+dl {clear:both;}
+dt {float:left; text-align:right; width:90px; line-height:25px; margin:0 10px 10px 0;}
+dd {float:left; width:475px; line-height:25px; margin:0 0 5px 0;24/04/2010}
+#footer {font-size:11px;}
+
+#container {width:700px; margin:0 auto;}
+
+
+input.button120 {
+	width:120px;
+	margin:1px 0 1px 0;
+	background-color:rgb(241,241,237);
+	font-family:tahoma;
+	font-size:11px;
+	border:1px solid;
+	border-top-color:rgb(0,60,116);
+	border-left-color:rgb(0,60,116);
+	border-right-color:rgb(0,60,116);
+	border-bottom-color:rgb(0,60,116);
+	border-style: outset;
+}
+

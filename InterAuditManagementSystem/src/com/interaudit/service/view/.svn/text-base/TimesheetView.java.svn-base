@@ -1,0 +1,326 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Country;
+import lu.intrasoft.jaspers.entities.Project;
+import lu.intrasoft.jaspers.entities.Timesheet;
+import lu.intrasoft.jaspers.util.Constants;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class TimesheetView {
+
+	private List<String> years;
+	
+	private List<Country> countries;
+	
+	private Long timesheetId;
+	
+	private String timesheetStatus;
+	
+	private String userName;
+	
+	private boolean isOperationalManager;
+	
+	private Calendar calendar;
+	
+	private Date date;
+
+	private ArrayList<TimesheetRowView> rows;
+	
+	private TimesheetRowView columnTotals;
+	
+	public TimesheetView() {
+		calendar = Calendar.getInstance();
+		this.rows = new ArrayList<TimesheetRowView>();
+		this.columnTotals = new TimesheetRowView("Total");
+	}
+	
+	public TimesheetView(Timesheet timesheet) {
+		this();
+		this.timesheetId = timesheet.getId();
+		this.timesheetStatus = timesheet.getStatus().getDescription();
+		this.userName = timesheet.getUser().getFullName();
+		this.isOperationalManager = false;
+		this.date = timesheet.getDate();
+		calendar.setTime(date);
+	}
+	
+	public void updateCell(int row, int col, double value) {
+		double oldValue = rows.get(row).getCellValue(col); 
+		
+		rows.get(row).setCellValue(col, value);
+		
+		//updateColumn Total
+		columnTotals.setCellValue(col, columnTotals.getCellValue(col) - oldValue + value);
+	}
+	
+	
+	public double getRowTotal(int row) {
+		return rows.get(row).getHoursTotal();
+	}
+	
+	public double getColumnTotal(int col) {
+		return columnTotals.getCellValue(col);
+	}
+	
+	public double getGlobalTotal() {
+		return columnTotals.getHoursTotal();
+	}
+	
+	public void addRow(TimesheetRowView rowView) {
+		this.rows.add(rowView);
+	}
+	
+	public void initializeColumnTotals(double[] totals) {
+		columnTotals.setCells(totals);
+	}
+	
+	public void removeRow(Long id) {
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getType().getId().equals(id)) {
+				rows.remove(rowView);
+				break;
+			}
+		}
+	}
+	
+	public void removeAPRow(Long actionPlanId) {
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getActionPlan() != null) {
+				if (rowView.getRow().getActionPlan().getId().equals(actionPlanId)) {
+					rows.remove(rowView);
+					break;
+				}
+			}
+		}
+	}
+	
+	public void removeProjectRow(Long projectId) {
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getProject() != null) {
+				if (rowView.getRow().getProject().getId().equals(projectId)) {
+					rows.remove(rowView);
+					break;
+				}
+			}
+		}
+	}
+	
+	public boolean isEmptyRow(Long id) {
+		boolean empty = false;
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getType().getId().equals(id)) {
+				if (rowView.getHoursTotal() == 0) {
+					empty = true;
+				}
+				break;
+			}
+		}
+		return empty;
+	}
+	
+	public boolean isEmptyProjectRow(Long projectId) {
+		boolean empty = false;
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getType().getId().equals(Constants.TIMESHEET_ROW_TYPE_ID_PROJECT)) {
+				Project p = rowView.getRow().getProject();
+				if (p.getId().equals(projectId)) {
+					if (rowView.getHoursTotal() == 0) {
+						empty = true;
+					}
+					break;
+				}
+			}
+		}
+		return empty;
+	}
+	
+	public boolean isEmptyActionPlanRow(String apYear,Long apCountryId) {
+		boolean empty = false;
+		for (TimesheetRowView rowView : rows) {
+			if (rowView.getRow().getType().getId().equals(Constants.TIMESHEET_ROW_TYPE_ID_ACTION_PLAN)) {
+				ActionPlan ap = rowView.getRow().getActionPlan();
+				if (ap.getYear().equals(apYear) && ap.getBeneficiaryCountry().getId().equals(apCountryId)) {
+					if (rowView.getHoursTotal() == 0) {
+						empty = true;
+					}
+					break;
+				}
+			}
+		}
+		
+		return empty;
+	}
+	
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public ArrayList<TimesheetRowView> getRows() {
+		return rows;
+	}
+
+	public void setRows(ArrayList<TimesheetRowView> rows) {
+		this.rows = rows;
+	}
+	
+	public TimesheetRowView getColumnTotals() {
+		return columnTotals;
+	}
+
+	public void setColumnTotals(TimesheetRowView columnTotals) {
+		this.columnTotals = columnTotals;
+	}
+
+	public String getFormattedDate() {
+		SimpleDateFormat sdf = new SimpleDateFormat( "MMMMMMM yyyy",Locale.ENGLISH );
+		Date dating = calendar.getTime();
+		return sdf.format(dating);
+	}
+	
+	public int getNumberOfDays() {
+		return calendar.getActualMaximum(Calendar.DATE);
+	}
+	
+	public List<Integer> getWeekEndDays() {
+		ArrayList<Integer> res = new ArrayList<Integer>();
+		//Backup current day of calendar
+		int tempDate = calendar.get(Calendar.DATE);
+		for (int i = 1; i <= calendar.getActualMaximum(Calendar.DATE);i++) {
+			calendar.set(Calendar.DATE, i);
+			int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK); 
+	        if ((dayOfWeek == Calendar.SATURDAY) || (dayOfWeek == Calendar.SUNDAY)) {
+	            res.add(i);
+	        } 
+		}
+		//Restore current day
+		calendar.set(Calendar.DATE, tempDate);
+		
+		return res;
+	}
+	
+	public String getInitialDataSource() {
+		//StringBuffer buf = new StringBuffer();
+		JSONArray dataSource = new JSONArray();
+		try {
+		//Add normal rows
+		for(Iterator<TimesheetRowView> it = rows.iterator(); it.hasNext();) {
+			TimesheetRowView row = it.next();
+			JSONObject dataSourceEntry = new JSONObject();
+
+			dataSourceEntry.put("type", row.getTitle());
+			for (int i=1; i <=getNumberOfDays();i++) {
+				dataSourceEntry.put("day"+ String.valueOf(i),TimesheetViewManager.doubleToString(row.getCellValue(i)));
+			}
+			dataSourceEntry.put("total",TimesheetViewManager.doubleToString(row.getHoursTotal()));
+			dataSourceEntry.put("typeF",row.getTitle());
+			//Adding titles for additional information display
+			if (row.getRow().getProject() != null) {
+				dataSourceEntry.put("title", row.getRow().getProject().getTitle());
+			} else if (row.getRow().getActionPlan() != null) {
+				dataSourceEntry.put("title", row.getRow().getActionPlan().getBeneficiaryCountry().getDescription() + " " + row.getRow().getActionPlan().getYear());
+			} else {
+				dataSourceEntry.put("title", row.getTitle());
+				dataSourceEntry.put("type", row.getRow().getType().getParent().getDescription());
+			}
+			dataSource.put(dataSourceEntry);
+		}
+		//Add columnTotals row
+		JSONObject columnTotalsRow = new JSONObject();
+		columnTotalsRow.put("type",columnTotals.getTitle());
+		for (int i=1; i <=getNumberOfDays();i++) {
+			columnTotalsRow.put("day"+String.valueOf(i), TimesheetViewManager.doubleToString(columnTotals.getCellValue(i)));
+		}
+		columnTotalsRow.put("total", TimesheetViewManager.doubleToString(columnTotals.getHoursTotal()));
+		columnTotalsRow.put("typeF", columnTotals.getTitle());
+		columnTotalsRow.put("title", "Day Total");
+		dataSource.put(columnTotalsRow);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return dataSource.toString();
+	}
+
+	public String getInitialRowMapping() {
+		StringBuffer buf = new StringBuffer();
+		for(Iterator<TimesheetRowView> it = rows.iterator(); it.hasNext();) {
+			TimesheetRowView row = it.next();
+			
+			buf.append("{rowTypeId:" + row.getRow().getType().getId());
+			buf.append(",recordIndex:" + rows.indexOf(row));
+			if (row.getRow().getActionPlan() != null) {
+				buf.append(",year:" + row.getRow().getActionPlan().getYear());
+				buf.append(",countryId:" +  row.getRow().getActionPlan().getBeneficiaryCountry().getId());
+			} else if (row.getRow().getProject() != null) {
+				buf.append(",projectId:" +  row.getRow().getProject().getId());
+			}
+			buf.append(",title:\"" + row.getTitle() +"\"}");
+			if (it.hasNext()) buf.append(",");
+		}
+		return buf.toString();
+	}
+	
+	public Long getTimesheetId() {
+		return timesheetId;
+	}
+
+	public void setTimesheetId(Long timesheetId) {
+		this.timesheetId = timesheetId;
+	}
+
+	public List<String> getYears() {
+		return years;
+	}
+
+	public void setYears(List<String> years) {
+		this.years = years;
+	}
+
+	public List<Country> getCountries() {
+		return countries;
+	}
+
+	public void setCountries(List<Country> countries) {
+		this.countries = countries;
+	}
+
+	public String getTimesheetStatus() {
+		return timesheetStatus;
+	}
+
+	public void setTimesheetStatus(String timesheetStatus) {
+		this.timesheetStatus = timesheetStatus;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public boolean getIsOperationalManager() {
+		return isOperationalManager;
+	}
+
+	public void setOperationalManager(boolean isOperationalManager) {
+		this.isOperationalManager = isOperationalManager;
+	}
+	
+}

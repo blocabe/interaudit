@@ -1,0 +1,150 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Contact;
+import lu.intrasoft.jaspers.entities.ContactType;
+import lu.intrasoft.jaspers.entities.Country;
+import lu.intrasoft.jaspers.entities.JaspersUser;
+import lu.intrasoft.jaspers.entities.Office;
+import lu.intrasoft.jaspers.entities.Project;
+import lu.intrasoft.jaspers.entities.ProjectStatus;
+import lu.intrasoft.jaspers.entities.Sector;
+import lu.intrasoft.jaspers.entities.SubSector;
+
+/**
+ * Class to encapsulate all the values that must be displayed on the Jasper
+ * Search screen.
+ * 
+ * @author Valentin Carnu
+ * 
+ */
+public class SearchView {
+    private List<Country> countries;
+    private List<Sector> sectors;
+    private List<SubSector> subsectors;
+    private List<String> years;
+    private List<ProjectStatus> statuses;
+    private List<JaspersUser> regionalManagers;
+    private List<JaspersUser> sectorManagers;
+    private List<JaspersUser> taskManagers;
+    private List<Project> projects;
+    private List<ActionPlan> actionPlans;
+    private List<Office> offices;
+    private ProjectStatus projectStatus;
+    private List<Contact> contacts;
+    private List<ContactType> contactTypes;
+
+    public List<Country> getCountries() {
+        return countries;
+    }
+
+    public void setCountries(List<Country> countries) {
+        this.countries = countries;
+    }
+
+    public List<Sector> getSectors() {
+        return sectors;
+    }
+
+    public void setSectors(List<Sector> sectors) {
+        this.sectors = sectors;
+    }
+
+    public List<SubSector> getSubsectors() {
+        return subsectors;
+    }
+
+    public void setSubsectors(List<SubSector> subsectors) {
+        this.subsectors = subsectors;
+    }
+
+    public List<String> getYears() {
+		return years;
+	}
+
+	public void setYears(List<String> years) {
+		this.years = years;
+	}
+
+	public List<ProjectStatus> getStatuses() {
+        return statuses;
+    }
+
+    public void setStatuses(List<ProjectStatus> statuses) {
+        this.statuses = statuses;
+    }
+
+    public List<JaspersUser> getRegionalManagers() {
+        return regionalManagers;
+    }
+
+    public void setRegionalManagers(List<JaspersUser> regionalManagers) {
+        this.regionalManagers = regionalManagers;
+    }
+
+    public List<JaspersUser> getSectorManagers() {
+        return sectorManagers;
+    }
+
+    public void setSectorManagers(List<JaspersUser> sectorManagers) {
+        this.sectorManagers = sectorManagers;
+    }
+
+    public List<JaspersUser> getTaskManagers() {
+        return taskManagers;
+    }
+
+    public void setTaskManagers(List<JaspersUser> taskManagers) {
+        this.taskManagers = taskManagers;
+    }
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
+    }
+
+    public List<ActionPlan> getActionPlans() {
+        return actionPlans;
+    }
+
+    public void setActionPlans(List<ActionPlan> actionPlans) {
+        this.actionPlans = actionPlans;
+    }
+
+	public List<Office> getOffices() {
+		return offices;
+	}
+
+	public void setOffices(List<Office> offices) {
+		this.offices = offices;
+	}
+
+    public ProjectStatus getProjectStatus() {
+        return projectStatus;
+    }
+
+    public void setProjectStatus(ProjectStatus projectStatus) {
+        this.projectStatus = projectStatus;
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
+    }
+
+    public List<ContactType> getContactTypes() {
+        return contactTypes;
+    }
+
+    public void setContactTypes(List<ContactType> contactTypes) {
+        this.contactTypes = contactTypes;
+    }
+}

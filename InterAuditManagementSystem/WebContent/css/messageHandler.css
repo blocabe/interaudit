@@ -1,0 +1,138 @@
+
+
+
+/*
+hourglass, used mainly for ajax calls
+*/
+.curWait {
+	cursor: wait;
+}
+
+/*
+add a hand, used when adding click events on any elements
+*/
+.curHand {
+	cursor:pointer;	
+}
+	
+/*
+to hide/show paragraphs or any element.
+used for UI behaviour change
+*/
+.hide {
+	display: none;
+}
+	
+.show {
+	display: block;
+}
+ 
+
+
+
+/*
+Zone used to show various informations after a user action :
+confirmation message or error message after a save, help, etc.
+*/
+
+div#infoZone , div#infoZoneSessionError {
+	position: fixed;
+	z-index: 99;
+	left: 220px;
+	top:8px;
+	background-color: #FFFFCC;
+	border:2px solid #999999;	
+	padding:10px;	
+	padding-right:15px;
+	padding-left: 25px;
+	visibility: visible;
+	overflow: auto;
+	max-height:600px;
+	max-width : 600px;
+}
+
+div#infoZone ul, div#infoZoneSessionError ul {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+/* infoZoneSessionError message should be on top of any other message as it
+ * indicates the end of the http session
+*/  
+div#infoZoneSessionError{
+	z-index: 100;
+}
+
+div#infoZoneVerboseMsg {
+	font-weight: normal  ;
+}
+
+div#infoZoneSessionError.enlarged, div#infoZone.enlarged {
+	max-height : 100%;
+	max-width : 100%;
+	left: 8px;
+	right: 8px;
+	bottom : 8px;
+}
+
+div#infoZone.ok {
+	background-image:url(../images/accept.gif);
+	background-repeat:no-repeat;
+	background-position: 5px 10px;
+		
+	}
+
+div#infoZone.error, div#infoZoneSessionError.error {
+	background-image:url(../images/cancel.gif);
+	background-repeat:no-repeat;
+	background-position: 5px 10px;
+	font-weight: bold;
+		
+	}
+	
+div#infoZone.warning, div#infoZoneSessionError.warning {
+	background-image:url(../images/warning.gif);
+	background-repeat:no-repeat;
+	background-position: 5px 10px;
+	font-weight: bold;
+		
+	}
+	
+div#infoZone .error {
+	color: red;
+	font-weight: bold;
+}
+
+div#infoZone .standard {
+	color: black;
+	font-weight: normal;
+}
+
+div#infoZone .warning {
+	color: orange;
+	font-weight: bold;
+}
+
+div#infoZone .button {
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+div#infoZone.loader {
+	background-image:url(../images/ajax-loader.gif);
+	background-repeat:no-repeat;
+	background-position: 0px 0px;
+	padding-left: 35px;
+	}
+	
+div#infoZone.help {
+    background-image:url(../images/help.gif);
+   	background-repeat:no-repeat;
+	background-position: 8px 8px;
+	padding-left: 35px;
+	
+}
+
+

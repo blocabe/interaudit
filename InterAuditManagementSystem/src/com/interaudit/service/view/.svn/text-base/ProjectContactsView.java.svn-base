@@ -1,0 +1,30 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+import java.util.Map;
+
+import lu.intrasoft.jaspers.entities.ProjectContact;
+import lu.intrasoft.jaspers.entities.ProjectContactCategory;
+
+public class ProjectContactsView {
+	Map<ProjectContactCategory, List<ProjectContact>> projectContactsMap;
+	private ProjectContact projectContact;
+	
+	public Map<ProjectContactCategory, List<ProjectContact>> getProjectContactsMap() {
+		return projectContactsMap;
+	}
+
+	public void setProjectContactsMap(
+			Map<ProjectContactCategory, List<ProjectContact>> projectContactsMap) {
+		this.projectContactsMap = projectContactsMap;
+	}
+
+	public ProjectContact getProjectContact() {
+		return projectContact;
+	}
+	
+	public void setProjectContact(ProjectContact projectContact) {
+		this.projectContact = projectContact;
+	}
+
+}

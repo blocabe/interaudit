@@ -1,0 +1,127 @@
+ /*use this on .shtml container td's so you can use unclassed local td styles -- it reduces page size on pages with large tables see studentrecords/courseinfo/ for some examples */
+td.normal {	font-family: Verdana, sans-serif, Arial; font-weight: normal; font-size: 1em; color: #404040;}
+
+
+/* services matrix */
+table.servicesT
+{
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: xx-small;
+	color: #404040;
+	width: 250px;
+	background-color: #fafafa;
+	border: 1px #6699CC solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-top: 0px;
+}
+
+table.servicesT td.servHd
+{
+	border-bottom: 2px solid #d8d8d8;
+	background-color: #fafafa;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #404040;
+}
+
+table.servicesT td
+{
+	border-bottom: 1px dotted #CEDCEA;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 10px;
+	color: #404040;
+	background-color: white;
+	text-align: left;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.servBodL { border-left: 1px dotted #CEDCEA; }
+
+table.servicesT td ul
+{
+	list-style: none none inside;
+	margin: 8px 3px 10px -20px;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+table.servicesT td  li
+{
+	font-size: 10px;
+	line-height: 18px;
+}
+
+table.servicesT td h5 { margin: 3px 3px -3px 6px; }
+
+/* Alerts & Notices sticky widget */
+.alerts {	text-align: left; color: #404040; width: 260px; background-color: #fafafa; border: 1px #d79900 solid; border-collapse: collapse; border-spacing: 0px;}
+.alerts th {	border-bottom: 2px solid #d79900; background-color: #fff2ba; text-align: center; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040;}
+
+.alertsFloat {	float:right; margin: 15px 0px 10px 3px; text-align: center; font-family: Verdana; font-weight: normal; font-size: 10px; color: #404040; width: 220px; background-color: #fafafa; border: 1px #d79900 solid; border-collapse: collapse; border-spacing: 0px;}
+div.spacer { clear:both; }
+
+.alertHd {	border-bottom: 2px solid #d79900; background-color: #fff2ba; text-align: center; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040;}
+.alertBod {	text-align: left; font-family: Verdana, sans-serif, Arial;  color: #404040; background-color: #fafafa; margin-left: 10px; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;}
+.alertBod p {	text-align: left; font-family: Verdana, sans-serif, Arial; font-weight: normal; font-size: 11px; line-height: 12px; color: #404040; background-color: #fafafa; text-indent: -8px; margin-left: 10px; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;}
+.alertBod ul  { list-style:none none inside; margin: 8px 3px 10px 10px;  font-size: 10px; line-height:14px;}
+.alertBod li  { font-size: 10px; line-height:18px;}
+.alertBod h5  { margin: 3px 3px -3px 6px;}
+
+/* Alerts home right side */
+.side {	font-family: verdana, arial, sans-serif; color: #333; font-size: 11px; font-weight: normal; background: #FFF; line-height: 14px; padding: 2px;}
+.sidetitle {	font-family: verdana, arial, sans-serif; color: #666; font-size: 9px; font-weight: bold; background: #EEE; line-height: 14px; padding: 2px; margin-top: 10px; text-align: center; text-transform: uppercase; letter-spacing: .2em;}
+.sidetitleTop { font-family: verdana, arial, sans-serif; color: #666; font-size: 9px; font-weight: bold; background: #EEE; line-height: 14px; padding: 2px; margin-top: 40px; text-align: center; text-transform: uppercase; letter-spacing: .2em; }
+
+/* help style matrix */
+table.helpT { font-family: Verdana; font-weight: normal; font-size: 11px; color: #404040; width: 500px; background-color: #fafafa; border: 1px #6699CC solid; border-collapse: collapse; border-spacing: 0px; }
+table.helpT td.helpHed { border-bottom: 2px solid #6699CC; border-left: 1px solid #6699CC; background-color: #BEC8D1; text-align: left; text-indent: 5px; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040; }
+table.helpT td { border-bottom: 1px solid #E3F0F6; font-family: Verdana, sans-serif, Arial; font-weight: normal; font-size: 11px; color: #404040; background-color: white; text-align: left; padding-left: 3px;}
+.helpHed { border-bottom: 2px solid #6699CC; border-left: 1px solid #6699CC; background-color: #BEC8D1; text-align: left; text-indent: 5px; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040; }
+.helpBodL { border-left: 1px dotted #CEDCEA; }
+td.helpBod {  border-top: 0px; border-left: 1px solid #9CF; border-right: 0px; text-align: left; text-indent: 10px; font-family: Verdana, sans-serif, Arial; font-weight: normal; font-size: 11px; color: #404040; background-color: #fafafa; }
+
+table.sofT { text-align: center; font-size: x-small; color: #404040; width: 540px; background-color: #fafafa; border: 1px #B9BB94 solid; border-collapse: collapse; border-spacing: 0px; }
+table.sofT th {background:#DEE1A8;border-bottom:solid 1px #c8c8c8;}
+table.sofT td { border-bottom: 1px solid #B9BB94; border-top: 0px; border-left: 1px solid #B9BB94; border-right: 0px; text-align: left;  background-color: #fafafa;padding:5px; }
+table.sofT td.helpHed { border-bottom: 2px solid #6699CC; border-left: 1px solid #6699CC; background-color: #BEC8D1; text-align: left; text-indent: 5px; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040; }
+table.sofT td.sup { background-color: #FCC; }
+.sup { background-color: #FCC; }
+
+/* localNav -- for third tier nav, e.g., cis email */
+#main table.localNav { text-align: left; font-family: Verdana; font-weight: normal; font-size: 11px; color: #404040; width: 250px; background-color: #fafafa; border: 1px #6699CC solid; border-collapse: collapse; border-spacing: 0px; float: right; margin-top: 40px; margin-left: 15px; }
+#main table.localNav th { border-bottom: 2px solid #6699CC; border-left: 1px solid #6699CC; background-color: #BEC8D1; text-align: left; text-indent: 5px; font-family: Verdana, Arial, sans-serif; font-weight: bold; font-size: 11px; color: #404040; }
+#main table.localNav td { border-bottom: 1px solid #E3F0F6; font-family: Verdana, Arial, sans-serif; font-weight: normal; font-size: 11px; color: #404040; background-color: white; text-align: left; padding-left: 3px;}
+/* delete this after converting all tables to th */
+#main table.localNav td.helpHed { border-bottom: 2px solid #6699CC; border-left: 1px solid #6699CC; background-color: #BEC8D1; text-align: left; text-indent: 5px; font-family: Verdana; font-weight: bold; font-size: 11px; color: #404040; }
+/* this is used with localNav tables -- provides container and bottom spacing */
+
+
+/* contact table */
+table.contacts { width: 580px; background-color: #fafafa; border: 1px #000000 solid; border-collapse: collapse; border-spacing: 0px; margin-bottom: 15px; font-family: Verdana; }
+table.contacts caption { 	background-color: #99CCCC; /*	border: 1px #000000 solid;*/ font-family: Verdana; font-weight: bold; font-size: 14px; color: #404040; }
+table.contacts th { background-color: #CCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #404040; text-align: center; }
+table.contacts td.contactDept { background-color: #99CCCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #404040; }
+table.contacts td { border-bottom: 1px #BFDADA dotted; /*border-left: 1px #BFDADA dotted;*/ text-align: left; font-family: Verdana, sans-serif, Arial; font-weight: normal; font-size: .7em; color: #404040; background-color: #fafafa; padding-top: 4px; padding-bottom: 4px; padding-left: 4px; padding-right: 0px; }
+
+/* other homepage format */
+.tips { margin-top: 10px; padding: 3px 3px 3px 3px; color: #333333; border: 1px #69c dotted; }
+.virus { margin-top: 20px; text-align: center; padding: 3px 3px 3px 3px; border: 1px #69c dotted; }
+.pict { margin-top: 25px; color: #333333; border: 1px #69c dotted; }
+.verysmall { font-size: 10px; line-height: 12px; }
+.rightDate { font-size: 9px; line-height: 12px; font-weight: normal; color: #666; }
+
+
+table.stats { text-align: center; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ; font-weight: normal; font-size: 11px; color: #fff; width: 280px; background-color: #666; border: 0px; border-collapse: collapse; border-spacing: 0px; }
+table.stats td { background-color: #CCC; color: #000; padding: 4px; text-align: left; border: 1px #fff solid; }
+table.stats td.hed { background-color: #666; color: #fff; padding: 4px; text-align: left; border-bottom: 2px #fff solid; font-size: 12px; font-weight: bold; }
+
+table.node { font-family: Verdana; font-weight: normal; font-size: 10px; color: #404; border-left: 1px #a7a solid; border-top: 1px #a7a solid; border-right: 2px #9a9 solid; border-bottom: 2px #9a9 solid; background-color: #d4d4d4; width: 138px; height: 225px; border-collapse: collapse; border-spacing: 0px; }
+table.node td { font-family: Verdana; font-weight: normal; text-align:left; font-size: 10px; color: #404040; padding: 5px; background-color: transparent; vertical-align: top; }
+table.node td.hed { font-family: Verdana; font-weight: bold; text-align:center; font-size: 10px; color: #404040; border-bottom: thin #9a9a9a dotted; background-color: #e7e57b; padding: 0px; height: 15px; }
+

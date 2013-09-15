@@ -1,0 +1,43 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.Contact;
+import lu.intrasoft.jaspers.entities.ContactType;
+import lu.intrasoft.jaspers.entities.Country;
+import lu.intrasoft.jaspers.entities.Office;
+
+public class ContactDetailsView {
+
+    Contact contact;
+    private List<Country> countries;
+    private List<Office> offices;
+    private List<ContactType> contactTypes;
+
+
+    public Contact getContact() {
+        return contact;
+    }
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
+    public List<Country> getCountries() {
+        return countries;
+    }
+    public void setCountries(List<Country> countries) {
+        this.countries = countries;
+    }
+	public List<Office> getOffices() {
+		return offices;
+	}
+	public void setOffices(List<Office> offices) {
+		this.offices = offices;
+	}
+	public List<ContactType> getContactTypes() {
+		return contactTypes;
+	}
+	public void setContactTypes(List<ContactType> contactTypes) {
+		this.contactTypes = contactTypes;
+	}
+
+}

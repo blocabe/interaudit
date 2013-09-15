@@ -1,0 +1,107 @@
+package lu.intrasoft.jaspers.service.view;
+
+import lu.intrasoft.jaspers.entities.TimesheetRow;
+import lu.intrasoft.jaspers.util.Constants;
+
+public class TimesheetRowView implements Comparable<TimesheetRowView> {
+
+	public static final int TIMESHEET_ROW_MAX_SIZE = 31;
+
+	private String title;
+
+	private TimesheetRow row;
+	
+	//private double hoursTotal;
+
+	private double[] cells;
+	private boolean[] update;
+
+	public TimesheetRowView() {
+		this.title="";
+		this.cells = new double[TIMESHEET_ROW_MAX_SIZE];
+		this.update= new boolean[TIMESHEET_ROW_MAX_SIZE];
+	}
+	public TimesheetRowView(String title) {
+		this();
+		this.title= title;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public double getHoursTotal() {
+		double res = 0;
+		for (double d : cells) {
+			res += d;
+		}
+		return res;
+	}
+
+	public double[] getCells() {
+		return cells;
+	}
+
+	public void setCells(double[] cells) {
+		this.cells = cells;
+	}
+
+	public double getCellValue(int col) {
+		return this.cells[col-1] ;
+	}
+
+	public void setCellValue(int col, double val) {
+		this.cells[col-1] = val;
+		//Mark for update
+		this.update[col-1] = true;
+	}
+	
+	public boolean cellNeedUpdate(int col) {
+		return this.update[col-1] ;
+	}
+
+	public TimesheetRow getRow() {
+		return row;
+	}
+	public void setRow(TimesheetRow row) {
+		this.row = row;
+	}
+	
+	public int compareTo(TimesheetRowView o) {
+		int result = -1;
+		if (this.equals(o)) {
+			result = 0;
+		} else {
+			if (o instanceof TimesheetRowView) {
+				TimesheetRowView rowView = (TimesheetRowView) o ;
+				TimesheetRow row = rowView.getRow();
+				int typeCompare = this.getRow().getType().getId().compareTo(row.getType().getId());
+				if (typeCompare > 0 ) {
+					result =  1;
+				} else if (typeCompare < 0 ) {
+					result =  -1;
+				} else {
+					//Same type
+					if (this.getRow().getType().getId().equals(Constants.TIMESHEET_ROW_TYPE_ID_PROJECT)) {
+						//Compare Project Type
+						String ref = this.getRow().getProject().getProjectReference();
+						if (ref == null) ref = this.getRow().getProject().getTemporaryReference(); 
+						String compare = row.getProject().getProjectReference();
+						if (compare == null) compare = row.getProject().getTemporaryReference();
+						result =  ref.compareTo(compare);
+					} else 	if (this.getRow().getType().getId().equals(Constants.TIMESHEET_ROW_TYPE_ID_ACTION_PLAN)) {
+						//Compare AP Type
+						return this.getTitle().compareTo(rowView.getTitle());
+					}
+				}
+			} else {
+				result = -1;
+			}
+		}
+		return result;
+	}
+}

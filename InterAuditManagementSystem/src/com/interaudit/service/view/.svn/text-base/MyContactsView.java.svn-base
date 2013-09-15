@@ -1,0 +1,17 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.Contact;
+
+public class MyContactsView {
+    private List<Contact> contacts;
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
+    }
+}

@@ -1,0 +1,119 @@
+/**** TABS STYLES ****/
+.spacer {
+	position:relative;
+	height:3px;
+}
+#tabs {
+	position:relative;
+	height:21px;			/* height of the tabs container div */
+	margin-left:10px;
+	font-size: 12px;
+	font-family: Arial, Verdana, sans-serif;
+	background-color:transparent;
+}
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#tabs .groupleft {
+	float:left;
+	background:url("../images/tableft_.gif") no-repeat left top;
+	margin:0;
+	margin-top:6px;
+	padding:0px 4px 0px 4px;
+	text-decoration:none;
+}
+#tabs .groupleft_selected {
+	float:left;
+	background:url("../images/tableft.gif") no-repeat left top;
+	margin:0;
+	margin-top:6px;
+	padding:0px 4px 0px 4px;
+	text-decoration:none;
+	font-weight:bold;	
+}
+#tabs a .group {
+	float:left;
+	display:block;
+	background:url("../images/tabright_.gif") no-repeat right top;
+	padding:0px 4px 0px 4px;
+	color:#0199CB;
+	cursor: pointer;
+}
+
+#tabs a .group_selected {
+	float:left;
+	display:block;
+	background:url("../images/tabright.gif") no-repeat right top;
+	padding:0px 4px 0px 4px;
+	margin-right:0px;
+	color:#FFF;
+	cursor: pointer;
+	font-weight:bold;	
+}
+
+
+/* Commented Backslash Hack hides rUle from IE5-Mac \*/
+#tabs a span {
+	float:none;
+}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#B0AEAF;
+}
+
+#tabs a:hover {
+	background-position:0% -42px;
+}
+
+#tabs a:hover span {
+	background-position:100% -42px;
+}
+
+#tabs #current a {
+	background-position:0% -42px;
+}
+
+#tabs #current a span {
+	background-position:100% -42px;
+}
+
+#tabs #current1 a {
+	background-position:0% -42px;
+}
+
+#tabs #current1 a span {
+	background-position:100% -42px;
+}
+
+#tabs #current2 a {
+	background-position:0% -42px;
+}
+
+#tabs #current2 a span {
+	background-position:100% -42px;
+}
+
+.current {
+	position:relative;
+	background-color:#0199CB;
+	height:3px;
+	font-size:0px;
+	line-height:0;
+}
+.current1 {
+	background-color:#f8f6e9;
+	padding-top:10px;
+	border-top:none;
+	color:#000000;
+}
+.current2 {
+	background-color:white;
+	padding-top:10px;
+	padding-left:5px;
+	border-top:none;
+	color:#000000;
+}

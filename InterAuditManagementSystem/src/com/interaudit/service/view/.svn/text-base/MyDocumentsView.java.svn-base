@@ -1,0 +1,69 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+import java.util.Map;
+
+import lu.intrasoft.jaspers.entities.Document;
+import lu.intrasoft.jaspers.entities.DocumentType;
+import lu.intrasoft.jaspers.entities.JaspersEntity;
+
+
+public class MyDocumentsView {
+    private List<DocumentType> documentTypes;
+    private List<JaspersEntity> jaspersEntities;
+    private List<Document> personalDocuments;
+    private Map<String, List<Document>> jaspersDocuments;
+    private JaspersEntity personalJaspersEntity;
+    private JaspersEntity generalJaspersEntity;
+    private JaspersEntity templateJaspersEntity;
+    private Document document;
+    
+    public List<DocumentType> getDocumentTypes() {
+        return documentTypes;
+    }
+    public void setDocumentTypes(List<DocumentType> documentTypes) {
+        this.documentTypes = documentTypes;
+    }
+    public List<JaspersEntity> getJaspersEntities() {
+        return jaspersEntities;
+    }
+    public void setJaspersEntities(List<JaspersEntity> jaspersEntities) {
+        this.jaspersEntities = jaspersEntities;
+    }
+    public List<Document> getPersonalDocuments() {
+        return personalDocuments;
+    }
+    public void setPersonalDocuments(List<Document> personalDocuments) {
+        this.personalDocuments = personalDocuments;
+    }
+    public Map<String, List<Document>> getJaspersDocuments() {
+        return jaspersDocuments;
+    }
+    public void setJaspersDocuments(Map<String, List<Document>> jaspersDocuments) {
+        this.jaspersDocuments = jaspersDocuments;
+    }
+    public JaspersEntity getPersonalJaspersEntity() {
+        return personalJaspersEntity;
+    }
+    public void setPersonalJaspersEntity(JaspersEntity personalJaspersEntity) {
+        this.personalJaspersEntity = personalJaspersEntity;
+    }
+    public JaspersEntity getGeneralJaspersEntity() {
+        return generalJaspersEntity;
+    }
+    public void setGeneralJaspersEntity(JaspersEntity generalJaspersEntity) {
+        this.generalJaspersEntity = generalJaspersEntity;
+    }
+    public JaspersEntity getTemplateJaspersEntity() {
+        return templateJaspersEntity;
+    }
+    public void setTemplateJaspersEntity(JaspersEntity templateJaspersEntity) {
+        this.templateJaspersEntity = templateJaspersEntity;
+    }
+    public Document getDocument() {
+        return document;
+    }
+    public void setDocument(Document document) {
+        this.document = document;
+    }
+}

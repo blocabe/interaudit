@@ -1,0 +1,32 @@
+package lu.intrasoft.jaspers.service.view;
+
+import lu.intrasoft.jaspers.entities.Document;
+import lu.intrasoft.jaspers.entities.Project;
+
+public class ProjectDocumentView {
+    private Project project;
+    private Document document;
+    private boolean currentUserTeamMember;
+
+    public Project getProject() {
+        return project;
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public Document getDocument() {
+        return document;
+    }
+
+    public void setDocument(Document document) {
+        this.document = document;
+    }
+    public boolean isCurrentUserTeamMember() {
+        return currentUserTeamMember;
+    }
+    public void setCurrentUserTeamMember(boolean currentUserTeamMember) {
+        this.currentUserTeamMember = currentUserTeamMember;
+    }
+}

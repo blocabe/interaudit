@@ -1,0 +1,167 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Document;
+import lu.intrasoft.jaspers.entities.DocumentType;
+import lu.intrasoft.jaspers.entities.JaspersEntity;
+import lu.intrasoft.jaspers.entities.ProjectStatus;
+import lu.intrasoft.jaspers.util.Constants;
+
+public class ActionPlanDetailsView {
+
+//    private Document document;
+//    private ActionPlan documentParentActionPlan;
+    private ActionPlan actionPlan;
+    private ProjectStatus projectStatusRejected;
+    private ProjectStatus projectStatusAccepted;
+    private ProjectStatus projectStatusHold;
+    private List<DocumentType> documentTypes;
+    private List<JaspersEntity> jaspersEntities;
+    private JaspersEntity jaspersEntity;
+
+    // public void setDocumentedEntity(ActionPlan actionPlan) {
+    // this.actionPlan = actionPlan;
+    // }
+
+    public ActionPlan getActionPlan() {
+        return actionPlan;
+    }
+
+    public void setActionPlan(ActionPlan actionPlan) {
+        this.actionPlan = actionPlan;
+    }
+
+    // @Override
+    // public boolean getHasTeam() {
+    // return false;
+    // }
+    // @Override
+    // public ActionPlan getDocumentedEntity() {
+    // return this.actionPlan;
+    // }
+    // @Override
+    public List<DocumentType> getDocumentTypes() {
+        return documentTypes;
+    }
+
+    public void setDocumentTypes(List<DocumentType> documentTypes) {
+        this.documentTypes = documentTypes;
+    }
+
+    // @Override
+    public List<JaspersEntity> getJaspersEntities() {
+        return jaspersEntities;
+    }
+
+    public void setJaspersEntities(List<JaspersEntity> jaspersEntities) {
+        this.jaspersEntities = jaspersEntities;
+    }
+
+    public ProjectStatus getProjectStatusRejected() {
+        return projectStatusRejected;
+    }
+
+    public void setProjectStatusRejected(ProjectStatus projectStatusRejected) {
+        this.projectStatusRejected = projectStatusRejected;
+    }
+
+    public ProjectStatus getProjectStatusAccepted() {
+        return projectStatusAccepted;
+    }
+
+    public void setProjectStatusAccepted(ProjectStatus projectStatusAccepted) {
+        this.projectStatusAccepted = projectStatusAccepted;
+    }
+
+    public JaspersEntity getJaspersEntity() {
+        return jaspersEntity;
+    }
+
+    public void setJaspersEntity(JaspersEntity jaspersEntity) {
+        this.jaspersEntity = jaspersEntity;
+    }
+
+    // @Override
+    public JaspersEntity getCurrentJaspersEntity() {
+        JaspersEntity jaspersEntityReturn = null;
+        for (JaspersEntity jaspersEntity : this.jaspersEntities) {
+            if (Constants.JASPERS_ENTITY_CODE_ACTION_PLAN.equals(jaspersEntity
+                    .getCode())) {
+                jaspersEntityReturn = jaspersEntity;
+                break;
+            }
+        }
+        return jaspersEntityReturn;
+    }
+
+    /**
+     * 
+     * @return If the actionPlan has REQUESTED status then returns the
+     *         actionPlan, else returns the avenant with REQUESTED status from
+     *         the actionPlan's avenants if exists else returns null.
+     */
+    public ActionPlan getRequestedActionPlan() {
+        if (Constants.CODE_ACTION_PLAN_STATUS_REQUESTED.equals(this
+                .getActionPlan().getStatus().getCode())) {
+            return this.getActionPlan();
+        } else {
+            ActionPlan requestedActionPlan = null;
+            for (ActionPlan ap : this.getActionPlan().getAvenants()) {
+                if (Constants.CODE_ACTION_PLAN_STATUS_REQUESTED.equals(ap
+                        .getStatus().getCode())) {
+                    requestedActionPlan = ap;
+                    break;
+                }
+            }
+            return requestedActionPlan;
+        }
+    }
+
+    // public ActionPlan getRequestedActionPlan() {
+    // if (Constants.CODE_ACTION_PLAN_STATUS_REQUESTED.equals(this
+    // .getDocumentedEntity().getStatus().getCode())) {
+    // return this.getDocumentedEntity();
+    // } else {
+    // ActionPlan requestedActionPlan = null;
+    // for (ActionPlan ap : this.getDocumentedEntity().getAvenants()) {
+    // if (Constants.CODE_ACTION_PLAN_STATUS_REQUESTED.equals(ap
+    // .getStatus().getCode())) {
+    // requestedActionPlan = ap;
+    // break;
+    // }
+    // }
+    // return requestedActionPlan;
+    // }
+    // }
+
+//    public Document getDocument() {
+//        return document;
+//    }
+//
+//    public void setDocument(Document document) {
+//        this.document = document;
+//    }
+//
+//    public ActionPlan getDocumentParentActionPlan() {
+//        return documentParentActionPlan;
+//    }
+//
+//    public void setDocumentParentActionPlan(ActionPlan documentParentActionPlan) {
+//        this.documentParentActionPlan = documentParentActionPlan;
+//    }
+//
+//    public ActionPlan getDocumentParent() {
+//        return (documentParentActionPlan == null) ? actionPlan
+//                : documentParentActionPlan;
+//    }
+
+    public ProjectStatus getProjectStatusHold() {
+        return projectStatusHold;
+    }
+
+    public void setProjectStatusHold(ProjectStatus projectStatusHold) {
+        this.projectStatusHold = projectStatusHold;
+    }
+}

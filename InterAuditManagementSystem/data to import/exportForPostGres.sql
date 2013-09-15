@@ -1,0 +1,4990 @@
+--------------------------------------------------------
+--  File created - samedi-septembre-18-2010   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Sequence ACTIVITY_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "ACTIVITY_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence ADRESS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "ADRESS_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence BANK_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "BANK_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence BUDGET_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "BUDGET_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence CONTACT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "CONTACT_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence CONTRACT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "CONTRACT_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence COST_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "COST_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence CUSTOMER_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "CUSTOMER_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence DECLARATION_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "DECLARATION_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence DOCUMENT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "DOCUMENT_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence EMPLOYEE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EMPLOYEE_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence EXERCISE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "EXERCISE_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence HIBERNATE_SEQUENCE
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "HIBERNATE_SEQUENCE"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 12821 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence INVOICE_REMIND_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "INVOICE_REMIND_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence INVOICE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "INVOICE_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence MESSAGE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MESSAGE_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence MISSION_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "MISSION_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence OBJECTIVES_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "OBJECTIVES_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence ORIGIN_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "ORIGIN_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence PAYMENT_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "PAYMENT_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence PROFILE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "PROFILE_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence RESULTATS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "RESULTATS_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence TASK_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TASK_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence TIMESHEET_CELL_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TIMESHEET_CELL_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence TIMESHEET_ROW_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TIMESHEET_ROW_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence TIMESHEET_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TIMESHEET_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence TRAINING_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TRAINING_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence WORKDONE_PER_DAY_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "WORKDONE_PER_DAY_SEQ"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Table ACCESS_RIGHTS
+--------------------------------------------------------
+
+  CREATE TABLE "ACCESS_RIGHTS" 
+   (	"ID" NUMBER(19,0), 
+	"ACTIVE" NUMBER(1,0), 
+	"FK_RIGHT" NUMBER(19,0), 
+	"FK_EMPLOYEE" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table ACTIVITIES
+--------------------------------------------------------
+
+  CREATE TABLE "ACTIVITIES" 
+   (	"ID" NUMBER(19,0), 
+	"STATUS" VARCHAR2(255), 
+	"TODO" VARCHAR2(255), 
+	"COMMENTS" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"STARTDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"ENDDATE" DATE, 
+	"MISSION_ID" NUMBER(19,0), 
+	"TASK_ID" NUMBER(19,0), 
+	"ORDRE" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table BANKS
+--------------------------------------------------------
+
+  CREATE TABLE "BANKS" 
+   (	"ID" NUMBER(19,0), 
+	"NAME" VARCHAR2(255), 
+	"CODE" VARCHAR2(255), 
+	"ACCOUNT" VARCHAR2(255), 
+	"CONTACTPERSON" VARCHAR2(255), 
+	"CONTACTPERSONEMAIL" VARCHAR2(255), 
+	"CONTACTPERSONPHONE" VARCHAR2(255), 
+	"CONTACTPERSONFAX" VARCHAR2(255), 
+	"ACTIVE" NUMBER(1,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table BUDGETS
+--------------------------------------------------------
+
+  CREATE TABLE "BUDGETS" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"EXP_AMOUNT" FLOAT(126), 
+	"REAL_AMOUNT" FLOAT(126), 
+	"REP_AMOUNT" FLOAT(126), 
+	"COMMENTS" VARCHAR2(255), 
+	"STATUS" VARCHAR2(255), 
+	"FIABLE" NUMBER(1,0), 
+	"FK_ASSOCIE" NUMBER(19,0), 
+	"FK_CONTRACT" NUMBER(19,0), 
+	"FK_MANAGER" NUMBER(19,0), 
+	"FK_EXERCISE" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMMENTS
+--------------------------------------------------------
+
+  CREATE TABLE "COMMENTS" 
+   (	"ID" NUMBER(19,0), 
+	"TEXT" VARCHAR2(4000), 
+	"CREATED" DATE, 
+	"FK_EMPLOYEE" NUMBER(19,0), 
+	"FK_TIMESHEET" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table CONTACTS
+--------------------------------------------------------
+
+  CREATE TABLE "CONTACTS" 
+   (	"ID" NUMBER(19,0), 
+	"NAME" VARCHAR2(255), 
+	"F_NAME" VARCHAR2(255), 
+	"L_NAME" VARCHAR2(255), 
+	"JOB" VARCHAR2(255), 
+	"B_PHONE" VARCHAR2(255), 
+	"B_MOBILE" VARCHAR2(255), 
+	"B_FAX" VARCHAR2(255), 
+	"P_PHONE" VARCHAR2(255), 
+	"P_MOBILE" VARCHAR2(255), 
+	"B_EMAIL" VARCHAR2(255), 
+	"P_EMAIL" VARCHAR2(255), 
+	"B_WEB_ADDR" VARCHAR2(255), 
+	"ACTIVE" NUMBER(1,0), 
+	"B_ACTIVITY" VARCHAR2(255), 
+	"UPDATEDUSER" VARCHAR2(255), 
+	"COMPANY" VARCHAR2(255), 
+	"ADDRESS" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"VERSION" NUMBER(10,0), 
+	"FK_CUSTOMER" NUMBER(19,0), 
+	"SEX" VARCHAR2(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table CONTRACTS
+--------------------------------------------------------
+
+  CREATE TABLE "CONTRACTS" 
+   (	"ID" NUMBER(19,0), 
+	"REFERENCE" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"FROMDATE" DATE, 
+	"TODATE" DATE, 
+	"DURATION" NUMBER(10,0), 
+	"LANGUAGE" VARCHAR2(255), 
+	"VAL" FLOAT(126), 
+	"CUR" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"MISSIONTYPE" VARCHAR2(255), 
+	"AGREED" NUMBER(1,0), 
+	"FK_CUSTOMER" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table CUSTOMERS
+--------------------------------------------------------
+
+  CREATE TABLE "CUSTOMERS" 
+   (	"ID" NUMBER(19,0), 
+	"WEB_ADDRESS" VARCHAR2(255), 
+	"ACTIVE" NUMBER(1,0), 
+	"COUNTRY" VARCHAR2(255), 
+	"MAINADDRESS" VARCHAR2(255), 
+	"MAINBILLINGADDRESS" VARCHAR2(255), 
+	"ACTIVITY" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"UPDATEDUSER" VARCHAR2(255), 
+	"COMPY_NAME" VARCHAR2(255), 
+	"FAX" VARCHAR2(255), 
+	"PHONE" VARCHAR2(255), 
+	"MOBILE" VARCHAR2(255), 
+	"P_PHONE" VARCHAR2(255), 
+	"P_MOBILE" VARCHAR2(255), 
+	"EMAIL" VARCHAR2(255), 
+	"CODE" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"FK_ASSOCIE" NUMBER(19,0), 
+	"FK_ORIGIN" NUMBER(19,0), 
+	"FK_MANAGER" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table DECLARATIONS
+--------------------------------------------------------
+
+  CREATE TABLE "DECLARATIONS" 
+   (	"ID" NUMBER(19,0), 
+	"EXERCISE" VARCHAR2(255), 
+	"CUSTOMER" VARCHAR2(255), 
+	"REQUESTDATE" DATE, 
+	"RECEIPTDATE" DATE, 
+	"VALIDITYDATE" DATE, 
+	"DECLARATION" NUMBER(1,0), 
+	"PASSPORT" NUMBER(1,0), 
+	"ACTIVE" NUMBER(1,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table DOCS_INVOICES
+--------------------------------------------------------
+
+  CREATE TABLE "DOCS_INVOICES" 
+   (	"ID_INVOICE" NUMBER(19,0), 
+	"ID_DOCUMENT" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table DOCS_MISSIONS
+--------------------------------------------------------
+
+  CREATE TABLE "DOCS_MISSIONS" 
+   (	"ID_MISSION" NUMBER(19,0), 
+	"ID_DOCUMENT" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table DOCUMENT_INVOICES
+--------------------------------------------------------
+
+  CREATE TABLE "DOCUMENT_INVOICES" 
+   (	"DOCUMENT_ID" NUMBER(19,0), 
+	"INVOICE_ID" NUMBER(19,0), 
+	"CREATEDDATE" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table DOCUMENTS
+--------------------------------------------------------
+
+  CREATE TABLE "DOCUMENTS" 
+   (	"ID" NUMBER(19,0), 
+	"FILE_NAME" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"TITLE" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"OWNER" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table EMAIL_DATA
+--------------------------------------------------------
+
+  CREATE TABLE "EMAIL_DATA" 
+   (	"ID" NUMBER(19,0), 
+	"SENDER_ADDRESS" VARCHAR2(255), 
+	"RECEIVER_ADDRESS" VARCHAR2(255), 
+	"MAILSUBJECT" VARCHAR2(255), 
+	"MAILCONTENTS" VARCHAR2(4000), 
+	"CREATED" DATE, 
+	"STATUS" VARCHAR2(255), 
+	"TYPE" VARCHAR2(255), 
+	"FK_SENDER" NUMBER(19,0), 
+	"FK_RECEIVER" NUMBER(19,0), 
+	"SENTDATE" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table EMPLOYEES
+--------------------------------------------------------
+
+  CREATE TABLE "EMPLOYEES" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"FIRSTNAME" VARCHAR2(255), 
+	"LASTNAME" VARCHAR2(255), 
+	"JOBTITLE" VARCHAR2(255), 
+	"EMAIL" VARCHAR2(255), 
+	"CODE" VARCHAR2(255), 
+	"ACTIVE" NUMBER(1,0), 
+	"PASSWORD" VARCHAR2(255), 
+	"LOGIN" VARCHAR2(255), 
+	"UPDATEUSER" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"MODIFIEDDATE" DATE, 
+	"PRIXVENTE" FLOAT(126), 
+	"PRIXREVIENT" FLOAT(126), 
+	"COUTHORAIRE" FLOAT(126), 
+	"FK_POSITION" NUMBER(19,0), 
+	"DATE_OF_HIRING" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table EVENT_PLANNING
+--------------------------------------------------------
+
+  CREATE TABLE "EVENT_PLANNING" 
+   (	"ID" NUMBER(19,0), 
+	"YEAR" NUMBER(10,0), 
+	"WEEKNUMBER" NUMBER(10,0), 
+	"FK_EMPLOYEE" NUMBER(19,0), 
+	"FK_PLANNING" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table EVENTS
+--------------------------------------------------------
+
+  CREATE TABLE "EVENTS" 
+   (	"ID" NUMBER(19,0), 
+	"YEAR" NUMBER(10,0), 
+	"MONTH" NUMBER(10,0), 
+	"DAY" NUMBER(10,0), 
+	"STARTHOUR" NUMBER(10,0), 
+	"ENDHOUR" NUMBER(10,0), 
+	"TYPE" VARCHAR2(255), 
+	"TITLE" VARCHAR2(255), 
+	"DATEOFEVENT" DATE, 
+	"FK_EMPLOYEE" NUMBER(19,0), 
+	"FK_MISSION" NUMBER(19,0), 
+	"TASK_ID" NUMBER(19,0), 
+	"VALID" NUMBER(1,0), 
+	"FK_ACTIVITY" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table EXERCISES
+--------------------------------------------------------
+
+  CREATE TABLE "EXERCISES" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"YEAR" NUMBER(10,0), 
+	"STATUS" VARCHAR2(255), 
+	"STARTDATE" DATE, 
+	"ENDDATE" DATE, 
+	"ISAPPPROVED" NUMBER(1,0), 
+	"TOT_EXP_AMOUNT" FLOAT(126), 
+	"INFLATIONPERCENTAGE" FLOAT(126), 
+	"TOT_REP_AMOUNT" FLOAT(126), 
+	"TOT_REAL_AMOUNT" FLOAT(126), 
+	"TOT_INACTIF_AMOUNT" FLOAT(126)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table INVOICE_FEES
+--------------------------------------------------------
+
+  CREATE TABLE "INVOICE_FEES" 
+   (	"ID" NUMBER(19,0), 
+	"CREATEDATE" DATE, 
+	"JUSTIFICATION" VARCHAR2(255), 
+	"VALUE" FLOAT(126), 
+	"VERSION" NUMBER(10,0), 
+	"FK_FACTURE" NUMBER(19,0), 
+	"CODEJUSTIFICATION" VARCHAR2(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table INVOICE_REMINDS
+--------------------------------------------------------
+
+  CREATE TABLE "INVOICE_REMINDS" 
+   (	"ID" NUMBER(19,0), 
+	"REMINDDATE" DATE, 
+	"VERSION" NUMBER(10,0), 
+	"FK_FACTURE" NUMBER(19,0), 
+	"STARTVALIDITYDATE" DATE, 
+	"ENDVALIDITYDATE" DATE, 
+	"ACTIVE" NUMBER(1,0), 
+	"SENT" NUMBER(1,0), 
+	"ORDRE" NUMBER(10,0), 
+	"FK_SENDER" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table INVOICES
+--------------------------------------------------------
+
+  CREATE TABLE "INVOICES" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"TYPE" VARCHAR2(255), 
+	"CURRENCY" VARCHAR2(3), 
+	"YEAR" VARCHAR2(255), 
+	"LIBELLE" VARCHAR2(255), 
+	"AMOUNT" FLOAT(126), 
+	"REFERENCE" VARCHAR2(255), 
+	"STATUS" VARCHAR2(255), 
+	"PAYS" VARCHAR2(255), 
+	"BILLADDRESS" VARCHAR2(255), 
+	"CUSTCODE" VARCHAR2(255), 
+	"CUSTNAME" VARCHAR2(255), 
+	"FK_PARTNER" NUMBER(19,0), 
+	"PROJECT_ID" NUMBER(19,0), 
+	"FK_CREATOR" NUMBER(19,0), 
+	"APPROVED" NUMBER(1,0), 
+	"CONTACT_ID" NUMBER(19,0), 
+	"LANGUAGE" VARCHAR2(255), 
+	"TVA" FLOAT(126), 
+	"DELAIPAIEMENT" NUMBER(10,0), 
+	"SENT" NUMBER(1,0), 
+	"BANK_ID" NUMBER(19,0), 
+	"AMOUNT_NET" FLOAT(126), 
+	"HONORAIRES" FLOAT(126), 
+	"DATEFACTURE" DATE, 
+	"SENTDATE" DATE, 
+	"DATEOFPAYMENT" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table ITEM_EVENT_PLANNING
+--------------------------------------------------------
+
+  CREATE TABLE "ITEM_EVENT_PLANNING" 
+   (	"ID" NUMBER(19,0), 
+	"MISSION" NUMBER(1,0), 
+	"IDENTITY" NUMBER(19,0), 
+	"TITLE" VARCHAR2(255), 
+	"FK_EVENTPLANNING" NUMBER(19,0), 
+	"DATEOFEVENT" DATE, 
+	"STARTDATE" VARCHAR2(255), 
+	"ENDDATE" VARCHAR2(255), 
+	"DURATIONTYPE" VARCHAR2(255), 
+	"DURATION" FLOAT(126), 
+	"SFORMAT" VARCHAR2(255), 
+	"DATEFORMAT" RAW(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table MESSAGE
+--------------------------------------------------------
+
+  CREATE TABLE "MESSAGE" 
+   (	"ID" NUMBER(19,0), 
+	"SUBJECT" VARCHAR2(255), 
+	"CONTENTS" VARCHAR2(4000), 
+	"CREATEDATE" DATE, 
+	"SENTDATE" DATE, 
+	"PARENT_ID" NUMBER(19,0), 
+	"TO_ID" NUMBER(19,0), 
+	"MISSION_ID" NUMBER(19,0), 
+	"FROM_ID" NUMBER(19,0), 
+	"READ" NUMBER(1,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table MISSION_COSTS
+--------------------------------------------------------
+
+  CREATE TABLE "MISSION_COSTS" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"COSTCODE" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"AMOUNT" FLOAT(126), 
+	"CURRENCY" VARCHAR2(3), 
+	"CREATEDATE" DATE, 
+	"MISSION_ID" NUMBER(19,0), 
+	"OWNER_ID" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table MISSIONS
+--------------------------------------------------------
+
+  CREATE TABLE "MISSIONS" 
+   (	"ID" NUMBER(19,0), 
+	"EXERCISE" VARCHAR2(255), 
+	"TITLE" VARCHAR2(255), 
+	"REFER" VARCHAR2(255), 
+	"COMMENTS" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"STARTDATE" DATE, 
+	"DUEDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"UPDATEDUSER" VARCHAR2(255), 
+	"STATUS" VARCHAR2(255), 
+	"TYP" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"LANGUAGE" VARCHAR2(255), 
+	"ANNUALBUDGET_ID" NUMBER(19,0), 
+	"FK_PARENT" NUMBER(19,0), 
+	"DATECLOTURE" DATE, 
+	"JOB_STATUS" VARCHAR2(255), 
+	"TODO" VARCHAR2(255), 
+	"JOBCOMMENT" VARCHAR2(255), 
+	"TOFINISH" VARCHAR2(255), 
+	"STARTWEEK" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table MISSIONTYPE_TASK
+--------------------------------------------------------
+
+  CREATE TABLE "MISSIONTYPE_TASK" 
+   (	"ID" NUMBER(19,0), 
+	"MISSIONTYPECODE" VARCHAR2(255), 
+	"LIBELLE" VARCHAR2(255), 
+	"TASKCODE" VARCHAR2(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table ORIGINS
+--------------------------------------------------------
+
+  CREATE TABLE "ORIGINS" 
+   (	"ID" NUMBER(19,0), 
+	"NAME" VARCHAR2(255), 
+	"CODE" VARCHAR2(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table PAYMENTS
+--------------------------------------------------------
+
+  CREATE TABLE "PAYMENTS" 
+   (	"ID" NUMBER(19,0), 
+	"CODE" VARCHAR2(255), 
+	"REFERENCE" VARCHAR2(255), 
+	"CUSTOMERNAME" VARCHAR2(255), 
+	"AMOUNT" FLOAT(126), 
+	"CURRENCY" VARCHAR2(3), 
+	"PAYMENTDATE" DATE, 
+	"VERSION" NUMBER(10,0), 
+	"FK_FACTURE" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table PLANNING_ANNUEL
+--------------------------------------------------------
+
+  CREATE TABLE "PLANNING_ANNUEL" 
+   (	"ID" NUMBER(19,0), 
+	"LASTUPDATE" DATE, 
+	"YEAR" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table PROFILES
+--------------------------------------------------------
+
+  CREATE TABLE "PROFILES" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"NAME" VARCHAR2(255), 
+	"FROMDATE" DATE, 
+	"TODATE" DATE, 
+	"ACTIVE" NUMBER(1,0), 
+	"ORDRE" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table RIGHTS
+--------------------------------------------------------
+
+  CREATE TABLE "RIGHTS" 
+   (	"ID" NUMBER(19,0), 
+	"NAME" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"CODE" VARCHAR2(255), 
+	"TYPE" VARCHAR2(255)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TASKS
+--------------------------------------------------------
+
+  CREATE TABLE "TASKS" 
+   (	"ID" NUMBER(19,0), 
+	"NAME" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"CODEPRESTATION" VARCHAR2(255), 
+	"CHARGEABLE" NUMBER(1,0), 
+	"CODE" VARCHAR2(255), 
+	"VERSION" NUMBER(10,0), 
+	"OPTIONAL" NUMBER(1,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TIMESHEET_CELLS
+--------------------------------------------------------
+
+  CREATE TABLE "TIMESHEET_CELLS" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"DAYNUMBER" NUMBER(10,0), 
+	"VALUE" FLOAT(126), 
+	"FK_ROW" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TIMESHEET_ROWS
+--------------------------------------------------------
+
+  CREATE TABLE "TIMESHEET_ROWS" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"LABEL" VARCHAR2(255), 
+	"CODEPRESTATION" VARCHAR2(255), 
+	"CUSTNUMBER" VARCHAR2(255), 
+	"ASSCODE" VARCHAR2(255), 
+	"MANCODE" VARCHAR2(255), 
+	"FK_TIMESHEET" NUMBER(19,0), 
+	"FK_ACTIVITY" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TIMESHEETS
+--------------------------------------------------------
+
+  CREATE TABLE "TIMESHEETS" 
+   (	"ID" NUMBER(19,0), 
+	"VERSION" NUMBER(10,0), 
+	"EXERCISE" VARCHAR2(255), 
+	"CREATEDATE" DATE, 
+	"UPDATEDATE" DATE, 
+	"ACCEPTEDDATE" DATE, 
+	"REJECTEDDATE" DATE, 
+	"SUBMITDATE" DATE, 
+	"VALIDATIONDATE" DATE, 
+	"STARTDATEOFWEEK" DATE, 
+	"ENDDATEOFWEEK" DATE, 
+	"PRIXVENTE" FLOAT(126), 
+	"PRIXREVIENT" FLOAT(126), 
+	"COUTHORAIRE" FLOAT(126), 
+	"STATUS" VARCHAR2(255), 
+	"WEEKNUMBER" NUMBER(10,0), 
+	"FK_EMPLOYEE" NUMBER(19,0), 
+	"USERID" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table TRAININGS
+--------------------------------------------------------
+
+  CREATE TABLE "TRAININGS" 
+   (	"ID" NUMBER(19,0), 
+	"TITLE" VARCHAR2(255), 
+	"DESCRIPTION" VARCHAR2(255), 
+	"STARTDATE" DATE, 
+	"ENDDATE" DATE, 
+	"COMPANYNAME" VARCHAR2(255), 
+	"BENEFICIAIRE_ID" NUMBER(19,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table USER_ACTIONS
+--------------------------------------------------------
+
+  CREATE TABLE "USER_ACTIONS" 
+   (	"ID" NUMBER(19,0), 
+	"ACTION" VARCHAR2(255), 
+	"ENTITYCLASSNAME" VARCHAR2(255), 
+	"ENTITYID" NUMBER(19,0), 
+	"TIME" DATE, 
+	"FK_EMPLOYEE" NUMBER(19,0)
+   ) ;
+
+---------------------------------------------------
+--   DATA FOR TABLE PROFILES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into PROFILES
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (1,0,'SENIOR_MANAGER',to_timestamp('18/05/09 10:20:49,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:49,000000000','DD/MM/RR HH24:MI:SS,FF'),1,3);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (2,0,'DIRECTOR',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,2);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (3,0,'ASSISTANTS',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,8);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (4,0,'PARTNER',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (5,0,'MGMT_PARTNER',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,2);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (6,0,'SECRETAIRE',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,9);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (7,0,'MANAGER',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,4);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (8,0,'ASSISTANT_MANAGER',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,7);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (9,0,'SENIOR_MANAGER',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,5);
+Insert into PROFILES (ID,VERSION,NAME,FROMDATE,TODATE,ACTIVE,ORDRE) values (10,0,'SENIORS',to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 10:20:50,000000000','DD/MM/RR HH24:MI:SS,FF'),1,6);
+
+---------------------------------------------------
+--   END DATA FOR TABLE PROFILES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE INVOICE_REMINDS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into INVOICE_REMINDS
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12621,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,2,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12622,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,3,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12623,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,4,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12624,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1,4,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12625,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,6,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12626,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1,6,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12627,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,8,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12628,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1,8,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12631,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1,12,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12114,to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),2,10797,to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('17/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,1,2,3);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12629,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,10,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12108,to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),6,10781,to_timestamp('16/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,1,1,3);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12110,to_timestamp('15/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),2,10797,to_timestamp('13/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('17/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,1,1,3);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12630,null,0,10781,to_timestamp('29/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,1,11,null);
+Insert into INVOICE_REMINDS (ID,REMINDDATE,VERSION,FK_FACTURE,STARTVALIDITYDATE,ENDVALIDITYDATE,ACTIVE,SENT,ORDRE,FK_SENDER) values (12782,null,0,10781,to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/10/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,0,13,null);
+
+---------------------------------------------------
+--   END DATA FOR TABLE INVOICE_REMINDS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE TIMESHEET_ROWS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into TIMESHEET_ROWS
+Insert into TIMESHEET_ROWS (ID,VERSION,LABEL,CODEPRESTATION,CUSTNUMBER,ASSCODE,MANCODE,FK_TIMESHEET,FK_ACTIVITY) values (12427,3,'DIMPEX SA','4000','82633','EK','LM',12424,6294);
+Insert into TIMESHEET_ROWS (ID,VERSION,LABEL,CODEPRESTATION,CUSTNUMBER,ASSCODE,MANCODE,FK_TIMESHEET,FK_ACTIVITY) values (12429,3,'HERMES PARTNERS TRUST SERVICES SA','4051','9286','EK','SG',12424,6302);
+Insert into TIMESHEET_ROWS (ID,VERSION,LABEL,CODEPRESTATION,CUSTNUMBER,ASSCODE,MANCODE,FK_TIMESHEET,FK_ACTIVITY) values (12425,3,'HOLDUN SA','5046','9280','OB','OJ',12424,6292);
+Insert into TIMESHEET_ROWS (ID,VERSION,LABEL,CODEPRESTATION,CUSTNUMBER,ASSCODE,MANCODE,FK_TIMESHEET,FK_ACTIVITY) values (12375,6,'DIMPEX SA','4000','82633','EK','LM',12360,6294);
+Insert into TIMESHEET_ROWS (ID,VERSION,LABEL,CODEPRESTATION,CUSTNUMBER,ASSCODE,MANCODE,FK_TIMESHEET,FK_ACTIVITY) values (12377,5,'GULF OIL INTERNATIONAL LTD','4051','11261','OB','SG',12360,6298);
+
+---------------------------------------------------
+--   END DATA FOR TABLE TIMESHEET_ROWS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE MISSIONS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into MISSIONS
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6269,'2010','HPMC1 SÀRL','9000_2010','HPMC1 SÀRL',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'CLOSED','CONSO',25,'EN',6258,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6271,'2010','SUMMERWIND SA','9289_2010','SUMMERWIND SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RA',5,'EN',6266,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6273,'2010','CARYOS SA','9291_2010','CARYOS SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('16/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('15/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,'ONGOING','RA',34,'EN',6261,null,to_timestamp('23/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6275,'2010','SABLIERE HEIN SA','10388_2010','SABLIERE HEIN SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RA',5,'DE',6252,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6277,'2010','INTRUMA CORPORATE SERVICES SA','9287_2010','INTRUMA CORPORATE SERVICES SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','MCOMM',5,'EN',6250,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6279,'2010','LUXYS SA','9282_2010','LUXYS SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','AC',12,'FR',6254,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6281,'2010','SCANCARGO SA','9281_2010','SCANCARGO SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RC',18,'FR',6245,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6283,'2010','ANGLESEA CAPITAL SA','6565_2010','ANGLESEA CAPITAL SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,'ONGOING','CONSO',21,'EN',6246,null,to_timestamp('10/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),'FIELD WORK TO FINALISE','TO_REVIEW',null,'DRAFT_ISSUED_TO_CLIENT',27);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6285,'2010','APKIEFFER','9290_2010','APKIEFFER',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,'ONGOING','MISSPE',15,'EN',6249,null,to_timestamp('10/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',27);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6287,'2010','COLOGIC','9292_2010','COLOGIC',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','MISSPE',14,'FR',6263,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6289,'2010','BORG LUXEMBOURG SA','16000_2010','BORG LUXEMBOURG SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RC',19,'DE',6260,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6291,'2010','HOLDUN SA','9280_2010','HOLDUN SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','MCOMM',3,'FR',6243,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6293,'2010','DIMPEX SA','82633_2010','DIMPEX SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('27/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,'ONGOING','RA',13,'DE',6253,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',34);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6295,'2010','LUXLAIT SA','12085_2010','LUXLAIT SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RA',3,'EN',6259,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6297,'2010','GULF OIL INTERNATIONAL LTD','11261_2010','GULF OIL INTERNATIONAL LTD',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'PENDING','AC',0,'EN',6264,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6299,'2010','EASY DISTRIBUTION SA (EX EASYCARS SA)','9283_2010','EASY DISTRIBUTION SA (EX EASYCARS SA)',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RC',3,'EN',6257,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6301,'2010','HERMES PARTNERS TRUST SERVICES SA','9286_2010','HERMES PARTNERS TRUST SERVICES SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','AC',4,'FR',6244,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6303,'2010','GAMET INVESTMENT SA','12084_2010','GAMET INVESTMENT SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'PENDING','RC',0,'DE',6248,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6305,'2010','APKIEFFER','9290_2010','APKIEFFER',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,'ONGOING','MCOMM',11,'FR',6265,null,to_timestamp('10/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',27);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6307,'2010','EUROPEAN PARLIAMENT-SUPERMARKET','6666_2010','EUROPEAN PARLIAMENT-SUPERMARKET',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','MISSPE',2,'DE',6255,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6309,'2010','PARFIMAT SA','9296_2010','PARFIMAT SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'PENDING','RC',0,'EN',6267,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6311,'2010','MATSA SA','9294_2010','MATSA SA',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','CONSO',2,'DE',6262,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6313,'2010','EUROPEAN PARLIAMENT-CANTEEN','6464_2010','EUROPEAN PARLIAMENT-CANTEEN',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'ONGOING','RA',1,'DE',6251,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6315,'2010','WEISGERBER EXPERTISE','9284_2010','WEISGERBER EXPERTISE',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'CLOSED','CONSO',2,'FR',6242,null,to_timestamp('10/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),'FIELD WORK TO FINALISE','TO_REVIEW',null,'TO_PREPARE',0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6317,'2010','LAURAD HOLDING','9293_2010','LAURAD HOLDING',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'PENDING','AC',0,'DE',6256,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+Insert into MISSIONS (ID,EXERCISE,TITLE,REFER,COMMENTS,CREATEDATE,STARTDATE,DUEDATE,UPDATEDATE,UPDATEDUSER,STATUS,TYP,VERSION,LANGUAGE,ANNUALBUDGET_ID,FK_PARENT,DATECLOTURE,JOB_STATUS,TODO,JOBCOMMENT,TOFINISH,STARTWEEK) values (6319,'2010','EUROPEAN PARLIAMENT-IMPREST QTRLY REVIEWS','6363_2010','EUROPEAN PARLIAMENT-IMPREST QTRLY REVIEWS',to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,'PENDING','MCOMM',0,'FR',6247,null,null,'FIELD WORK TO FINALISE','TO_REVIEW',null,null,0);
+
+---------------------------------------------------
+--   END DATA FOR TABLE MISSIONS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE RIGHTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into RIGHTS
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (43,'Consulter facture','Consulter les factures','CONSULT_INVOICE','INVOICE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (44,'Consulter document','Consulter document','CONSULT_DOCUMENT','DOCUMENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (45,'Enregister timesheet','Enregistrer timesheet','REGISTER_TIMESHEET','TIMESHEET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (1,'Enregister employee','Enregister un employee','REGISTER_USER','EMPLOYEE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (2,'Modifier employee','Permet de modifier un employee','MODIFY_USER','EMPLOYEE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (3,'Consulter employee ','Consulter les details d''un employee','CONSULT_USER','EMPLOYEE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (4,'Enregistrer client','Enregistrer un client ','REGISTER_CUST','CLIENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (5,'Modifier client','Permet de modifier un client','MODIFY_CUST','CLIENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (6,'Consulter client','Permet de modifier les details d''un client','CONSULT_CUST','CLIENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (7,'Enregistrer banque','Enregistrer une banque','REGISTER_BANK','BANK');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (8,'Modifier  banque','Modifier une banque','MODIFY_BANK','BANK');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (9,'Consulter banque','Consulter banque','CONSULT_BANK','BANK');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (10,'Enregistrer payment','Enregistrer payment','REGISTER_PAYMENT','PAYMENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (11,'Modifier payment','Modifier payment','MODIFY_PAYMENT','PAYMENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (12,'Consulter payment','Consulter payment','CONSULT_PAYMENT','PAYMENT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (13,'Enregistrer contact','Enregistrer contact','REGISTER_CONTACT','CONTACT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (14,'Modifier contact','Modifier contact','MODIFY_CONTACT','CONTACT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (15,'Consulter contact','Consulter contact','CONSULT_CONTACT','CONTACT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (16,'Enregistrer declaration','Enregistrer declarartion','REGISTER_DECLARATION','DECLARATION');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (17,'Modifier declaration','Modifier déclaration','MODIFY_DECLARATION','DECLARATION');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (18,'Consulter declaration','Consulter declaration','CONSULT_DECLARATION','DECLARATION');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (19,'Enregistrer contrat','Enregistrer contrat','REGISTER_CONTRACT','CONTRAT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (20,'Modifier contrat','Modifier contrat','MODIFY_CONTRACT','CONTRAT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (21,'Consulter contrat','Consulter contrat','CONSULT_CONTRACT','CONTRAT');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (22,'Consulter budget','Consulter budget','CONSULT_BUDGET','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (23,'Modify budget','Modify budget','MODIFY_BUDGET','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (24,'Build budget','Build budget','BUILD_BUDGET','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (25,'Export budget to excel file','Export budget to excel file','EXPORT_BUDGET_TO_EXCEL','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (26,'Consult  resultats','Consult resultats','CONSULT_RESULTATS','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (27,'Consult rentabilite clients','Consulter rentablilite clients','CONSULT_RENTABILITE_CLIENTS','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (28,'Consult financial data','Consulter financial data','CONSULT_FINANCIAL_DATA','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (29,'Modifier droits ','Modifier droits','MODIFY_ACCESS_RIGHTS','DROITS');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (30,'Consulter planning missions','Consulter planning missions','CONSULT_PLANNING_MISSIONS','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (31,'Consulter planning general','Consulter planning general','CONSULT_GENERAL_PLANNING','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (32,'Modifier planning general','Modifier planning general','MODIFY_GENERAL_PLANNING','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (33,'Consulter calendrier','Consulter calendrier','CONSULT_CALENDAR','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (34,'Modifier calendrier','Modifier calendrier','MODIFY_CALENDAR','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (35,'Consulter missions','Consulter missions','CONSULT_MISSIONS','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (36,'Modifier mission','Modifier mission','MODIFY_MISSIONS','PLANNING');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (37,'Creer facture','Creer facture','CREATE_INVOICE','INVOICE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (38,'Modifier facture','Modifier facture','MODIFY_INVOICE','INVOICE');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (39,'Enregistrer depense','Enregistrer depense','REGISTER_EXPENSE','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (40,'Modifier depense','Modifier depense','MODIFY_EXPENSE','BUDGET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (41,'Valider timesheet','Validate timesheet','VALIDATE_TIMESHEET','TIMESHEET');
+Insert into RIGHTS (ID,NAME,DESCRIPTION,CODE,TYPE) values (42,'Reject timesheet','Reject timeshet','REJECT_TIMESHEET','TIMESHEET');
+
+---------------------------------------------------
+--   END DATA FOR TABLE RIGHTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EXERCISES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EXERCISES
+Insert into EXERCISES (ID,VERSION,YEAR,STATUS,STARTDATE,ENDDATE,ISAPPPROVED,TOT_EXP_AMOUNT,INFLATIONPERCENTAGE,TOT_REP_AMOUNT,TOT_REAL_AMOUNT,TOT_INACTIF_AMOUNT) values (6241,12,2010,'PENDING',to_timestamp('01/01/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,296584,374454021,1,0,34140,199760437,0);
+
+---------------------------------------------------
+--   END DATA FOR TABLE EXERCISES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE TRAININGS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into TRAININGS
+
+---------------------------------------------------
+--   END DATA FOR TABLE TRAININGS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE ACTIVITIES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ACTIVITIES
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6270,'FIELD WORK TO FINALISE','TO_REVIEW',null,6,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6269,62748,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6272,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6271,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6274,'FIELD WORK TO FINALISE','TO_REVIEW',null,5,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6273,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6276,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6275,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6278,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6277,62744,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6280,'FIELD WORK TO FINALISE','TO_REVIEW',null,5,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6279,62731,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6282,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6281,62730,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6284,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6283,62748,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6286,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6285,62747,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6288,'FIELD WORK TO FINALISE','TO_REVIEW',null,4,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6287,62747,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6290,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6289,62730,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6292,'FIELD WORK TO FINALISE','TO_REVIEW',null,1,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6291,62744,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6294,'FIELD WORK TO FINALISE','TO_REVIEW',null,3,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6293,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6296,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6295,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6298,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6297,62731,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6300,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6299,62730,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6302,'FIELD WORK TO FINALISE','TO_REVIEW',null,2,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6301,62731,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6304,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6303,62730,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6306,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6305,62744,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6308,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6307,62747,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6310,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6309,62730,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6312,'FIELD WORK TO FINALISE','TO_REVIEW',null,1,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6311,62748,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6314,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6313,62729,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6316,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6315,62748,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6318,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6317,62731,1);
+Insert into ACTIVITIES (ID,STATUS,TODO,COMMENTS,VERSION,STARTDATE,UPDATEDATE,ENDDATE,MISSION_ID,TASK_ID,ORDRE) values (6320,'FIELD WORK TO FINALISE','TO_REVIEW',null,0,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,6319,62744,1);
+
+---------------------------------------------------
+--   END DATA FOR TABLE ACTIVITIES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE TASKS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into TASKS
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62848,'Formation','Formation','9859',0,'FORMATION',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62849,'Temps partiel','Temps partiel','9981',1,'TEMPSPART',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62850,'Revue','Revue','9982',1,'REVUE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62846,'Conge parental','Conge parental','9931',0,'CONGEPARE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62847,'Conge sans solde','Conge sans solde','9932',1,'CONGESS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62800,'Conge de maternite','Conge de maternite','9920',0,'CONGMAT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62807,'Preparation des confirmations','banques , avocats, cadastre','4002',1,'PDC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62808,'Preparation lancement du dossier (DA,LS)','Preparation lancement du dossier (DA,LS)','4003',1,'PLDD',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62809,'Dossier administratif','Dossier administratif','4004',1,'DA',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62810,'Compte annuels','controle: report,sommes pointage B/G','4005',1,'CA',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62811,'Prise de connaissance du dossier - repartition du travail','Prise de connaissance du dossier - repartition du travail','4006',1,'PCDRT',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62812,'Suivi du dossier chez le client/Supervision','Suivi du dossier chez le client/Supervision','4007',1,'SDCS',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62813,'Frais d''établissement','Frais d''établissement','4008',1,'FRE',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62814,'Immobilisations incorporelles','Immobilisations incorporelles','4009',1,'IMINC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62815,'Immobilisations corporelles','Immobilisations corporelles','4010',1,'IMCP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62816,'Immobilisations financieres','Immobilisations financieres','4011',1,'IMFI',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62817,'Stock-Inventaire physique','Stock-Inventaire physique','4012',1,'SIPH',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62818,'Stock-Audit de la section','Stock-Audit de la section','4013',1,'SAS',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62819,'Client-Preparation et suivi de la circularisation','Client-Preparation et suivi de la circularisation','4014',1,'CPSC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62820,'Client-Audit de la section','Client-Audit de la section','4015',1,'CAS',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62821,'Creances sur des entreprises liees','Creances sur des entreprises liees','4016',1,'CEL',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62822,'Autres creances','Autres creances','4017',1,'ATC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62823,'Valeurs mobilieres','Valeurs mobilieres','4018',1,'VMB',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62824,'Avoirs en banques et encaisses','Avoirs en banques et encaisses','4019',1,'ABEC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62825,'Compte de regularisation actif','Compte de regularisation actif','4020',1,'CPRA',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62826,'Capitaux propres','Capitaux propres','4021',1,'CPP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62827,'Provisions pour risques et charges','Provisions pour risques et charges','4022',1,'PRRC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62828,'Dettes envers ets de credit','Dettes envers ets de credit','4023',1,'DECR',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62829,'Fournisseurs-preparation et suivi de la circularisation','Fournisseurs-preparation et suivi de la circularisation','4024',1,'FNPSC',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62830,'Fournisseurs-audit de la section','Fournisseurs-audit de la section','4025',1,'FNAS',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62831,'Dettes sur des entreprises liees','Dettes sur des entreprises liees','4026',1,'DEL',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62832,'Autres dettes','Autres dettes','4027',1,'ADTS',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62833,'Compte de regularisation passif','Compte de regularisation passif','4028',1,'CPRP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62834,'Compte de pertes et profits','Compte de pertes et profits','4029',1,'CPPP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62835,'Compte de pertes et profits-Resultats brut','Compte de pertes et profits-Resultats brut','4030',1,'CPPRB',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62836,'Compte de pertes et profits-Frais de personnel','Compte de pertes et profits-Frais de personnel','4031',1,'CPPFP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62837,'Compte de pertes et profits-Autres charges déxploitation','Compte de pertes et profits-Autres charges déxploitation','4032',1,'CPP-ACD',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62838,'Compte de pertes et profits-Produits provenant de participations','Compte de pertes et profits-Produits provenant de participations','4033',1,'CPP-PPP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62839,'Compte de pertes et profits-Resultat financier','Compte de pertes et profits-Resultat financier','4034',1,'CPPRF',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62840,'Compte de pertes et profits-Resultat exceptionel','Compte de pertes et profits-Resultat exceptionel','4035',1,'CPPRE',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62841,'Compte de pertes et profits-Impots','Compte de pertes et profits-Impots','4036',1,'CPPRI',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62842,'Engagements hors bilan','Engagements hors bilan','4037',1,'EGHB',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62843,'Review','Review','4038',1,'RVW',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62844,'Copie de controle','Copie de controle','4039',1,'CDCT',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62845,'Travail specifique ','Travail specifique','4040',1,'TRSP',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62744,'Mandat - commissaire','Mandat - commissaire','5046',1,'MCOMM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62745,'Mandat - actionnaire','Mandat - actionnaire','5047',1,'MACT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62746,'S‚cr‚tariat juridique','S‚cr‚tariat juridique','5048',1,'SECJUR',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62747,'Mission sp‚ciale','Mission sp‚ciale','5050',1,'MISSPE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62748,'Consolidation','Consolidation','5051',1,'CONSO',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62749,'Expertise','Expertise','5052',1,'EXP',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62750,'D‚placement','D‚placement','5080',1,'DEP',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62751,'Domiciliation','Domiciliation','5090',1,'DOM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62752,'Dactylographie','Dactylographie','6000',1,'DACT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62753,'Classement','Classement','6010',1,'CALS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62754,'Photocopies','Photocopies','6020',1,'PHOTO',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62755,'D‚placement','D‚placement','6030',1,'DEPLAC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62756,'Divers','Divers','6090',1,'DIV',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62757,'Manual typing','Manual typing','6100',1,'MANTYP',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62758,'Telefax','Telefax','6110',1,'FAX',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62759,'Expenses','Expenses','6120',1,'EXPE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62760,'Frais … refacturer','Frais … refacturer','6130',1,'FFACT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62761,'Prestations par tiers','Prestations par tiers','9110',0,'PRETIER',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62762,'Frais de d‚placement','Frais de d‚placement','9120',0,'FDEP',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62763,'D‚bours','D‚bours','9130',0,'DEB',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62764,'OECL','OECL','9710',0,'OECL',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62765,'IRE','IRE','9720',0,'IRE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62766,'ALFI','ALFI','9730',0,'ALFI',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62767,'KPMG','KPMG','9750',0,'KPMG',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62768,'KPMG Network','KPMG Network','9751',0,'KPMG-N',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62769,'KPMG Updating livres','KPMG Updating livres','9752',0,'KPMG-UL',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62770,'KPMG-Fiscalit‚','KPMG-Fiscalit‚','9755',0,'KPMG-F',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62771,'Organisations professionnelles locales','Organisations professionnelles locales','9760',0,'OPL',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62772,'Correspondants divers','Correspondants divers','9790',0,'CDIVER',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62773,'Secretariat','Secretariat','9800',0,'SEC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62774,'Facturation clients','Facturation clients','9810',0,'FCLIENT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62775,'D‚comptes fournisseurs','D‚comptes fournisseurs','9812',0,'DECFOUR',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62776,'Comptabilite','Comptabilite','9815',0,'COMPTA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62777,'Datev','Datev','9818',0,'DATEV',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62778,'Gestion du personnel','Gestion du personnel','9820',0,'GESPERS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62779,'Recrutement','Recrutement','9825',0,'RECRUT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62780,'Organisation administrative','Organisation administrative','9830',0,'ORGADM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62781,'Newsletters et autres publications','Newsletters et autres publications','9831',0,'NEWS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62782,'Informatique-conception de formulaires','Informatique-conception de formulaires','9832',0,'INF-CONS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62783,'Administration courante','Administration courante','9835',0,'ADMCOU',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62784,'Prestations clients non factur‚es','Prestations clients non factur‚es','9840',0,'PRESCLI',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62785,'Litt‚rature','Litt‚rature','9850',0,'LITT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62786,'Etudes fiscales','Etudes fiscales','9851',0,'ETUDFIS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62787,'Conception formulaires','Conception formulaires','9852',0,'CONFOR',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62788,'S‚minaires KPMG','S‚minaires KPMG','9853',0,'SEMKPMG',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62789,'Formation externe (IRE, Universit‚ Luxembourg)','Formation externe (IRE, Universit‚ Luxembourg)','9854',0,'FORMEXT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62790,'Formation interne (bureau IA)','Formation interne (bureau IA)','9855',0,'FORMINT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62791,'Formation nouveaux collŠgues','Formation nouveaux collŠgues','9856',0,'FORMCOLL',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62792,'Prestation s‚minaire','Prestation s‚minaire','9857',0,'PRESTSEM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62793,'Gestion des formations','Gestion des formations','9858',0,'GESTFORM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62794,'Public Relations','Public Relations','9860',0,'PUBREL',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62795,'Publication banques allemandes','Publication banques allemandes','9870',0,'PUBBQ',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62796,'Projet Leasing','Projet Leasing','9875',0,'PROJLEAS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62798,'Divers','Divers','9890',0,'DIVERS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62799,'Maladie','Maladie','9910',0,'MALAD',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62801,'Conge legal','Conge legal','9930',0,'CONGLEG',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62802,'Jours feries','Jours feries','9940',0,'FERIE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62803,'Absences r‚mun‚r‚es','Absences r‚mun‚r‚es','9970',0,'ABSREM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62804,'Absence non r‚mun‚r‚e','Absence non r‚mun‚r‚e','9980',0,'ABSNREM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62806,'Planning-budget','Planning-budget','4001',1,'PLB',0,0);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62700,'Report a nouveau','Report a nouveau','1000',1,'RAA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62701,'D‚claration','D‚claration','2000',1,'D',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62702,'Conseil fiscal','Conseil fiscal','2010',1,'CF',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62703,'Conseil droit fiscal et travail','Conseil droit fiscal et travail','2020',1,'CDFET',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62704,'Autres conseils','Autres conseils','2030',1,'AC1',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62705,'Contr“le bulletins','Contr“le bulletins','2050',1,'CB',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62706,'Recours fiscal','Recours fiscal','2060',1,'RF',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62707,'Conseil fiscal imp“ts directs','Conseil fiscal imp“ts directs','2100',1,'CFID',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62708,'Conseil fiscal TVA','Conseil fiscal TVA','2101',1,'CFTVA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62709,'Conseil fiscal autres imp“ts indirects','Conseil fiscal autres imp“ts indirects','2102',1,'CFAII',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62710,'Conseil fiscal autres','Conseil fiscal autres','2103',1,'CFAIII',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62711,'Assistance r‚vision','Assistance r‚vision','2110',1,'AR',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62714,'Comptabilite','Comptabilite','3000',1,'CMPT',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62715,'D‚compte salaires','D‚compte salaires','3200',1,'DS',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62716,'Conseil','Conseil','3210',1,'C',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62718,'Mise en route comptabilit‚','Mise en route comptabilit‚','3310',1,'MERC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62719,'Assistance comptabilit‚','Assistance comptabilit‚','3320',1,'AC2',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62720,'Redressement comptabilit‚','Redressement comptabilit‚','3330',1,'RD',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62721,'Etablissement bilan','Etablissement bilan','3500',1,'EB',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62722,'Annexe et rapport de gestion','Annexe et rapport de gestion','3502',1,'AERDG',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62723,'Discussion finale','Discussion finale','3505',1,'DF',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62724,'Bilan int‚rimaire','Bilan int‚rimaire','3510',1,'BI',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62725,'D‚claration IR-IRC-IC-IF','D‚claration IR-IRC-IC-IF','3520',1,'DIIII',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62726,'D‚claration TVA','D‚claration TVA','3530',1,'DTVA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62727,'Taxe d''abonnement','Taxe d''abonnement','3540',1,'TA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62728,'Statec','Statec','3590',1,'STATEC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62729,'R‚vision annuelle','R‚vision annuelle','4000',1,'RA',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62730,'R‚vision contractuelle','R‚vision contractuelle','4050',1,'RC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62731,'Audit consolidation','Audit consolidation','4051',1,'AC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62732,'Contr“le interne','Contr“le interne','4100',1,'CI',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62733,'Revue dossiers d''autres r‚viseurs','Revue dossiers d''autres r‚viseurs','4150',1,'RDDAR',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62734,'Conseil juridique','Conseil juridique','5010',1,'CJ',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62735,'Conseil en gestion d''entreprise','Conseil en gestion d''entreprise','5012',1,'CEGDE',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62736,'Conseil financier','Conseil financier','5014',1,'CFI',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62737,'Conseil informatique','Conseil informatique','5015',1,'CINF',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62738,'Recrutement','Recrutement','5020',1,'REC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62739,'S‚minaire','S‚minaire','5030',1,'SEM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62740,'Autorisation de commerce','Autorisation de commerce','5040',1,'AUTCOM',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62741,'Constitution de soci‚t‚','Constitution de soci‚t‚','5042',1,'CONSOC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62742,'Liquidation de soci‚t‚','Liquidation de soci‚t‚','5043',1,'LIQSOC',0,1);
+Insert into TASKS (ID,NAME,DESCRIPTION,CODEPRESTATION,CHARGEABLE,CODE,VERSION,OPTIONAL) values (62743,'Mandat - administrateur','Mandat - administrateur','5045',1,'MADM',0,1);
+
+---------------------------------------------------
+--   END DATA FOR TABLE TASKS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE DOCUMENT_INVOICES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into DOCUMENT_INVOICES
+
+---------------------------------------------------
+--   END DATA FOR TABLE DOCUMENT_INVOICES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE TIMESHEET_CELLS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into TIMESHEET_CELLS
+Insert into TIMESHEET_CELLS (ID,VERSION,DAYNUMBER,VALUE,FK_ROW) values (12428,0,2,5,75,12427);
+Insert into TIMESHEET_CELLS (ID,VERSION,DAYNUMBER,VALUE,FK_ROW) values (12430,0,4,6,12429);
+Insert into TIMESHEET_CELLS (ID,VERSION,DAYNUMBER,VALUE,FK_ROW) values (12426,0,3,6,5,12425);
+Insert into TIMESHEET_CELLS (ID,VERSION,DAYNUMBER,VALUE,FK_ROW) values (12376,0,2,4,25,12375);
+Insert into TIMESHEET_CELLS (ID,VERSION,DAYNUMBER,VALUE,FK_ROW) values (12378,0,3,4,5,12377);
+
+---------------------------------------------------
+--   END DATA FOR TABLE TIMESHEET_CELLS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EMPLOYEES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EMPLOYEES
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (181,1,'Valentin','Nedeltchev',null,'valentin.nedeltchev@interaudit.lu','VN',1,'Nedeltchev','Nedeltchev',null,to_timestamp('07/11/09 08:07:05,000000000','DD/MM/RR HH24:MI:SS,FF'),null,130,120,50,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (241,0,'Jonathan','Picard',null,'jonathan.picard@interaudit.lu','JP',1,'picard','picard',null,to_timestamp('08/11/09 14:26:26,000000000','DD/MM/RR HH24:MI:SS,FF'),null,0,0,0,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (1,0,'Vincent','Dog',null,'vincent.dog@interaudit.lu','VD',1,'vincentdog','vincentdog',null,to_timestamp('01/11/09 13:36:19,000000000','DD/MM/RR HH24:MI:SS,FF'),null,150,150,100,4,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (2,4,'Edouard','Kostka',null,'edouard.kostka@interausit.lu','EK',1,'kostka','kostka',null,to_timestamp('01/11/09 13:38:30,000000000','DD/MM/RR HH24:MI:SS,FF'),null,150,120,100,4,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (3,11,'Murielle','Badoux',null,'murielle.badoux@interaudit.lu','MB',1,'badoux','badoux',null,to_timestamp('01/11/09 13:41:39,000000000','DD/MM/RR HH24:MI:SS,FF'),null,120,100,90,5,to_timestamp('06/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (4,1,'Stephane','Gaillard',null,'stephane.gaillard@interaudit.lu','SG',1,'gaillard','gaillard',null,to_timestamp('01/11/09 13:48:02,000000000','DD/MM/RR HH24:MI:SS,FF'),null,125,120,80,7,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (6,0,'Olivier','Jansen',null,'olivier.jansen@interaudit.lu','OJ',1,'jansen','jansen',null,to_timestamp('01/11/09 13:52:48,000000000','DD/MM/RR HH24:MI:SS,FF'),null,120,140,56,7,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (5,14,'Laurent','Mariani',null,'laurent.mariani@interausit.lu','LM',1,'mariani','mariani',null,to_timestamp('01/11/09 13:50:01,000000000','DD/MM/RR HH24:MI:SS,FF'),null,170,150,100,7,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (7,0,'Olivier','Biren',null,'olivier.biren@interaudit.lu','OB',1,'biren','biren',null,to_timestamp('01/11/09 14:00:31,000000000','DD/MM/RR HH24:MI:SS,FF'),null,170,150,100,5,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (541,5,'Veronique','Blocail',null,'veronique.blocail@interaudit.lu','VB',1,'blocabe12','blocabe',null,to_timestamp('13/12/09 17:02:23,000000000','DD/MM/RR HH24:MI:SS,FF'),null,150,120,100,6,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (544,1,'Phillippe','Lemoine',null,'Phillippe.Lemoine@interaudit.lu','PL',1,'Lemoine','Lemoine',null,to_timestamp('13/12/09 17:32:42,000000000','DD/MM/RR HH24:MI:SS,FF'),null,0,0,0,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (542,5,'Dimitri','Hubin',null,'dimitri.hubin@interaudit.lu','DH',1,'Hubin','Hubin',null,to_timestamp('13/12/09 17:29:35,000000000','DD/MM/RR HH24:MI:SS,FF'),null,60,50,25,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (543,4,'Calogero','Midioni',null,'Calogero.Midioni@interaudit.lu','CM',1,'Calogero','Calogero',null,to_timestamp('13/12/09 17:31:21,000000000','DD/MM/RR HH24:MI:SS,FF'),null,140,130,90,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (545,2,'Claire','Pignot',null,'claire.pignot@interaduit.lu','CP',1,'Pignot','Pignot',null,to_timestamp('13/12/09 17:34:08,000000000','DD/MM/RR HH24:MI:SS,FF'),null,170,150,100,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (546,0,'Lancelot','Szraberg',null,'Lancelot.Szraberg@interaudit.lu','LS',1,'Szraberg','Szraberg',null,to_timestamp('13/12/09 17:35:46,000000000','DD/MM/RR HH24:MI:SS,FF'),null,0,0,0,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (547,0,'Sebastien','Radelet',null,'Sebastien.Radelet@interaudit.lu','SR',1,'Radelet','Radelet',null,to_timestamp('13/12/09 17:37:06,000000000','DD/MM/RR HH24:MI:SS,FF'),null,0,0,0,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (548,2,'Elsa','Gaspard',null,'Elsa.Gaspard@interaudit.lu','EG',1,'Gaspard','Gaspard',null,to_timestamp('13/12/09 17:38:32,000000000','DD/MM/RR HH24:MI:SS,FF'),null,60,50,25,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (549,1,'Medhi','Zidane',null,'Medhi.Zidane@interaudit.lu','MZ',1,'Zidane','Zidane',null,to_timestamp('13/12/09 17:40:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,0,0,0,3,null);
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (11709,0,'Amila','Beganovica',null,'amila.beganovica@interaduit.lu','AB',1,'Amila','Amila',null,to_timestamp('12/07/10 10:29:23,000000000','DD/MM/RR HH24:MI:SS,FF'),null,65,60,15,6,to_timestamp('15/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (11710,2,'Valerie','Crete',null,'valerie.crete@interaudit.lu','VC',1,'crete','crete',null,to_timestamp('12/07/10 10:31:18,000000000','DD/MM/RR HH24:MI:SS,FF'),null,70,50,15,3,to_timestamp('13/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (11711,0,'Yves','Deschenaux',null,'yves.deschenaus@interaudit.lu','YD',1,'deschenaux','deschenaux',null,to_timestamp('12/07/10 10:32:53,000000000','DD/MM/RR HH24:MI:SS,FF'),null,80,50,15,3,to_timestamp('13/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into EMPLOYEES (ID,VERSION,FIRSTNAME,LASTNAME,JOBTITLE,EMAIL,CODE,ACTIVE,PASSWORD,LOGIN,UPDATEUSER,CREATEDATE,MODIFIEDDATE,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,FK_POSITION,DATE_OF_HIRING) values (11712,0,'Natalie','Semedo',null,'natalie.semedo@interaudit.lu','NS',1,'semedo','semedo',null,to_timestamp('12/07/10 10:34:35,000000000','DD/MM/RR HH24:MI:SS,FF'),null,80,70,15,3,to_timestamp('14/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+
+---------------------------------------------------
+--   END DATA FOR TABLE EMPLOYEES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE MISSION_COSTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into MISSION_COSTS
+Insert into MISSION_COSTS (ID,VERSION,COSTCODE,DESCRIPTION,AMOUNT,CURRENCY,CREATEDATE,MISSION_ID,OWNER_ID) values (10904,0,'restaurant','restaurant client',150,'EUR',to_timestamp('06/11/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),6281,5);
+
+---------------------------------------------------
+--   END DATA FOR TABLE MISSION_COSTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE INVOICE_FEES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into INVOICE_FEES
+
+---------------------------------------------------
+--   END DATA FOR TABLE INVOICE_FEES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE ACCESS_RIGHTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ACCESS_RIGHTS
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (774,1,43,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (775,1,44,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (776,1,45,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (777,1,43,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (778,1,44,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (779,1,45,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (780,1,43,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (781,1,44,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (782,1,45,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (783,1,43,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (784,1,44,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (785,1,45,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (786,1,43,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (787,1,44,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (788,1,45,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (789,1,43,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (790,1,44,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (791,1,45,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (792,1,43,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (793,1,44,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (794,1,45,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (795,1,43,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (796,1,44,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (797,1,45,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (798,1,43,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (799,1,44,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (800,1,45,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (801,1,43,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (802,1,44,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (803,1,45,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (804,1,43,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (805,1,44,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (806,1,45,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (807,1,43,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (808,1,44,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (809,1,45,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (810,1,43,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (811,1,44,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (812,1,45,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (813,1,43,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (814,1,44,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (815,1,45,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (816,1,43,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (817,1,44,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (818,1,45,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (819,1,43,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (820,1,44,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (821,1,45,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (822,1,43,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (823,1,44,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (824,1,45,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (825,1,43,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (826,1,44,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (827,1,45,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (1,1,1,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (2,1,2,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (3,1,3,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (4,1,4,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (5,1,5,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (6,1,6,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (7,1,7,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (8,1,8,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (9,1,9,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (10,1,10,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (11,1,11,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (12,1,12,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (13,1,13,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (14,1,14,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (15,1,15,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (16,1,16,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (17,1,17,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (18,1,18,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (19,1,19,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (20,1,20,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (21,1,21,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (22,0,22,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (23,1,23,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (24,1,24,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (25,1,25,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (26,1,26,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (27,1,27,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (28,1,28,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (29,1,29,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (30,1,30,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (31,1,31,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (32,1,32,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (33,1,33,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (34,1,34,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (35,1,35,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (36,1,36,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (37,1,37,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (38,1,38,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (39,1,39,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (40,1,40,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (41,1,41,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (42,1,42,1);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (44,1,1,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (45,1,2,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (46,1,3,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (47,1,4,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (48,1,5,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (49,1,6,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (50,1,7,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (51,1,8,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (52,1,9,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (53,1,10,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (54,1,11,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (55,1,12,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (56,1,13,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (57,1,14,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (58,1,15,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (59,1,16,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (60,1,17,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (61,1,18,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (62,1,19,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (63,1,20,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (64,1,21,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (65,1,22,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (66,1,23,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (67,1,24,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (68,1,25,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (69,1,26,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (70,1,27,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (71,1,28,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (72,1,29,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (73,1,30,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (74,1,31,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (75,1,32,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (76,1,33,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (77,1,34,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (78,1,35,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (79,1,36,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (80,1,37,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (81,1,38,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (82,1,39,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (83,1,40,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (84,1,41,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (85,1,42,2);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (87,1,1,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (88,1,2,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (89,1,3,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (90,1,4,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (91,1,5,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (92,1,6,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (93,1,7,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (94,1,8,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (95,1,9,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (96,1,10,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (97,1,11,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (98,1,12,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (99,1,13,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (100,1,14,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (101,1,15,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (102,1,16,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (103,1,17,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (104,1,18,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (105,1,19,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (106,1,20,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (107,1,21,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (108,1,22,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (109,1,23,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (110,1,24,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (111,1,25,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (112,1,26,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (113,1,27,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (114,1,28,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (115,1,29,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (116,1,30,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (117,1,31,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (118,1,32,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (119,1,33,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (120,1,34,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (121,1,35,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (122,1,36,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (123,1,37,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (124,1,38,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (125,1,39,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (126,1,40,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (127,1,41,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (128,1,42,3);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (130,1,1,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (131,1,2,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (132,1,3,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (133,1,4,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (134,1,5,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (135,1,6,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (136,1,7,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (137,1,8,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (138,1,9,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (139,1,10,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (140,1,11,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (141,1,12,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (142,1,13,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (143,1,14,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (144,1,15,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (145,1,16,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (146,1,17,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (147,1,18,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (148,1,19,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (149,1,20,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (150,1,21,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (151,1,22,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (152,1,23,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (153,1,24,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (154,1,25,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (155,1,26,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (156,1,27,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (157,1,28,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (158,1,29,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (159,1,30,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (160,1,31,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (161,1,32,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (162,1,33,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (163,1,34,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (164,1,35,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (165,1,36,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (166,1,37,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (167,1,38,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (168,1,39,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (169,1,40,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (170,1,41,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (171,1,42,4);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (173,1,1,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (174,1,2,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (175,1,3,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (176,1,4,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (177,1,5,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (178,1,6,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (179,1,7,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (180,1,8,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (181,1,9,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (182,1,10,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (183,1,11,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (184,1,12,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (185,1,13,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (186,1,14,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (187,1,15,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (188,1,16,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (189,1,17,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (190,1,18,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (191,1,19,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (192,1,20,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (193,1,21,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (194,1,22,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (195,1,23,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (196,1,24,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (197,1,25,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (198,1,26,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (199,1,27,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (200,1,28,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (201,1,29,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (202,1,30,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (203,1,31,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (204,1,32,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (205,1,33,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (206,1,34,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (207,1,35,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (208,1,36,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (209,1,37,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (210,1,38,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (211,1,39,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (212,1,40,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (213,1,41,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (214,1,42,5);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (216,1,1,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (217,1,2,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (218,1,3,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (219,1,4,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (220,1,5,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (221,1,6,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (222,1,7,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (223,1,8,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (224,1,9,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (225,1,10,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (226,1,11,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (227,1,12,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (228,1,13,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (229,1,14,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (230,1,15,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (231,1,16,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (232,1,17,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (233,1,18,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (234,1,19,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (235,1,20,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (236,1,21,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (237,1,22,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (238,1,23,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (239,1,24,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (240,1,25,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (241,1,26,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (242,1,27,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (243,1,28,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (244,1,29,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (245,1,30,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (246,1,31,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (247,1,32,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (248,1,33,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (249,1,34,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (250,1,35,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (251,1,36,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (252,1,37,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (253,1,38,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (254,1,39,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (255,1,40,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (256,1,41,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (257,1,42,6);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (259,1,1,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (260,1,2,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (261,1,3,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (262,1,4,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (263,1,5,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (264,1,6,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (265,1,7,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (266,1,8,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (267,1,9,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (268,1,10,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (269,1,11,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (270,1,12,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (271,1,13,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (272,1,14,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (273,1,15,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (274,1,16,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (275,1,17,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (276,1,18,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (277,1,19,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (278,1,20,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (279,1,21,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (280,1,22,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (281,1,23,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (282,1,24,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (283,1,25,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (284,1,26,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (285,1,27,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (286,1,28,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (287,1,29,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (288,1,30,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (289,1,31,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (290,1,32,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (291,1,33,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (292,1,34,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (293,1,35,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (294,1,36,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (295,1,37,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (296,1,38,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (297,1,39,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (298,1,40,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (299,1,41,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (300,1,42,7);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (302,1,1,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (303,1,2,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (304,1,3,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (305,1,4,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (306,1,5,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (307,1,6,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (308,1,7,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (309,1,8,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (310,1,9,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (311,1,10,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (312,1,11,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (313,1,12,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (314,1,13,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (315,1,14,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (316,1,15,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (317,1,16,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (318,1,17,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (319,1,18,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (320,1,19,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (321,1,20,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (322,1,21,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (323,1,22,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (324,1,23,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (325,1,24,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (326,1,25,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (327,1,26,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (328,1,27,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (329,1,28,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (330,1,29,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (331,1,30,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (332,1,31,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (333,1,32,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (334,1,33,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (335,1,34,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (336,1,35,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (337,1,36,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (338,1,37,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (339,1,38,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (340,1,39,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (341,1,40,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (342,1,41,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (343,1,42,181);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (345,1,1,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (346,1,2,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (347,1,3,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (348,1,4,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (349,1,5,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (350,1,6,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (351,1,7,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (352,1,8,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (353,1,9,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (354,1,10,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (355,1,11,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (356,1,12,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (357,1,13,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (358,1,14,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (359,1,15,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (360,1,16,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (361,1,17,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (362,1,18,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (363,1,19,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (364,1,20,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (365,1,21,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (366,1,22,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (367,1,23,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (368,1,24,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (369,1,25,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (370,1,26,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (371,1,27,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (372,1,28,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (373,1,29,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (374,1,30,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (375,1,31,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (376,1,32,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (377,1,33,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (378,1,34,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (379,1,35,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (380,1,36,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (381,1,37,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (382,1,38,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (383,1,39,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (384,1,40,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (385,1,41,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (386,1,42,241);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (388,1,1,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (389,1,2,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (390,1,3,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (391,1,4,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (392,1,5,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (393,1,6,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (394,1,7,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (395,1,8,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (396,1,9,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (397,1,10,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (398,1,11,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (399,1,12,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (400,1,13,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (401,1,14,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (402,1,15,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (403,1,16,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (404,1,17,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (405,1,18,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (406,1,19,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (407,1,20,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (408,1,21,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (409,1,22,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (410,1,23,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (411,1,24,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (412,1,25,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (413,1,26,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (414,1,27,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (415,1,28,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (416,1,29,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (417,1,30,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (418,1,31,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (419,1,32,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (420,1,33,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (421,1,34,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (422,1,35,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (423,1,36,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (424,1,37,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (425,1,38,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (426,1,39,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (427,1,40,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (428,1,41,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (429,1,42,541);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (431,1,1,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (432,1,2,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (433,1,3,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (434,1,4,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (435,1,5,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (436,1,6,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (437,1,7,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (438,1,8,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (439,1,9,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (440,1,10,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (441,1,11,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (442,1,12,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (443,1,13,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (444,1,14,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (445,1,15,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (446,1,16,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (447,1,17,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (448,1,18,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (449,1,19,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (450,1,20,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (451,1,21,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (452,1,22,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (453,1,23,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (454,1,24,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (455,1,25,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (456,1,26,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (457,1,27,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (458,1,28,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (459,1,29,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (460,1,30,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (461,1,31,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (462,1,32,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (463,1,33,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (464,1,34,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (465,1,35,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (466,1,36,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (467,1,37,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (468,1,38,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (469,1,39,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (470,1,40,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (471,1,41,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (472,1,42,542);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (474,1,1,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (475,1,2,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (476,1,3,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (477,1,4,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (478,1,5,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (479,1,6,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (480,1,7,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (481,1,8,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (482,1,9,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (483,1,10,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (484,1,11,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (485,1,12,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (486,1,13,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (487,1,14,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (488,1,15,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (489,1,16,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (490,1,17,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (491,1,18,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (492,1,19,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (493,1,20,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (494,1,21,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (495,1,22,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (496,1,23,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (497,1,24,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (498,1,25,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (499,1,26,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (500,1,27,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (501,1,28,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (502,1,29,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (503,1,30,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (504,1,31,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (505,1,32,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (506,1,33,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (507,1,34,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (508,1,35,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (509,1,36,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (510,1,37,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (511,1,38,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (512,1,39,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (513,1,40,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (514,1,41,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (515,1,42,543);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (517,1,1,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (518,1,2,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (519,1,3,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (520,1,4,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (521,1,5,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (522,1,6,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (523,1,7,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (524,1,8,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (525,1,9,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (526,1,10,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (527,1,11,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (528,1,12,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (529,1,13,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (530,1,14,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (531,1,15,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (532,1,16,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (533,1,17,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (534,1,18,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (535,1,19,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (536,1,20,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (537,1,21,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (538,1,22,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (539,1,23,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (540,1,24,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (541,1,25,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (542,1,26,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (543,1,27,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (544,1,28,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (545,1,29,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (546,1,30,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (547,1,31,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (548,1,32,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (549,1,33,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (550,1,34,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (551,1,35,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (552,1,36,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (553,1,37,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (554,1,38,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (555,1,39,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (556,1,40,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (557,1,41,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (558,1,42,544);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (560,1,1,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (561,1,2,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (562,1,3,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (563,1,4,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (564,1,5,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (565,1,6,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (566,1,7,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (567,1,8,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (568,1,9,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (569,1,10,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (570,1,11,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (571,1,12,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (572,1,13,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (573,1,14,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (574,1,15,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (575,1,16,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (576,1,17,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (577,1,18,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (578,1,19,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (579,1,20,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (580,1,21,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (581,1,22,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (582,0,23,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (583,1,24,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (584,1,25,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (585,1,26,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (586,1,27,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (587,1,28,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (588,1,29,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (589,1,30,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (590,1,31,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (591,1,32,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (592,1,33,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (593,1,34,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (594,1,35,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (595,1,36,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (596,1,37,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (597,1,38,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (598,1,39,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (599,1,40,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (600,1,41,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (601,1,42,545);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (603,1,1,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (604,1,2,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (605,1,3,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (606,1,4,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (607,1,5,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (608,1,6,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (609,1,7,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (610,1,8,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (611,1,9,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (612,1,10,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (613,1,11,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (614,1,12,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (615,1,13,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (616,1,14,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (617,1,15,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (618,1,16,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (619,1,17,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (620,1,18,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (621,1,19,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (622,1,20,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (623,1,21,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (624,1,22,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (625,1,23,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (626,1,24,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (627,1,25,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (628,1,26,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (629,1,27,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (630,1,28,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (631,1,29,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (632,1,30,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (633,1,31,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (634,1,32,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (635,1,33,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (636,1,34,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (637,1,35,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (638,1,36,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (639,1,37,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (640,1,38,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (641,1,39,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (642,1,40,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (643,1,41,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (644,1,42,546);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (646,1,1,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (647,1,2,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (648,1,3,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (649,1,4,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (650,1,5,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (651,1,6,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (652,1,7,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (653,1,8,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (654,1,9,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (655,1,10,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (656,1,11,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (657,1,12,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (658,1,13,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (659,1,14,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (660,1,15,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (661,1,16,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (662,1,17,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (663,1,18,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (664,1,19,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (665,1,20,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (666,1,21,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (667,1,22,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (668,1,23,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (669,1,24,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (670,1,25,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (671,1,26,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (672,1,27,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (673,1,28,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (674,1,29,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (675,1,30,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (676,1,31,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (677,1,32,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (678,1,33,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (679,1,34,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (680,1,35,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (681,1,36,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (682,1,37,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (683,1,38,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (684,1,39,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (685,1,40,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (686,1,41,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (687,1,42,547);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (689,1,1,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (690,1,2,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (691,1,3,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (692,1,4,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (693,1,5,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (694,1,6,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (695,1,7,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (696,1,8,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (697,1,9,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (698,1,10,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (699,1,11,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (700,1,12,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (701,1,13,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (702,1,14,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (703,1,15,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (704,1,16,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (705,1,17,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (706,1,18,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (707,1,19,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (708,1,20,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (709,1,21,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (710,1,22,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (711,1,23,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (712,1,24,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (713,1,25,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (714,1,26,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (715,1,27,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (716,1,28,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (717,1,29,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (718,1,30,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (719,1,31,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (720,1,32,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (721,1,33,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (722,1,34,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (723,1,35,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (724,1,36,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (725,1,37,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (726,1,38,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (727,1,39,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (728,1,40,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (729,1,41,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (730,1,42,548);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (732,1,1,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (733,1,2,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (734,1,3,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (735,1,4,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (736,1,5,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (737,1,6,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (738,1,7,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (739,1,8,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (740,1,9,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (741,1,10,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (742,1,11,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (743,1,12,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (744,1,13,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (745,1,14,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (746,1,15,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (747,1,16,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (748,1,17,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (749,1,18,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (750,1,19,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (751,1,20,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (752,1,21,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (753,1,22,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (754,1,23,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (755,1,24,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (756,1,25,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (757,1,26,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (758,1,27,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (759,1,28,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (760,1,29,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (761,1,30,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (762,1,31,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (763,1,32,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (764,1,33,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (765,1,34,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (766,1,35,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (767,1,36,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (768,1,37,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (769,1,38,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (770,1,39,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (771,1,40,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (772,1,41,549);
+Insert into ACCESS_RIGHTS (ID,ACTIVE,FK_RIGHT,FK_EMPLOYEE) values (773,1,42,549);
+
+---------------------------------------------------
+--   END DATA FOR TABLE ACCESS_RIGHTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE ORIGINS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ORIGINS
+Insert into ORIGINS (ID,NAME,CODE) values (1,'InterFiduciaire','IF');
+Insert into ORIGINS (ID,NAME,CODE) values (2,'InterAudit','IA');
+Insert into ORIGINS (ID,NAME,CODE) values (3,'Atoz','AT');
+Insert into ORIGINS (ID,NAME,CODE) values (4,'Fideos','FD');
+Insert into ORIGINS (ID,NAME,CODE) values (5,'Bob Bernard','BB');
+Insert into ORIGINS (ID,NAME,CODE) values (6,'Signes','SG');
+Insert into ORIGINS (ID,NAME,CODE) values (7,'Inconnue','IC');
+
+---------------------------------------------------
+--   END DATA FOR TABLE ORIGINS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE BANKS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into BANKS
+Insert into BANKS (ID,NAME,CODE,ACCOUNT,CONTACTPERSON,CONTACTPERSONEMAIL,CONTACTPERSONPHONE,CONTACTPERSONFAX,ACTIVE) values (302,'Banque et Caisse d''Epargne de l''Etat','bceelull','19556012','Hocheid ','hocheid@bcee.lu','491212',null,1);
+Insert into BANKS (ID,NAME,CODE,ACCOUNT,CONTACTPERSON,CONTACTPERSONEMAIL,CONTACTPERSONPHONE,CONTACTPERSONFAX,ACTIVE) values (303,'BGL BNP Parisbas','BGLLLULL','LU945583698','Scorpionne','scorpionne@bgl.lu','494448','256365',1);
+Insert into BANKS (ID,NAME,CODE,ACCOUNT,CONTACTPERSON,CONTACTPERSONEMAIL,CONTACTPERSONPHONE,CONTACTPERSONFAX,ACTIVE) values (242,'Societe generale','SG','LU 456987-789444','Alan Johns','alan.johns@interaudit.lu','4578963210',null,1);
+
+---------------------------------------------------
+--   END DATA FOR TABLE BANKS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE ITEM_EVENT_PLANNING
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ITEM_EVENT_PLANNING
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12581,1,6293,'DIMPEX SA',8507,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12582,1,6293,'DIMPEX SA',8521,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12583,1,6293,'DIMPEX SA',8535,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12584,1,6293,'DIMPEX SA',8549,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12585,1,6293,'DIMPEX SA',8563,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12586,1,6293,'DIMPEX SA',8577,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12587,1,6293,'DIMPEX SA',8591,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12588,1,6293,'DIMPEX SA',8605,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12589,1,6293,'DIMPEX SA',8619,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12590,1,6293,'DIMPEX SA',8633,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12591,1,6293,'DIMPEX SA',8647,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12592,1,6293,'DIMPEX SA',8661,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12593,1,6293,'DIMPEX SA',8675,to_timestamp('27/08/10 07:06:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12594,1,6293,'DIMPEX SA',8689,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12596,1,6293,'DIMPEX SA',12595,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12597,1,6293,'DIMPEX SA',8703,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12598,1,6293,'DIMPEX SA',8717,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12599,1,6293,'DIMPEX SA',8731,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12601,1,6293,'DIMPEX SA',12600,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12603,1,6293,'DIMPEX SA',12602,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12605,1,6293,'DIMPEX SA',12604,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12606,1,6293,'DIMPEX SA',8745,to_timestamp('27/08/10 07:06:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','3.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12663,1,6287,'Cologic',11204,to_timestamp('08/09/10 07:21:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'13.9','13.9','WD',1,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11800,1,6283,'ANGLESEA CAPITAL SA',8498,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11801,1,6283,'ANGLESEA CAPITAL SA',8512,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11802,1,6283,'ANGLESEA CAPITAL SA',8526,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11803,1,6283,'ANGLESEA CAPITAL SA',8540,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11804,1,6283,'ANGLESEA CAPITAL SA',8554,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11805,1,6283,'ANGLESEA CAPITAL SA',8568,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11806,1,6283,'ANGLESEA CAPITAL SA',8582,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11807,1,6283,'ANGLESEA CAPITAL SA',8596,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11808,1,6283,'ANGLESEA CAPITAL SA',8610,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11809,1,6283,'ANGLESEA CAPITAL SA',8624,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11810,1,6283,'ANGLESEA CAPITAL SA',8638,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11811,1,6283,'ANGLESEA CAPITAL SA',8652,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11812,1,6283,'ANGLESEA CAPITAL SA',8666,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11813,1,6283,'ANGLESEA CAPITAL SA',8680,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11814,1,6283,'ANGLESEA CAPITAL SA',11795,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11815,1,6283,'ANGLESEA CAPITAL SA',8694,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11816,1,6283,'ANGLESEA CAPITAL SA',8708,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11817,1,6283,'ANGLESEA CAPITAL SA',8722,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11818,1,6283,'ANGLESEA CAPITAL SA',11797,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11819,1,6283,'ANGLESEA CAPITAL SA',11798,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11820,1,6283,'ANGLESEA CAPITAL SA',11799,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11821,1,6283,'ANGLESEA CAPITAL SA',8736,to_timestamp('15/07/10 06:52:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'28.6','2.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11882,1,6287,'Cologic',8501,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11883,1,6287,'Cologic',8515,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11884,1,6287,'Cologic',8529,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11885,1,6287,'Cologic',8543,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11886,1,6287,'Cologic',8557,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11887,1,6287,'Cologic',8571,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11888,1,6287,'Cologic',8585,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11889,1,6287,'Cologic',8599,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11890,1,6287,'Cologic',8613,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11891,1,6287,'Cologic',8627,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11892,1,6287,'Cologic',8641,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11893,1,6287,'Cologic',8655,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11894,1,6287,'Cologic',8669,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11895,1,6287,'Cologic',8683,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11841,0,62801,'Conge legal',8499,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11842,0,62801,'Conge legal',8513,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11843,0,62801,'Conge legal',8527,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11844,0,62801,'Conge legal',8541,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11845,0,62801,'Conge legal',8555,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11846,0,62801,'Conge legal',8569,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11847,0,62801,'Conge legal',8583,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11848,0,62801,'Conge legal',8597,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11849,0,62801,'Conge legal',8611,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11850,0,62801,'Conge legal',8625,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11851,0,62801,'Conge legal',8639,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11852,0,62801,'Conge legal',8653,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11853,0,62801,'Conge legal',8667,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11854,0,62801,'Conge legal',8681,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11855,0,62801,'Conge legal',11836,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11856,0,62801,'Conge legal',8695,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11857,0,62801,'Conge legal',8709,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11858,0,62801,'Conge legal',8723,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11859,0,62801,'Conge legal',11838,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11860,0,62801,'Conge legal',11839,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11861,0,62801,'Conge legal',11840,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11862,0,62801,'Conge legal',8737,to_timestamp('15/07/10 06:53:33,000000000','DD/MM/RR HH24:MI:SS,FF'),'5.7','9.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11923,0,62850,'Revue',8641,to_timestamp('15/07/10 06:55:38,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','22.7','NA',4,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12661,0,62849,'Temps partiel',11204,to_timestamp('08/09/10 06:31:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'13.9','13.9','WD',1,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12662,1,6293,'DIMPEX SA',11204,to_timestamp('08/09/10 07:20:09,000000000','DD/MM/RR HH24:MI:SS,FF'),'13.9','13.9','WD',1,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12664,1,6273,'Caryos SA',11204,to_timestamp('08/09/10 07:22:31,000000000','DD/MM/RR HH24:MI:SS,FF'),'13.9','17.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11896,1,6287,'Cologic',11877,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11897,1,6287,'Cologic',8697,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11898,1,6287,'Cologic',8711,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11899,1,6287,'Cologic',8725,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11900,1,6287,'Cologic',11879,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11901,1,6287,'Cologic',11880,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11902,1,6287,'Cologic',11881,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11903,1,6287,'Cologic',8739,to_timestamp('15/07/10 06:54:27,000000000','DD/MM/RR HH24:MI:SS,FF'),'19.7','23.7','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11943,1,6293,'DIMPEX SA',8504,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11944,1,6293,'DIMPEX SA',8518,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11945,1,6293,'DIMPEX SA',8532,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11946,1,6293,'DIMPEX SA',8546,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11947,1,6293,'DIMPEX SA',8560,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11948,1,6293,'DIMPEX SA',8574,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11949,1,6293,'DIMPEX SA',8588,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11950,1,6293,'DIMPEX SA',8602,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11951,1,6293,'DIMPEX SA',8616,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11952,1,6293,'DIMPEX SA',8630,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11953,1,6293,'DIMPEX SA',8644,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11954,1,6293,'DIMPEX SA',8658,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11955,1,6293,'DIMPEX SA',8672,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11956,1,6293,'DIMPEX SA',8686,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11957,1,6293,'DIMPEX SA',11938,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11958,1,6293,'DIMPEX SA',8700,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11959,1,6293,'DIMPEX SA',8714,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11960,1,6293,'DIMPEX SA',8728,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11961,1,6293,'DIMPEX SA',11940,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11962,1,6293,'DIMPEX SA',11941,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11963,1,6293,'DIMPEX SA',11942,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (11964,1,6293,'DIMPEX SA',8742,to_timestamp('15/07/10 07:04:07,000000000','DD/MM/RR HH24:MI:SS,FF'),'9.8','13.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12381,1,6283,'ANGLESEA CAPITAL SA',8505,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12382,1,6283,'ANGLESEA CAPITAL SA',8519,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12383,1,6283,'ANGLESEA CAPITAL SA',8533,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12384,1,6283,'ANGLESEA CAPITAL SA',8547,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12385,1,6283,'ANGLESEA CAPITAL SA',8561,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12386,1,6283,'ANGLESEA CAPITAL SA',8575,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12387,1,6283,'ANGLESEA CAPITAL SA',8589,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12388,1,6283,'ANGLESEA CAPITAL SA',8603,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12389,1,6283,'ANGLESEA CAPITAL SA',8617,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12390,1,6283,'ANGLESEA CAPITAL SA',8631,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12391,1,6283,'ANGLESEA CAPITAL SA',8645,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12392,1,6283,'ANGLESEA CAPITAL SA',8659,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12393,1,6283,'ANGLESEA CAPITAL SA',8673,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12394,1,6283,'ANGLESEA CAPITAL SA',8687,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12396,1,6283,'ANGLESEA CAPITAL SA',12395,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12397,1,6283,'ANGLESEA CAPITAL SA',8701,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12398,1,6283,'ANGLESEA CAPITAL SA',8715,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12399,1,6283,'ANGLESEA CAPITAL SA',8729,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12401,1,6283,'ANGLESEA CAPITAL SA',12400,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12403,1,6283,'ANGLESEA CAPITAL SA',12402,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12405,1,6283,'ANGLESEA CAPITAL SA',12404,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12406,1,6283,'ANGLESEA CAPITAL SA',8743,to_timestamp('14/08/10 20:15:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'16.8','20.8','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12408,1,6291,'HOLDUN SA',11207,to_timestamp('14/08/10 20:16:05,000000000','DD/MM/RR HH24:MI:SS,FF'),'13.9','17.9','NA',5,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12770,1,6273,'Caryos SA',8647,to_timestamp('12/09/10 15:18:01,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','30.8','WD',1,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12768,0,62850,'Revue',8619,to_timestamp('12/09/10 14:46:34,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','2.9','NA',4,null,null);
+Insert into ITEM_EVENT_PLANNING (ID,MISSION,IDENTITY,TITLE,FK_EVENTPLANNING,DATEOFEVENT,STARTDATE,ENDDATE,DURATIONTYPE,DURATION,SFORMAT,DATEFORMAT) values (12769,0,62850,'Revue',8619,to_timestamp('12/09/10 14:46:44,000000000','DD/MM/RR HH24:MI:SS,FF'),'30.8','30.8','PM',0,5,null,null);
+
+---------------------------------------------------
+--   END DATA FOR TABLE ITEM_EVENT_PLANNING
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EMAIL_DATA
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EMAIL_DATA
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10744,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/002 ] approved','The invoice  [  F-10/002 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('19/06/10 21:10:36,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10750,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/001 ] approved','The invoice  [  F-10/001 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('19/06/10 21:26:15,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10752,'murielle.badoux@interaudit.lu','edouard.kostka@interausit.lu','Invoice [ F-10/001 ] sent','The invoice  [ F-10/001 ] has been sent to the customer...',to_timestamp('19/06/10 21:26:22,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,2,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10784,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/003 ] approved','The invoice  [  F-10/003 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('20/06/10 07:32:01,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (6624,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','titre','contenu du message',to_timestamp('31/05/10 06:29:21,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (6626,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','titre 2','contenu message 2',to_timestamp('31/05/10 06:30:41,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10786,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Invoice [ F-10/003 ] sent','The invoice  [ F-10/003 ] has been sent to the customer...',to_timestamp('20/06/10 07:32:17,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10794,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','ret','eet',to_timestamp('20/06/10 08:50:11,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10862,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','titre','message contents',to_timestamp('23/06/10 07:54:13,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10882,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','titre du message','vas voir le site http://www.rue89.com/
+et dis moi ce que tu en penses...',to_timestamp('23/06/10 13:42:50,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10884,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','new message','mon nouveau message avec url
+http://www.lequipe.fr/
+test',to_timestamp('23/06/10 14:39:13,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11102,'murielle.badoux@interaudit.lu','Lancelot.Szraberg@interaudit.lu','suject','sdk,vxc:!mv,xwc
+!cvX/!XV:
+
+xcv:vxc§XCVvxc',to_timestamp('07/07/10 06:36:01,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,546,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12022,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/005 ] approved','The invoice  [  F-10/005 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('18/07/10 06:50:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12202,'murielle.badoux@interaudit.lu','edouard.kostka@interausit.lu','Invoice [ F-10/006 ] sent','The invoice  [ F-10/006 ] has been sent to the customer...',to_timestamp('25/07/10 06:34:15,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,2,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12282,'murielle.badoux@interaudit.lu','yves.deschenaus@interaudit.lu','test message','Il ne s''agit pas de quelques dixièmes de différence (avec les Red Bull), mais d''une seconde dans le deuxième secteur, et une demi-seconde dans le dernier. Lorsque nous avons regardé les temps, nous avons rigolé tellement c''est fou la vitesse à laquelle ils vont. Notre voiture ne peut pas être meilleure, je ne sais pas comment ils font. Je suis heureux de mon résultat, je suis passé de justesse en Q3 et j''ai tiré le meilleur de la voiture pour prendre la 5e place',to_timestamp('01/08/10 07:59:54,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,11711,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12284,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','vvvvvvvv','fdfdfgdfgd
+;eùmùùrtrt',to_timestamp('01/08/10 08:54:51,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10746,'murielle.badoux@interaudit.lu','edouard.kostka@interausit.lu','Invoice [ F-10/002 ] sent','The invoice  [ F-10/002 ] has been sent to the customer...',to_timestamp('19/06/10 21:11:02,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,2,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10800,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/004 ] approved','The invoice  [  F-10/004 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('20/06/10 13:19:04,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10802,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Invoice [ F-10/004 ] sent','The invoice  [ F-10/004 ] has been sent to the customer...',to_timestamp('20/06/10 13:19:19,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11750,'murielle.badoux@interaudit.lu','Calogero.Midioni@interaudit.lu','titre','In this course, we will go beyond the hype of Web services and explore implementation architectures, as well as best practices for implementing SOAs and realizing the benefits of composite applications. Composite applications combine new functionality with existing data and applications. 
+Because new development is usually involved, the tools as well as the implementers tend to be different from those used in traditional EAI projects.
+This training will focus on the evolving architecture alternatives and component technologies necessary for implementing composite applications. It will also include best practices for maximizing reuse and ROI.
+',to_timestamp('12/07/10 16:09:52,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,543,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11764,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','ykhjk
+ttttutu',to_timestamp('13/07/10 19:59:40,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11766,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','jkfksjdhkshkhsdfkhksdfdhsk*
+lsdfsdfjljsdflsfdlsfdlsdflsdflsdflfds
+*sdfljsdljsdfljsdflsdflsdfjlsdfldfslsd*dfsm*',to_timestamp('13/07/10 20:01:22,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11768,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','yutrutytuttu
+ppppppppppppppppppp
+Ã¹mlghlÃ¹ghÃ¹gÃ¹',to_timestamp('13/07/10 20:01:49,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11770,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','thj
+hglmmgk
+gfÃ¹f',to_timestamp('13/07/10 20:02:04,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11774,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','Je ne suis pas d''accord avec toi ',to_timestamp('13/07/10 20:37:32,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11776,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','Je ne suis pas d''accord avec toi encore
+Vas voir sur le site http://lemonde.fr
+',to_timestamp('13/07/10 20:41:49,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12086,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Invoice [ F-10/006 ] approved','The invoice  [  F-10/006 ] has been approved. Please take the necessary actions to send it to the customer...',to_timestamp('18/07/10 08:23:30,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','FACTURATION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12380,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','Raison du refus: j''ai un gros doute sur l''activitÃ© du mercerdi',to_timestamp('14/08/10 19:27:02,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12722,'murielle.badoux@interaudit.lu','olivier.biren@interaudit.lu','vvvvvvvvvb','bvcvcv',to_timestamp('10/09/10 23:18:37,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,7,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11762,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','uuuu',to_timestamp('13/07/10 19:38:13,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11772,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','bfdgdffgdgdd
+m,mlkmgf
+gf*mgdfdfdf',to_timestamp('13/07/10 20:28:30,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10864,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','sdfdgfgf','gfddddf',to_timestamp('23/06/10 07:54:26,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (10866,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','ghjkhhjjhjjk','dfskdlflogùlf*
+sdfùklldfds
+dsf*dfm*ds',to_timestamp('23/06/10 07:54:57,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11104,'murielle.badoux@interaudit.lu','jonathan.picard@interaudit.lu','dossier formation','Satut du dossier formation?',to_timestamp('07/07/10 06:44:17,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,241,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11982,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','test','bqksbkjsdkdfùlùsùf
+sdf:/sdfsdffSDsdffSDSDFsdf:;df
+SDF:SD/dfssdf
+sd!,lggmlgfffgg
+;:!xv;!;bvgfùfggfgfgf',to_timestamp('16/07/10 06:04:53,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11984,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','Timesheet rejected','vhjjbjkkkjhkkkljkhhkl
+klnlljjlmlmjÃ¹^ppokpkpko
+lkkk$pk$k$$$$$k$',to_timestamp('16/07/10 06:48:11,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12262,'murielle.badoux@interaudit.lu','olivier.biren@interaudit.lu','test','test badoux',to_timestamp('31/07/10 09:08:12,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,7,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12264,'murielle.badoux@interaudit.lu','murielle.badoux@interaudit.lu','test subject','test contents test contents test contents test contents',to_timestamp('31/07/10 15:28:16,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,3,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12724,'murielle.badoux@interaudit.lu','valerie.crete@interaudit.lu','Re : vvvvvvvvvb','clvlklxljvlvxclxcx
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:26.0
+To:Biren Olivier
+Subject:vvvvvvvvvb
+
+bvcvcv',to_timestamp('10/09/10 23:19:22,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,11710,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (12726,'murielle.badoux@interaudit.lu','veronique.blocail@interaudit.lu','Re : Re : vvvvvvvvvb','retrtrertrerer
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:57.0
+To:Crete Valerie
+Subject:Re : vvvvvvvvvb
+
+clvlklxljvlvxclxcx
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:26.0
+To:Biren Olivier
+Subject:vvvvvvvvvb
+
+bvcvcv',to_timestamp('10/09/10 23:19:45,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,541,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11123,'murielle.badoux@interaudit.lu','laurent.mariani@interausit.lu','test message','Le Sénat a adopté de justesse en deuxième lecture, par 166 voix contre 160, dans la nuit de mercredi à jeudi, le 
+http://www.w3schools.com/tags/tag_P.asp',to_timestamp('08/07/10 06:34:31,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,5,null);
+Insert into EMAIL_DATA (ID,SENDER_ADDRESS,RECEIVER_ADDRESS,MAILSUBJECT,MAILCONTENTS,CREATED,STATUS,TYPE,FK_SENDER,FK_RECEIVER,SENTDATE) values (11564,'murielle.badoux@interaudit.lu','Phillippe.Lemoine@interaudit.lu','statut','Tes tiemsheets ne sont pas à jour...',to_timestamp('09/07/10 13:55:22,000000000','DD/MM/RR HH24:MI:SS,FF'),'PENDING','MISSION_COMMUNICATION',3,544,null);
+
+---------------------------------------------------
+--   END DATA FOR TABLE EMAIL_DATA
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE MESSAGE
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into MESSAGE
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10793,'ret','eet',to_timestamp('20/06/10 08:50:10,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6287,3,1);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (6623,'titre','contenu du message',to_timestamp('31/05/10 06:29:21,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6269,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (6625,'titre 2','contenu message 2',to_timestamp('31/05/10 06:30:41,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6269,3,1);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10861,'titre','message contents',to_timestamp('23/06/10 07:54:13,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10881,'titre du message','vas voir le site http://www.rue89.com/
+et dis moi ce que tu en penses...',to_timestamp('23/06/10 13:42:49,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10883,'new message','mon nouveau message avec url
+http://www.lequipe.fr/
+test',to_timestamp('23/06/10 14:39:12,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11101,'suject','sdk,vxc:!mv,xwc
+!cvX/!XV:
+
+xcv:vxc§XCVvxc',to_timestamp('07/07/10 06:36:01,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,546,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12281,'test message','Il ne s''agit pas de quelques dixièmes de différence (avec les Red Bull), mais d''une seconde dans le deuxième secteur, et une demi-seconde dans le dernier. Lorsque nous avons regardé les temps, nous avons rigolé tellement c''est fou la vitesse à laquelle ils vont. Notre voiture ne peut pas être meilleure, je ne sais pas comment ils font. Je suis heureux de mon résultat, je suis passé de justesse en Q3 et j''ai tiré le meilleur de la voiture pour prendre la 5e place',to_timestamp('01/08/10 07:59:54,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,11711,6273,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12283,'vvvvvvvv','fdfdfgdfgd
+;eùmùùrtrt',to_timestamp('01/08/10 08:54:51,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6285,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12741,'jjjj','ykkyyu',to_timestamp('11/09/10 19:46:56,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,7,6273,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12742,'dfdff','fff',to_timestamp('11/09/10 19:53:52,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12743,'Re : dfdff','ettyyrytrrtr
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-11 19:53:52.0
+To:Badoux Murielle
+Subject:dfdff
+
+fff',to_timestamp('11/09/10 19:54:22,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12744,'Re : Re : dfdff','tyrryryt
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-11 19:54:22.0
+To:Badoux Murielle
+Subject:Re : dfdff
+
+ettyyrytrrtr
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-11 19:53:52.0
+To:Badoux Murielle
+Subject:dfdff
+
+fff',to_timestamp('11/09/10 19:54:49,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,1,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12721,'vvvvvvvvvb','bvcvcv',to_timestamp('10/09/10 23:18:26,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,7,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11747,'titre','In this course, we will go beyond the hype of Web services and explore implementation architectures, as well as best practices for implementing SOAs and realizing the benefits of composite applications. Composite applications combine new functionality with existing data and applications. 
+Because new development is usually involved, the tools as well as the implementers tend to be different from those used in traditional EAI projects.
+This training will focus on the evolving architecture alternatives and component technologies necessary for implementing composite applications. It will also include best practices for maximizing reuse and ROI.
+',to_timestamp('12/07/10 16:08:38,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,543,6285,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11749,'titre','In this course, we will go beyond the hype of Web services and explore implementation architectures, as well as best practices for implementing SOAs and realizing the benefits of composite applications. Composite applications combine new functionality with existing data and applications. 
+Because new development is usually involved, the tools as well as the implementers tend to be different from those used in traditional EAI projects.
+This training will focus on the evolving architecture alternatives and component technologies necessary for implementing composite applications. It will also include best practices for maximizing reuse and ROI.
+',to_timestamp('12/07/10 16:09:52,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,543,6285,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11103,'dossier formation','Satut du dossier formation?',to_timestamp('07/07/10 06:44:17,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,241,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11981,'test','bqksbkjsdkdfùlùsùf
+sdf:/sdfsdffSDsdffSDSDFsdf:;df
+SDF:SD/dfssdf
+sd!,lggmlgfffgg
+;:!xv;!;bvgfùfggfgfgf',to_timestamp('16/07/10 06:04:52,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,541,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12261,'test','test badoux',to_timestamp('31/07/10 09:08:11,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,7,6283,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12263,'test subject','test contents test contents test contents test contents',to_timestamp('31/07/10 15:28:15,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6283,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12723,'Re : vvvvvvvvvb','clvlklxljvlvxclxcx
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:26.0
+To:Biren Olivier
+Subject:vvvvvvvvvb
+
+bvcvcv',to_timestamp('10/09/10 23:18:57,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,11710,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (12725,'Re : Re : vvvvvvvvvb','retrtrertrerer
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:57.0
+To:Crete Valerie
+Subject:Re : vvvvvvvvvb
+
+clvlklxljvlvxclxcx
+---------------------------------------------
+From:Badoux Murielle
+Sent:2010-09-10 23:18:26.0
+To:Biren Olivier
+Subject:vvvvvvvvvb
+
+bvcvcv',to_timestamp('10/09/10 23:19:31,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,541,6289,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10863,'sdfdgfgf','gfddddf',to_timestamp('23/06/10 07:54:26,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (10865,'ghjkhhjjhjjk','dfskdlflogùlf*
+sdfùklldfds
+dsf*dfm*ds',to_timestamp('23/06/10 07:54:57,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,3,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11122,'test message','Le Sénat a adopté de justesse en deuxième lecture, par 166 voix contre 160, dans la nuit de mercredi à jeudi, le 
+http://www.w3schools.com/tags/tag_P.asp',to_timestamp('08/07/10 06:34:30,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,5,6281,3,0);
+Insert into MESSAGE (ID,SUBJECT,CONTENTS,CREATEDATE,SENTDATE,PARENT_ID,TO_ID,MISSION_ID,FROM_ID,READ) values (11563,'statut','Tes tiemsheets ne sont pas à jour...',to_timestamp('09/07/10 13:55:22,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,544,6281,3,0);
+
+---------------------------------------------------
+--   END DATA FOR TABLE MESSAGE
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE BUDGETS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into BUDGETS
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6242,2,16319,9996948242,0,0,null,'ONGOING',1,1,44,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6243,2,8159,99984741211,0,0,null,'ONGOING',1,7,33,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6244,2,5467,19989776611,0,0,null,'ONGOING',1,2,32,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6245,2,10073,5198116302,0,0,null,'ONGOING',1,7,42,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6246,4,12545,9997653961,12300,0,null,'ONGOING',1,2,21,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6247,2,14789,9997234344,0,0,null,'ONGOING',1,1,28,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6248,2,6119,99988555908,0,0,null,'ONGOING',1,1,30,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6249,2,50999,9990463257,0,0,null,'ONGOING',1,7,232,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6250,2,10067,3998117447,0,0,null,'ONGOING',1,1,35,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6251,2,12239,9997711182,0,0,null,'ONGOING',1,1,27,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6252,2,7126,73986673355,0,0,null,'ONGOING',1,7,41,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6253,5,12811,199760437,12811,199760437,0,null,'ONGOING',1,2,25,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6254,2,6425,99987983704,0,0,null,'ONGOING',1,3,38,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6255,2,15911,9997024536,0,0,null,'ONGOING',1,3,29,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6256,3,5711,99989318848,1028,0,null,'ONGOING',1,3,36,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6257,2,25499,9995231628,0,0,null,'ONGOING',1,2,26,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6258,2,6119,99988555908,0,0,null,'ONGOING',1,2,34,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6259,2,2039,99996185303,0,0,null,'ONGOING',1,1,37,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6260,2,4791,95991039276,0,0,null,'ONGOING',1,3,23,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6261,4,12239,9997711182,3403,0,null,'ONGOING',1,2,1,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6262,2,8052,89984941483,0,0,null,'ONGOING',1,7,39,6,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6263,4,4689,95991230011,4598,0,null,'ONGOING',1,3,24,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6264,2,14789,9997234344,0,0,null,'ONGOING',1,7,2,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6265,2,4589,99991416931,0,0,null,'ONGOING',1,7,22,4,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6266,2,10071,4798116684,0,0,null,'ONGOING',1,3,43,5,6241);
+Insert into BUDGETS (ID,VERSION,EXP_AMOUNT,REAL_AMOUNT,REP_AMOUNT,COMMENTS,STATUS,FIABLE,FK_ASSOCIE,FK_CONTRACT,FK_MANAGER,FK_EXERCISE) values (6267,2,8926,01983308792,0,0,null,'ONGOING',1,1,40,5,6241);
+
+---------------------------------------------------
+--   END DATA FOR TABLE BUDGETS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE DOCS_MISSIONS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into DOCS_MISSIONS
+Insert into DOCS_MISSIONS (ID_MISSION,ID_DOCUMENT) values (6281,10903);
+Insert into DOCS_MISSIONS (ID_MISSION,ID_DOCUMENT) values (6281,11565);
+Insert into DOCS_MISSIONS (ID_MISSION,ID_DOCUMENT) values (6287,10792);
+
+---------------------------------------------------
+--   END DATA FOR TABLE DOCS_MISSIONS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE DECLARATIONS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into DECLARATIONS
+
+---------------------------------------------------
+--   END DATA FOR TABLE DECLARATIONS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE PLANNING_ANNUEL
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into PLANNING_ANNUEL
+Insert into PLANNING_ANNUEL (ID,LASTUPDATE,YEAR) values (6268,to_timestamp('28/05/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),2010);
+
+---------------------------------------------------
+--   END DATA FOR TABLE PLANNING_ANNUEL
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE MISSIONTYPE_TASK
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into MISSIONTYPE_TASK
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (1,'RA','Revision annuelle','RA');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (2,'RC','Revision contractuelle','RC');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (3,'AC','Audit consolidation','AC');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (4,'CI','Controle interne','CI');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (5,'MCOMM','Mandat  commissaire','MCOMM');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (6,'MADM','Mandat administrateur','MADM');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (7,'MISSPE','Mission speciale','MISSPE');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (8,'CONSO','Consolidation','CONSO');
+Insert into MISSIONTYPE_TASK (ID,MISSIONTYPECODE,LIBELLE,TASKCODE) values (9,'DOM','Domiciliation','DOM');
+
+---------------------------------------------------
+--   END DATA FOR TABLE MISSIONTYPE_TASK
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE COMMENTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into COMMENTS
+Insert into COMMENTS (ID,TEXT,CREATED,FK_EMPLOYEE,FK_TIMESHEET) values (12379,'Raison du refus: j''ai un gros doute sur l''activitÃ© du mercerdi',to_timestamp('14/08/10 19:27:02,000000000','DD/MM/RR HH24:MI:SS,FF'),3,12360);
+
+---------------------------------------------------
+--   END DATA FOR TABLE COMMENTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE TIMESHEETS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into TIMESHEETS
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12521,0,'2010',to_timestamp('22/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('05/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('10/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',27,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12522,0,'2010',to_timestamp('22/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('28/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('03/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',26,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12641,0,'2010',to_timestamp('07/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',36,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12681,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),65,60,15,'DRAFT',36,null,11709);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12682,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',36,null,7);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12683,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',36,null,541);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12684,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),70,50,15,'DRAFT',36,null,11710);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12685,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,50,15,'DRAFT',36,null,11711);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12686,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,150,100,'DRAFT',36,null,1);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12687,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),125,120,80,'DRAFT',36,null,4);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12688,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',36,null,548);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12689,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',36,null,542);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12690,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,140,56,'DRAFT',36,null,6);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12691,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',36,null,2);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12692,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',36,null,544);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12693,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',36,null,5);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12694,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),140,130,90,'DRAFT',36,null,543);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12695,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),130,120,50,'DRAFT',36,null,181);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12696,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',36,null,241);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12697,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',36,null,545);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12698,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',36,null,547);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12699,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,70,15,'DRAFT',36,null,11712);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12700,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',36,null,546);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12701,0,'2010',to_timestamp('08/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('06/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('11/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',36,null,549);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12424,3,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('16/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('16/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'VALIDATED',32,null,5);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12431,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),65,60,15,'DRAFT',32,null,11709);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12432,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',32,null,7);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12433,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',32,null,541);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12434,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),70,50,15,'DRAFT',32,null,11710);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12435,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,50,15,'DRAFT',32,null,11711);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12436,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,150,100,'DRAFT',32,null,1);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12437,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),125,120,80,'DRAFT',32,null,4);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12438,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',32,null,548);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12439,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',32,null,542);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12440,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,140,56,'DRAFT',32,null,6);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12441,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',32,null,2);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12442,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',32,null,544);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12443,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),140,130,90,'DRAFT',32,null,543);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12444,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),130,120,50,'DRAFT',32,null,181);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12445,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',32,null,241);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12446,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',32,null,545);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12447,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',32,null,547);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12448,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,70,15,'DRAFT',32,null,11712);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12449,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',32,null,546);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12450,0,'2010',to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',32,null,549);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12784,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',37,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12785,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),65,60,15,'DRAFT',37,null,11709);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12786,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',37,null,7);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12787,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',37,null,541);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12788,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),70,50,15,'DRAFT',37,null,11710);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12789,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,50,15,'DRAFT',37,null,11711);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12790,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,150,100,'DRAFT',37,null,1);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12791,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),125,120,80,'DRAFT',37,null,4);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12792,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',37,null,548);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12793,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),60,50,25,'DRAFT',37,null,542);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12794,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,140,56,'DRAFT',37,null,6);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12795,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),150,120,100,'DRAFT',37,null,2);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12796,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',37,null,544);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12797,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',37,null,5);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12798,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),140,130,90,'DRAFT',37,null,543);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12799,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),130,120,50,'DRAFT',37,null,181);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12360,14,'2010',to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('15/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('09/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'VALIDATED',32,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12800,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',37,null,241);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12801,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),170,150,100,'DRAFT',37,null,545);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12802,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',37,null,547);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12803,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),80,70,15,'DRAFT',37,null,11712);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12804,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',37,null,546);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12805,0,'2010',to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('13/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/09/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,0,0,'DRAFT',37,null,549);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12541,0,'2010',to_timestamp('22/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('16/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('21/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',33,null,3);
+Insert into TIMESHEETS (ID,VERSION,EXERCISE,CREATEDATE,UPDATEDATE,ACCEPTEDDATE,REJECTEDDATE,SUBMITDATE,VALIDATIONDATE,STARTDATEOFWEEK,ENDDATEOFWEEK,PRIXVENTE,PRIXREVIENT,COUTHORAIRE,STATUS,WEEKNUMBER,FK_EMPLOYEE,USERID) values (12608,0,'2010',to_timestamp('27/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null,null,null,null,to_timestamp('23/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),120,100,90,'DRAFT',34,null,3);
+
+---------------------------------------------------
+--   END DATA FOR TABLE TIMESHEETS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE CUSTOMERS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into CUSTOMERS
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (4,'contact@europarl.eu.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','EUROPEAN PARLIAMENT-supermarket    
+',null,null,null,'EUROPEAN PARLIAMENT-supermarket',null,'+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','6666',1,3,2,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (6,'contact@europarl.eu.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','HOLDUN SA
+',null,null,null,'HOLDUN SA','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','9280',0,7,4,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (7,'contact@europarl.eu.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Scancargo SA',null,null,null,'Scancargo SA','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','9281',1,7,3,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (8,'Luxys SA',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Luxys SA
+',null,null,null,'Luxys SA',null,'+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','9282',1,3,5,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (9,'contact@email.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Easy Distribution SA (ex EASYCARS SA)
+',null,null,null,'Easy Distribution SA (ex EASYCARS SA)','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'contact@email.lu','9283',1,2,3,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (10,'contact@email.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Weisgerber Expertise
+',null,null,null,'Weisgerber Expertise','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'contact@email.lu','9284',1,1,4,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (11,'contact@email.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','HERMES PARTNERS TRUST SERVICES SA
+',null,null,null,'HERMES PARTNERS TRUST SERVICES SA',null,'+352 44 10 12 20000',null,null,null,'contact@email.lu','9286',1,2,3,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (12,'contact@email.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Intruma Corporate Services SA
+',null,null,null,'Intruma Corporate Services SA','+352 44 10 12 20000','+352 44 10 12 20000',null,null,null,'contact@email.lu','9287',1,1,3,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (13,'contact@email.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Summerwind SA
+',null,null,null,'Summerwind SA',null,'+352 44 10 12 2000',null,null,null,'contact@email.lu','9289',2,3,3,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (14,'contact@email.fr',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','APKieffer
+',null,null,null,'APKieffer',null,'+352 44 10122000',null,null,null,'contact@email.fr','9290',2,7,3,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (17,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Laurad Holding
+',null,null,null,'Laurad Holding',null,'+333 87 96 368542',null,null,null,'contact@email.fr','9293',2,3,3,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (1,'europarl.eu.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','EUROPEAN PARLIAMENT-Imprest qtrly reviews    
+',null,null,null,'EUROPEAN PARLIAMENT-Imprest qtrly reviews','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','6363',1,1,3,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (5,'contact@europarl.eu.lu',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','HPMC1 Sàrl
+',null,null,null,'HPMC1 Sàrl',null,'+352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','9000',1,2,6,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (650,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'SABLIERE HEIN SA',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','10388',2,7,1,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (651,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DIMPEX SA',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','82633',2,2,2,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (652,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'GULF OIL INTERNATIONAL LTD',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','11261',3,7,3,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (653,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'BORG LUXEMBOURG SA',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','16000',3,3,4,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (654,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'GAMET INVESTMENT SA',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','12084',2,1,5,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (655,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Fournisseur de sable',to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/05/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'LUXLAIT SA',null,'20.45.96.369',null,null,null,'a.marx@sabliere.lu','12085',2,1,6,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (2,'0352 44 10 12 2000',1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','EUROPEAN PARLIAMENT-canteen    
+',null,null,null,'EUROPEAN PARLIAMENT-canteen','0352 44 10 12 2000','0352 44 10 12 2000',null,null,null,'contact@europarl.eu.lu','6464',1,1,5,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (3,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Activity',null,null,null,'ANGLESEA CAPITAL SA','+352 44 10 12 2000','+352 44 10 12 2000',null,null,null,'example@server.lu','6565',2,2,2,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (15,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Caryos SA',null,null,null,'Caryos SA',null,'+352 44 10 12 2000',null,null,null,'contact.email@wanadoo.fr','9291',1,2,3,5);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (16,null,1,'FR','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Cologic
+',null,null,null,'Cologic',null,'+ 333 45 96 33210254',null,null,null,'contact.email@pt.lu','9292',1,3,4,4);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (18,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','MATSA SA
+',null,null,null,'MATSA SA',null,'+333 98 75 963210',null,null,null,'contact@email.fr','9294',1,7,2,6);
+Insert into CUSTOMERS (ID,WEB_ADDRESS,ACTIVE,COUNTRY,MAINADDRESS,MAINBILLINGADDRESS,ACTIVITY,CREATEDATE,UPDATEDATE,UPDATEDUSER,COMPY_NAME,FAX,PHONE,MOBILE,P_PHONE,P_MOBILE,EMAIL,CODE,VERSION,FK_ASSOCIE,FK_ORIGIN,FK_MANAGER) values (19,null,1,'LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','Parfimat SA
+',null,null,null,'Parfimat SA',null,'+352 44 52 69 78',null,null,null,'contactemail@sa.kh','9296',1,1,5,5);
+
+---------------------------------------------------
+--   END DATA FOR TABLE CUSTOMERS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE USER_ACTIONS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into USER_ACTIONS
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10743,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',10741,to_timestamp('19/06/10 21:10:36,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10749,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',10721,to_timestamp('19/06/10 21:26:14,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10751,'ENVOI FACTURE','com.interaudit.domain.model.Invoice',10721,to_timestamp('19/06/10 21:26:22,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10754,'ENREGISTREMENT PAYMENT P_F-10/001_1','com.interaudit.domain.model.Invoice',10721,to_timestamp('19/06/10 21:27:01,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10756,'ENREGISTREMENT PAYMENT P_F-10/001_2','com.interaudit.domain.model.Invoice',10721,to_timestamp('19/06/10 21:27:28,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10758,'ENREGISTREMENT PAYMENT P_F-10/002_2','com.interaudit.domain.model.Invoice',10741,to_timestamp('19/06/10 21:27:54,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10742,'CREATION FACTURE','com.interaudit.domain.model.Invoice',10741,to_timestamp('19/06/10 19:02:36,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10782,'CREATION FACTURE','com.interaudit.domain.model.Invoice',10781,to_timestamp('20/06/10 07:29:45,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10783,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',10781,to_timestamp('20/06/10 07:32:01,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10785,'ENVOI FACTURE','com.interaudit.domain.model.Invoice',10781,to_timestamp('20/06/10 07:32:17,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10798,'CREATION FACTURE','com.interaudit.domain.model.Invoice',10797,to_timestamp('20/06/10 13:18:48,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12021,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',12002,to_timestamp('18/07/10 06:50:45,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12124,'ENREGISTREMENT PAYMENT P_F-10/003_1','com.interaudit.domain.model.Invoice',10781,to_timestamp('18/07/10 18:55:31,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12201,'ENVOI FACTURE','com.interaudit.domain.model.Invoice',12083,to_timestamp('25/07/10 06:34:15,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12204,'ENREGISTREMENT PAYMENT P_F-10/006_1','com.interaudit.domain.model.Invoice',12083,to_timestamp('25/07/10 06:36:00,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12206,'ENREGISTREMENT PAYMENT P_F-10/003_2','com.interaudit.domain.model.Invoice',10781,to_timestamp('25/07/10 09:25:10,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12343,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12342,to_timestamp('14/08/10 18:58:47,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10748,'ENREGISTREMENT PAYMENT P_F-10/002_1','com.interaudit.domain.model.Invoice',10741,to_timestamp('19/06/10 21:11:18,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10799,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',10797,to_timestamp('20/06/10 13:19:04,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10722,'CREATION FACTURE','com.interaudit.domain.model.Invoice',10721,to_timestamp('19/06/10 06:24:30,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10745,'ENVOI FACTURE','com.interaudit.domain.model.Invoice',10741,to_timestamp('19/06/10 21:11:02,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (10801,'ENVOI FACTURE','com.interaudit.domain.model.Invoice',10797,to_timestamp('20/06/10 13:19:19,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12084,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12083,to_timestamp('18/07/10 08:21:33,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12085,'APPROBATION FACTURE','com.interaudit.domain.model.Invoice',12083,to_timestamp('18/07/10 08:23:30,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12109,'RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10781,to_timestamp('18/07/10 08:49:59,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12111,'RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10797,to_timestamp('18/07/10 08:49:59,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12112,'PROLONGATION RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10781,to_timestamp('18/07/10 11:48:07,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12113,'DESACTIVATION RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10797,to_timestamp('18/07/10 11:52:11,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12115,'RAPPEL FACTURE : 2','com.interaudit.domain.model.Invoice',10797,to_timestamp('18/07/10 11:52:18,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12119,'ENREGISTREMENT PAYMENT P_F-10/005_2','com.interaudit.domain.model.Invoice',12002,to_timestamp('18/07/10 12:29:44,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12117,'ENREGISTREMENT PAYMENT P_F-10/005_1','com.interaudit.domain.model.Invoice',12002,to_timestamp('18/07/10 12:29:20,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12003,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12002,to_timestamp('17/07/10 06:18:11,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12141,'PROLONGATION RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10781,to_timestamp('20/07/10 05:54:48,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12502,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12501,to_timestamp('21/08/10 20:54:09,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12781,'DESACTIVATION RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10781,to_timestamp('18/09/10 09:14:12,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12783,'RAPPEL FACTURE : 13','com.interaudit.domain.model.Invoice',10781,to_timestamp('18/09/10 09:14:12,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12122,'ENREGISTREMENT PAYMENT P_F-10/004_1','com.interaudit.domain.model.Invoice',10797,to_timestamp('18/07/10 18:52:50,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12161,'PROLONGATION RAPPEL FACTURE : 1','com.interaudit.domain.model.Invoice',10781,to_timestamp('24/07/10 02:41:32,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12462,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12461,to_timestamp('16/08/10 07:13:33,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+Insert into USER_ACTIONS (ID,ACTION,ENTITYCLASSNAME,ENTITYID,TIME,FK_EMPLOYEE) values (12482,'CREATION FACTURE','com.interaudit.domain.model.Invoice',12481,to_timestamp('16/08/10 20:07:28,000000000','DD/MM/RR HH24:MI:SS,FF'),3);
+
+---------------------------------------------------
+--   END DATA FOR TABLE USER_ACTIONS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE DOCS_INVOICES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into DOCS_INVOICES
+
+---------------------------------------------------
+--   END DATA FOR TABLE DOCS_INVOICES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE CONTRACTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into CONTRACTS
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (1,'CARYOSSA_1','Caryos SA mission',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',12000,'EUR',0,'RA',0,15);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (21,'ANGLESEACAPITALSA_1','ANGLESEA CAPITAL SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('22/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',12300,'EUR',1,'CONSO',1,3);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (22,'APKIEFFER_1','APKieffer',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',4500,'EUR',0,'MCOMM',1,14);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (23,'BORGLUXEMBOURGSA_1','BORG LUXEMBOURG SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',4698,'EUR',0,'RC',1,653);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (24,'COLOGIC_1','Cologic',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',4598,'EUR',1,'MISSPE',1,16);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (25,'DIMPEXSA_1','DIMPEX SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',12560,'EUR',0,'RA',1,651);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (26,'EASYDISTRIBUTIONSA(EXEASYCARSSA)_1','Easy Distribution SA (ex EASYCARS SA)',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',25000,'EUR',0,'RC',1,9);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (27,'EUROPEANPARLIAMENT-CANTEEN_1','EUROPEAN PARLIAMENT-canteen',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',12000,'EUR',0,'RA',0,2);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (28,'EUROPEANPARLIAMENT-IMPRESTQTRLYREVIEWS_1','EUROPEAN PARLIAMENT-Imprest qtrly reviews',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',14500,'EUR',0,'MCOMM',1,1);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (29,'EUROPEANPARLIAMENT-SUPERMARKET_1','EUROPEAN PARLIAMENT-supermarket',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',15600,'EUR',0,'MISSPE',1,4);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (30,'GAMETINVESTMENTSA_1','GAMET INVESTMENT SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',6000,'EUR',0,'RC',1,654);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (32,'HERMESPARTNERSTRUSTSERVICESSA_1','HERMES PARTNERS TRUST SERVICES SA',to_timestamp('04/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',5360,'EUR',0,'AC',1,11);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (33,'HOLDUNSA_1','HOLDUN SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',8000,'EUR',0,'MCOMM',1,6);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (34,'HPMC1SÀRL_1','HPMC1 Sàrl',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',6000,'EUR',0,'CONSO',1,5);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (35,'INTRUMACORPORATESERVICESSA_1','Intruma Corporate Services SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',9870,'EUR',0,'MCOMM',1,12);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (36,'LAURADHOLDING_1','Laurad Holding',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',5600,'EUR',0,'AC',1,17);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (37,'LUXLAITSA_1','LUXLAIT SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',2000,'EUR',0,'RA',1,655);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (38,'LUXYSSA_1','Luxys SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',6300,'EUR',0,'AC',1,8);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (39,'MATSASA_1','MATSA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',7895,'EUR',0,'CONSO',1,18);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (40,'PARFIMATSA_1','Parfimat SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',8751,'EUR',0,'RC',1,19);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (41,'SABLIEREHEINSA_1','SABLIERE HEIN SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'DE',6987,'EUR',0,'RA',1,650);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (42,'SCANCARGOSA_1','Scancargo SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',9876,'EUR',0,'RC',1,7);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (43,'SUMMERWINDSA_1','Summerwind SA',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',9874,'EUR',0,'RA',1,13);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (44,'WEISGERBEREXPERTISE_1','Weisgerber Expertise',to_timestamp('01/01/09 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('01/01/11 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'FR',16000,'EUR',0,'CONSO',1,10);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (2,'GULFOILINTERNATIONALLTD_1','GULF OIL INTERNATIONAL LTD',to_timestamp('01/01/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',14500,'EUR',0,'AC',1,652);
+Insert into CONTRACTS (ID,REFERENCE,DESCRIPTION,FROMDATE,TODATE,DURATION,LANGUAGE,VAL,CUR,VERSION,MISSIONTYPE,AGREED,FK_CUSTOMER) values (232,'APKIEFFER_2','APKieffer',to_timestamp('01/01/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('31/12/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'EN',50000,'EUR',0,'MISSPE',1,14);
+
+---------------------------------------------------
+--   END DATA FOR TABLE CONTRACTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EVENT_PLANNING
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EVENT_PLANNING
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7081,2010,14,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7083,2010,14,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7084,2010,14,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7085,2010,14,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7086,2010,14,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7087,2010,14,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7088,2010,14,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7089,2010,14,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7090,2010,14,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7091,2010,14,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7092,2010,14,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7093,2010,14,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7094,2010,14,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7095,2010,14,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7096,2010,14,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7097,2010,14,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7098,2010,14,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (7099,2010,14,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8493,2010,22,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8495,2010,23,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8496,2010,24,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8497,2010,25,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8498,2010,26,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8499,2010,27,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8500,2010,28,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8501,2010,29,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8502,2010,30,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8503,2010,31,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8504,2010,32,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8505,2010,33,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8506,2010,34,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8507,2010,35,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8508,2010,22,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8509,2010,23,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8510,2010,24,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8511,2010,25,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8512,2010,26,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8513,2010,27,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8514,2010,28,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8515,2010,29,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8516,2010,30,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8517,2010,31,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8518,2010,32,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8519,2010,33,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8520,2010,34,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8521,2010,35,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8522,2010,22,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8523,2010,23,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8524,2010,24,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8525,2010,25,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8526,2010,26,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8527,2010,27,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8528,2010,28,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8529,2010,29,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8530,2010,30,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8531,2010,31,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8532,2010,32,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8533,2010,33,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8534,2010,34,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8535,2010,35,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8536,2010,22,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8537,2010,23,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8538,2010,24,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8539,2010,25,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8540,2010,26,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8541,2010,27,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8542,2010,28,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8543,2010,29,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8544,2010,30,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8545,2010,31,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8546,2010,32,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8547,2010,33,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8548,2010,34,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8549,2010,35,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8550,2010,22,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8551,2010,23,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8552,2010,24,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8553,2010,25,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8554,2010,26,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8555,2010,27,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8556,2010,28,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8557,2010,29,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8558,2010,30,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8559,2010,31,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8560,2010,32,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8561,2010,33,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8562,2010,34,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8563,2010,35,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8564,2010,22,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8565,2010,23,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8566,2010,24,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8567,2010,25,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8568,2010,26,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8569,2010,27,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8570,2010,28,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8571,2010,29,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8572,2010,30,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8573,2010,31,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8574,2010,32,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8575,2010,33,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8576,2010,34,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8577,2010,35,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8578,2010,22,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8579,2010,23,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8580,2010,24,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8581,2010,25,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8582,2010,26,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8583,2010,27,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8584,2010,28,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8585,2010,29,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8586,2010,30,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8587,2010,31,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8588,2010,32,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8589,2010,33,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8590,2010,34,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8591,2010,35,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8592,2010,22,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8593,2010,23,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8594,2010,24,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8595,2010,25,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8596,2010,26,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8597,2010,27,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8598,2010,28,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8599,2010,29,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8600,2010,30,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8601,2010,31,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8602,2010,32,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8603,2010,33,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8604,2010,34,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8605,2010,35,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8606,2010,22,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8607,2010,23,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8608,2010,24,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8609,2010,25,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8610,2010,26,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8611,2010,27,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8612,2010,28,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8613,2010,29,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8614,2010,30,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8615,2010,31,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8616,2010,32,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8617,2010,33,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8618,2010,34,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8619,2010,35,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8620,2010,22,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8621,2010,23,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8622,2010,24,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8623,2010,25,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8624,2010,26,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8625,2010,27,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8626,2010,28,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8627,2010,29,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8628,2010,30,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8629,2010,31,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8630,2010,32,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8631,2010,33,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8632,2010,34,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8633,2010,35,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8634,2010,22,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8635,2010,23,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8636,2010,24,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8637,2010,25,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8638,2010,26,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8639,2010,27,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8640,2010,28,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8641,2010,29,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8642,2010,30,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8643,2010,31,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8644,2010,32,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8645,2010,33,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8646,2010,34,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8647,2010,35,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8648,2010,22,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8649,2010,23,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8650,2010,24,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8651,2010,25,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8652,2010,26,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8653,2010,27,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8654,2010,28,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8655,2010,29,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8656,2010,30,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8657,2010,31,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8658,2010,32,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8659,2010,33,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8660,2010,34,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8661,2010,35,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8662,2010,22,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8663,2010,23,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8664,2010,24,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8665,2010,25,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8666,2010,26,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8667,2010,27,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8668,2010,28,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8669,2010,29,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8670,2010,30,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8671,2010,31,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8672,2010,32,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8673,2010,33,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8674,2010,34,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8675,2010,35,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8676,2010,22,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8677,2010,23,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8678,2010,24,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8679,2010,25,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8680,2010,26,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8681,2010,27,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8682,2010,28,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8683,2010,29,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8684,2010,30,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8685,2010,31,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8686,2010,32,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8687,2010,33,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8688,2010,34,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8689,2010,35,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8690,2010,22,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8691,2010,23,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8692,2010,24,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8693,2010,25,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8694,2010,26,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8695,2010,27,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8696,2010,28,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8697,2010,29,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8698,2010,30,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8699,2010,31,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8700,2010,32,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8701,2010,33,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8702,2010,34,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8703,2010,35,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8704,2010,22,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8705,2010,23,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8706,2010,24,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8707,2010,25,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8708,2010,26,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8709,2010,27,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8710,2010,28,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8711,2010,29,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8712,2010,30,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8713,2010,31,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8714,2010,32,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8715,2010,33,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8716,2010,34,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8717,2010,35,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8718,2010,22,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8719,2010,23,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8720,2010,24,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8721,2010,25,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8722,2010,26,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8723,2010,27,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8724,2010,28,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8725,2010,29,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8726,2010,30,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8727,2010,31,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8728,2010,32,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8729,2010,33,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8730,2010,34,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8731,2010,35,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8732,2010,22,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8733,2010,23,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8734,2010,24,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8735,2010,25,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8736,2010,26,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8737,2010,27,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8738,2010,28,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8739,2010,29,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8740,2010,30,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8741,2010,31,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8742,2010,32,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8743,2010,33,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8744,2010,34,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (8745,2010,35,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10983,2010,39,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10991,2010,39,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10995,2010,39,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11001,2010,45,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11003,2010,48,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11046,2010,36,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11601,2010,41,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11603,2010,41,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11604,2010,41,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11605,2010,41,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11606,2010,41,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11607,2010,41,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11608,2010,41,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11609,2010,41,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11610,2010,41,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11611,2010,41,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11612,2010,41,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11613,2010,41,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11614,2010,41,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11615,2010,41,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11616,2010,41,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11617,2010,41,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11618,2010,41,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11619,2010,41,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11836,2010,27,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11838,2010,27,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11839,2010,27,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11840,2010,27,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11877,2010,29,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11879,2010,29,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11880,2010,29,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11881,2010,29,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11918,2010,38,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11920,2010,38,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11921,2010,38,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6943,2010,15,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6945,2010,15,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6946,2010,15,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6947,2010,15,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6948,2010,15,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6949,2010,15,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6950,2010,15,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6951,2010,15,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6952,2010,15,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6953,2010,15,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6954,2010,15,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6955,2010,15,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6956,2010,15,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6957,2010,15,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6958,2010,15,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6959,2010,15,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6960,2010,15,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6961,2010,15,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11922,2010,38,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11938,2010,32,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11940,2010,32,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11941,2010,32,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11942,2010,32,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12395,2010,33,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12400,2010,33,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12402,2010,33,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12404,2010,33,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6353,2010,2,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6346,2010,1,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6350,2010,1,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6355,2010,3,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6356,2010,4,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6357,2010,5,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6358,2010,6,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6359,2010,7,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6360,2010,8,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6361,2010,9,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6362,2010,10,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6363,2010,11,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6364,2010,12,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6365,2010,13,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6366,2010,2,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6367,2010,3,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6368,2010,4,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6369,2010,5,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6370,2010,6,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6371,2010,7,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6372,2010,8,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6373,2010,9,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6374,2010,10,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6375,2010,11,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6376,2010,12,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6377,2010,13,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6378,2010,1,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6379,2010,2,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6380,2010,3,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6381,2010,4,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6382,2010,5,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6383,2010,6,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6384,2010,7,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6385,2010,8,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6386,2010,9,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6387,2010,10,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6388,2010,11,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6389,2010,12,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6390,2010,13,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6391,2010,1,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6392,2010,2,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6393,2010,3,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6394,2010,4,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6395,2010,5,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6396,2010,6,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6397,2010,7,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6398,2010,8,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6399,2010,9,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6400,2010,10,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6401,2010,11,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6402,2010,12,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6403,2010,13,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6404,2010,1,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6405,2010,2,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6406,2010,3,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6407,2010,4,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6408,2010,5,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6409,2010,6,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6410,2010,7,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6411,2010,8,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6412,2010,9,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6413,2010,10,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6414,2010,11,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6415,2010,12,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6416,2010,13,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6417,2010,1,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6418,2010,2,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6419,2010,3,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6420,2010,4,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6421,2010,5,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6422,2010,6,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6423,2010,7,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6424,2010,8,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6425,2010,9,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6426,2010,10,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6427,2010,11,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6428,2010,12,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6429,2010,13,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6430,2010,1,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6431,2010,2,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6432,2010,3,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6433,2010,4,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6434,2010,5,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6435,2010,6,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6436,2010,7,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6437,2010,8,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6438,2010,9,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6439,2010,10,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6440,2010,11,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6441,2010,12,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6442,2010,13,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6443,2010,1,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6444,2010,2,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6445,2010,3,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6446,2010,4,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6447,2010,5,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6448,2010,6,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6449,2010,7,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6450,2010,8,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6451,2010,9,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6452,2010,10,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6453,2010,11,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6454,2010,12,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6455,2010,13,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6456,2010,1,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6457,2010,2,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6458,2010,3,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6459,2010,4,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6460,2010,5,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6461,2010,6,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6462,2010,7,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6463,2010,8,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6464,2010,9,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6465,2010,10,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6466,2010,11,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6467,2010,12,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6468,2010,13,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6469,2010,1,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6470,2010,2,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6471,2010,3,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6472,2010,4,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6473,2010,5,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6474,2010,6,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6475,2010,7,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6476,2010,8,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6477,2010,9,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6478,2010,10,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6479,2010,11,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6480,2010,12,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6481,2010,13,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6482,2010,1,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6483,2010,2,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6484,2010,3,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6485,2010,4,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6486,2010,5,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6487,2010,6,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6488,2010,7,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6489,2010,8,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6490,2010,9,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6491,2010,10,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6492,2010,11,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6493,2010,12,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6494,2010,13,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6495,2010,1,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6496,2010,2,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6497,2010,3,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6498,2010,4,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6499,2010,5,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6500,2010,6,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6501,2010,7,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6502,2010,8,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6503,2010,9,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6504,2010,10,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6505,2010,11,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6506,2010,12,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6507,2010,13,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6508,2010,1,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6509,2010,2,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6510,2010,3,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6511,2010,4,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6512,2010,5,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6513,2010,6,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6514,2010,7,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6515,2010,8,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6516,2010,9,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6517,2010,10,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6518,2010,11,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6519,2010,12,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6520,2010,13,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6521,2010,1,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6522,2010,2,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6523,2010,3,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6524,2010,4,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6525,2010,5,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6526,2010,6,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6527,2010,7,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6528,2010,8,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6529,2010,9,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6530,2010,10,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6531,2010,11,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6532,2010,12,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6533,2010,13,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6534,2010,1,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6535,2010,2,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6536,2010,3,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6537,2010,4,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6538,2010,5,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6539,2010,6,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6540,2010,7,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6541,2010,8,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6542,2010,9,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6543,2010,10,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6544,2010,11,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6545,2010,12,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6546,2010,13,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6547,2010,1,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6548,2010,2,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6549,2010,3,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6550,2010,4,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6551,2010,5,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6552,2010,6,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6553,2010,7,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6554,2010,8,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6555,2010,9,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6556,2010,10,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6557,2010,11,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6558,2010,12,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6559,2010,13,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6560,2010,1,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6561,2010,2,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6562,2010,3,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6563,2010,4,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6564,2010,5,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6565,2010,6,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6566,2010,7,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6567,2010,8,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6568,2010,9,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6569,2010,10,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6570,2010,11,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6571,2010,12,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6572,2010,13,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6573,2010,1,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6574,2010,2,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6575,2010,3,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6576,2010,4,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6577,2010,5,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6578,2010,6,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6579,2010,7,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6580,2010,8,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6581,2010,9,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6582,2010,10,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6583,2010,11,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6584,2010,12,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (6585,2010,13,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11021,2010,39,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11022,2010,38,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11023,2010,37,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11025,2010,51,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11026,2010,52,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11795,2010,26,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11797,2010,26,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11798,2010,26,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11799,2010,26,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12595,2010,35,11712,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12600,2010,35,11710,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12602,2010,35,11711,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (12604,2010,35,11709,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10984,2010,39,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10985,2010,39,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10994,2010,39,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10996,2010,38,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (10999,2010,45,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11004,2010,45,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11007,2010,48,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11175,2010,36,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11177,2010,37,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11178,2010,38,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11179,2010,39,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11180,2010,36,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11181,2010,37,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11182,2010,38,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11183,2010,39,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11184,2010,36,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11185,2010,37,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11186,2010,38,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11187,2010,39,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11188,2010,36,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11189,2010,37,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11190,2010,38,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11191,2010,39,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11192,2010,36,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11193,2010,37,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11194,2010,38,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11195,2010,39,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11196,2010,36,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11197,2010,37,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11198,2010,38,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11199,2010,39,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11200,2010,36,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11201,2010,37,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11202,2010,38,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11203,2010,36,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11204,2010,37,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11205,2010,38,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11206,2010,39,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11207,2010,37,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11208,2010,38,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11209,2010,36,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11210,2010,37,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11211,2010,38,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11212,2010,36,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11213,2010,37,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11214,2010,38,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11215,2010,36,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11216,2010,37,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11217,2010,38,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11218,2010,39,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11219,2010,36,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11220,2010,37,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11221,2010,38,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11222,2010,39,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11223,2010,36,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11224,2010,36,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11225,2010,37,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11226,2010,39,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11227,2010,36,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11228,2010,37,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11229,2010,38,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11230,2010,39,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11231,2010,36,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11232,2010,37,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11233,2010,38,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11234,2010,39,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11235,2010,36,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11236,2010,37,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11237,2010,38,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11238,2010,39,541,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11491,2010,40,2,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11493,2010,40,1,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11494,2010,40,3,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11495,2010,40,7,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11496,2010,40,5,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11497,2010,40,6,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11498,2010,40,4,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11499,2010,40,543,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11500,2010,40,545,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11501,2010,40,542,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11502,2010,40,548,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11503,2010,40,241,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11504,2010,40,546,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11505,2010,40,549,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11506,2010,40,544,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11507,2010,40,547,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11508,2010,40,181,6268);
+Insert into EVENT_PLANNING (ID,YEAR,WEEKNUMBER,FK_EMPLOYEE,FK_PLANNING) values (11509,2010,40,541,6268);
+
+---------------------------------------------------
+--   END DATA FOR TABLE EVENT_PLANNING
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EVENTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EVENTS
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10010,2010,5,158,1,24,'HPMC1 Sàrl',null,to_timestamp('07/06/10 09:31:43,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,1,6270);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10011,2010,5,159,25,40,'HPMC1 Sàrl',null,to_timestamp('08/06/10 09:31:59,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,1,6270);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10012,2010,5,160,1,28,'SABLIERE HEIN SA',null,to_timestamp('09/06/10 09:32:14,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,1,6276);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10013,2010,5,161,4,20,'Luxys SA',null,to_timestamp('10/06/10 09:32:28,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,1,6280);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10014,2010,5,159,1,20,'Cologic',null,to_timestamp('08/06/10 09:32:45,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,1,6288);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12562,2010,7,236,0,4,'BORG LUXEMBOURG SA',null,to_timestamp('24/08/10 00:30:09,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6290);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (9320,2010,4,151,1,18,'Cologic','01 45 78 96633 ',to_timestamp('31/05/10 06:06:08,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,null,0,6288);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (9321,2010,4,151,25,44,'HPMC1 Sàrl',null,to_timestamp('31/05/10 06:06:24,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,null,0,6270);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6722,2010,0,4,2,16,'HPMC1 Sàrl',null,to_timestamp('04/01/10 06:35:45,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,null,0,6270);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6721,2010,0,4,1,14,'SABLIERE HEIN SA','undefined',to_timestamp('04/01/10 06:35:07,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6276);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6723,2010,0,5,3,20,'Luxys SA',null,to_timestamp('05/01/10 06:36:08,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,null,0,6280);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6724,2010,0,6,21,40,'Caryos SA',null,to_timestamp('06/01/10 06:36:21,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,null,0,6274);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6725,2010,0,7,1,32,'Datev',null,to_timestamp('07/01/10 06:36:54,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,62777,0,null);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6728,2010,0,8,8,28,'Revue','undefined',to_timestamp('08/01/10 06:59:27,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,62850,0,null);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6727,2010,0,6,1,20,'Public Relations','undefined',to_timestamp('06/01/10 06:39:18,000000000','DD/MM/RR HH24:MI:SS,FF'),2,null,62794,0,null);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10661,2010,5,165,4,14,'HPMC1 Sàrl',null,to_timestamp('14/06/10 19:58:34,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6270);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10662,2010,5,165,17,38,'Scancargo SA','undefined',to_timestamp('14/06/10 19:58:44,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6282);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10663,2010,5,166,1,24,'Luxys SA','undefined',to_timestamp('15/06/10 19:59:03,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6280);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10664,2010,5,167,6,50,'Scancargo SA',null,to_timestamp('16/06/10 19:59:59,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6282);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10665,2010,5,168,2,28,'BORG LUXEMBOURG SA','undefined',to_timestamp('17/06/10 20:00:26,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6290);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10666,2010,5,169,1,32,'Luxys SA',null,to_timestamp('18/06/10 20:00:44,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6280);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10667,2010,5,168,30,42,'Cologic',null,to_timestamp('17/06/10 20:05:30,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6288);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12004,2010,7,222,4,22,'DIMPEX SA',null,to_timestamp('10/08/10 06:58:56,000000000','DD/MM/RR HH24:MI:SS,FF'),543,null,null,0,6294);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12421,2010,7,222,5,28,'DIMPEX SA','06 30 56 89 74',to_timestamp('10/08/10 08:05:29,000000000','DD/MM/RR HH24:MI:SS,FF'),5,null,null,0,6294);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12422,2010,7,223,2,28,'HOLDUN SA',null,to_timestamp('11/08/10 08:05:55,000000000','DD/MM/RR HH24:MI:SS,FF'),5,null,null,0,6292);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12423,2010,7,224,2,26,'HERMES PARTNERS TRUST SERVICES SA',null,to_timestamp('12/08/10 08:06:15,000000000','DD/MM/RR HH24:MI:SS,FF'),5,null,null,0,6302);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12561,2010,7,236,7,25,'ANGLESEA CAPITAL SA',null,to_timestamp('24/08/10 00:29:54,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6284);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (11163,2010,5,179,1,38,'MATSA SA','06 32 65 48 79',to_timestamp('28/06/10 13:08:09,000000000','DD/MM/RR HH24:MI:SS,FF'),6,null,null,0,6312);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (11164,2010,5,181,8,26,'HERMES PARTNERS TRUST SERVICES SA','ras',to_timestamp('30/06/10 13:08:50,000000000','DD/MM/RR HH24:MI:SS,FF'),6,null,null,0,6302);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (11574,2010,6,186,3,28,'Caryos SA',null,to_timestamp('05/07/10 14:10:18,000000000','DD/MM/RR HH24:MI:SS,FF'),541,null,null,0,6274);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (11575,2010,6,186,4,28,'ANGLESEA CAPITAL SA',null,to_timestamp('05/07/10 14:11:31,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6284);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6729,2010,0,11,1,5,'Caryos SA',null,to_timestamp('11/01/10 07:01:05,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6274);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6730,2010,0,12,1,40,'Conge legal','undefined',to_timestamp('12/01/10 07:01:22,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,62801,0,null);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (6741,2010,0,6,3,24,'APKieffer',null,to_timestamp('06/01/10 22:06:54,000000000','DD/MM/RR HH24:MI:SS,FF'),543,null,null,0,6286);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (10803,2010,5,174,5,9,'Conge legal','je pars en vacances',to_timestamp('23/06/10 15:29:21,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,62801,0,null);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (11778,2010,6,200,4,27,'APKieffer','01 45 78 96 96',to_timestamp('19/07/10 21:41:08,000000000','DD/MM/RR HH24:MI:SS,FF'),543,null,null,0,6286);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12345,2010,7,222,3,20,'DIMPEX SA',null,to_timestamp('10/08/10 19:01:13,000000000','DD/MM/RR HH24:MI:SS,FF'),3,null,null,0,6294);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12772,2010,8,256,0,16,'Cologic',null,to_timestamp('13/09/10 18:41:56,000000000','DD/MM/RR HH24:MI:SS,FF'),543,null,null,0,6288);
+Insert into EVENTS (ID,YEAR,MONTH,DAY,STARTHOUR,ENDHOUR,TYPE,TITLE,DATEOFEVENT,FK_EMPLOYEE,FK_MISSION,TASK_ID,VALID,FK_ACTIVITY) values (12773,2010,8,257,1,34,'Caryos SA',null,to_timestamp('14/09/10 18:42:24,000000000','DD/MM/RR HH24:MI:SS,FF'),543,null,null,0,6274);
+
+---------------------------------------------------
+--   END DATA FOR TABLE EVENTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE DOCUMENTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into DOCUMENTS
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (6627,'showAgendaPage[1].htm','description du document',to_timestamp('31/05/10 06:31:25,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'titre du document',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10787,'showAgendaPage[1].htm','description',to_timestamp('20/06/10 07:40:54,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'recapitulatif',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10788,'showAgendaPage[1].htm','ddggf',to_timestamp('20/06/10 07:43:10,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'ddfdg',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10789,'showAgendaPage[1].htm','tryr',to_timestamp('20/06/10 07:49:20,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'trrty',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10790,'showAgendaPage[1].htm','luii',to_timestamp('20/06/10 08:35:54,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'ouyio',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10791,'showAgendaPage[1].htm','dqsffsds',to_timestamp('20/06/10 08:39:59,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'sdssqd',0,2);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10792,'showAgendaPage[1].htm','dfssdfdfs',to_timestamp('20/06/10 08:42:29,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'sddfqs',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (10903,'jvahome.txt','Ce document décrit la reforme budgetaire',to_timestamp('23/06/10 15:39:15,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'reforme budgetaire',0,3);
+Insert into DOCUMENTS (ID,FILE_NAME,DESCRIPTION,CREATEDATE,UPDATEDATE,TITLE,VERSION,OWNER) values (11565,'showAgendaPage[1].htm','ed',to_timestamp('09/07/10 14:00:12,000000000','DD/MM/RR HH24:MI:SS,FF'),null,'mon doc',0,5);
+
+---------------------------------------------------
+--   END DATA FOR TABLE DOCUMENTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE PAYMENTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into PAYMENTS
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (10757,'BGLLLULL','P_F-10/002_2','ANGLESEA CAPITAL SA',10400,'EUR',to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10741);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (10753,'bceelull','P_F-10/001_1','ANGLESEA CAPITAL SA',1500,'EUR',to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10721);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (10755,'BGLLLULL','P_F-10/001_2','ANGLESEA CAPITAL SA',1050,'EUR',to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10721);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12123,'bceelull','P_F-10/003_1','Cologic',220,'EUR',to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10781);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12203,'BGLLLULL','P_F-10/006_1','Caryos SA',2533,45,'EUR',to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,12083);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12205,'bceelull','P_F-10/003_2','Cologic',300,'EUR',to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10781);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (10747,'BGLLLULL','P_F-10/002_1','ANGLESEA CAPITAL SA',1250,'EUR',to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10741);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12116,'BGLLLULL','P_F-10/005_1','Laurad Holding',1100,'EUR',to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,12002);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12118,'BGLLLULL','P_F-10/005_2','Laurad Holding',200,'EUR',to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,12002);
+Insert into PAYMENTS (ID,CODE,REFERENCE,CUSTOMERNAME,AMOUNT,CURRENCY,PAYMENTDATE,VERSION,FK_FACTURE) values (12121,'BGLLLULL','P_F-10/004_1','Cologic',5000,'EUR',to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,10797);
+
+---------------------------------------------------
+--   END DATA FOR TABLE PAYMENTS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE INVOICES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into INVOICES
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (10781,52,'AD','EUR','2010','Avance',952,2,'F-10/003','sent','FR','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','9292','Cologic',3,6287,3,1,437,'EN',15,15,1,303,828,828,to_timestamp('20/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('20/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null);
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (10741,4,'FB','EUR','2010','Facture finale',11598,9,'F-10/002','paid','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','6565','ANGLESEA CAPITAL SA',2,6283,3,1,261,'EN',15,15,1,303,10086,12300,to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (10797,39,'FB','EUR','2010','Facture finale',4335,5,'F-10/004','paid','FR','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','9292','Cologic',3,6287,3,1,437,'EN',15,15,1,303,3770,4598,to_timestamp('20/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('20/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12342,0,'AD','EUR','2010','Avance',2651,9,'F-10/007','pending','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','82633','DIMPEX SA',2,6293,3,0,12341,'EN',15,15,0,303,2306,2306,to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null);
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12083,3,'AD','EUR','2010','Avance',2533,45,'F-10/006','paid','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','9291','Caryos SA',2,6273,3,1,216,'EN',15,15,1,303,2203,2203,to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (10721,6,'AD','EUR','2010','Avance',2546,1,'F-10/001','paid','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','6565','ANGLESEA CAPITAL SA',2,6283,3,1,222,'EN',15,15,1,303,2214,2214,to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('19/06/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('25/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12002,4,'AD','EUR','2010','Avance',1182,2,'F-10/005','paid','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','9293','Laurad Holding',3,6317,3,1,12001,'EN',15,15,1,303,1028,1028,to_timestamp('17/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('18/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'));
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12501,0,'AD','EUR','2010','Avance',1380,'F-10/010','pending','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','9291','Caryos SA',2,6273,3,0,216,'EN',15,15,0,302,1200,1200,to_timestamp('21/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null);
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12481,0,'FB','EUR','2010','Facture finale',9429,07972450255,'F-10/009','pending','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','82633','DIMPEX SA',2,6293,3,0,12341,'EN',15,15,0,302,8199,199760437,12811,199760437,to_timestamp('16/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null);
+Insert into INVOICES (ID,VERSION,TYPE,CURRENCY,YEAR,LIBELLE,AMOUNT,REFERENCE,STATUS,PAYS,BILLADDRESS,CUSTCODE,CUSTNAME,FK_PARTNER,PROJECT_ID,FK_CREATOR,APPROVED,CONTACT_ID,LANGUAGE,TVA,DELAIPAIEMENT,SENT,BANK_ID,AMOUNT_NET,HONORAIRES,DATEFACTURE,SENTDATE,DATEOFPAYMENT) values (12461,0,'AD','EUR','2010','Avance',2651,9,'F-10/008','pending','LU','Rue J.P Bausch
+L-4023 ESCH-SUR-ALZETTE','82633','DIMPEX SA',2,6293,3,0,12341,'EN',15,15,0,303,2306,2306,to_timestamp('16/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),null,null);
+
+---------------------------------------------------
+--   END DATA FOR TABLE INVOICES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE CONTACTS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into CONTACTS
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (216,'Manason','Georges','Manason','senior engineer','+ 33 52 78 96 65 87',null,null,'+ 33 52 78 96 65 87','+ 33 52 78 96 65 87','contact.email@wanadoo.fr','georges.manasson@caryos.lu',null,1,'Caryos SA',null,'Caryos SA',null,to_timestamp('14/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,15,'M');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (222,'jones','brian','jones','commercial','+333 66 96 78 45',null,null,'+333 66 96 78 45','+333 66 96 78 45','example@server.lu','brian.jones@anglesacapitalsa.lu',null,1,'Activity',null,'ANGLESEA CAPITAL SA',null,to_timestamp('14/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,3,'M');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (302,'jenkins','bobby','jenkins','manager','+33 54 69 63',null,null,'+33 54 69 63','+33 54 69 63','a.marx@sabliere.lu','bobby.jenkins@borg.lu',null,1,'Fournisseur de sable',null,'BORG LUXEMBOURG SA',null,to_timestamp('20/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('20/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,653,'M');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (437,'Harrison','james','Harrison','Manager','+ 56 78 96 333',null,null,'+ 56 78 96 333','+ 56 78 96 333','contact.email@pt.lu','james.harrisson@cologic.lu',null,1,'Cologic
+',null,'Cologic',null,to_timestamp('28/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('28/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,16,'M');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (12341,'edwards','john ','edwards','manager','12 45 78 96',null,null,'12 45 78 96','12 45 78 96','a.marx@sabliere.lu','john .edawards@ekolux.com',null,1,'Fournisseur de sable',null,'DIMPEX SA',null,to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/08/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,651,'F');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (233,'Jones','Brian','Jones','Commercial','1245633',null,null,'1245633','1245633','contact@europarl.eu.lu','brian.jones@fortis.lu',null,1,'EUROPEAN PARLIAMENT-Imprest qtrly reviews    
+',null,'EUROPEAN PARLIAMENT-Imprest qtrly reviews',null,to_timestamp('10/01/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('14/03/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),2,1,'F');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (261,'Clark','Jones','Clark','Commercial','12 30 45 69',null,null,'12 30 45 69','12 30 45 69','example@server.lu','jones.clark@sgbt.lu',null,1,'Activity',null,'ANGLESEA CAPITAL SA',null,to_timestamp('15/01/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('29/04/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),1,3,'F');
+Insert into CONTACTS (ID,NAME,F_NAME,L_NAME,JOB,B_PHONE,B_MOBILE,B_FAX,P_PHONE,P_MOBILE,B_EMAIL,P_EMAIL,B_WEB_ADDR,ACTIVE,B_ACTIVITY,UPDATEDUSER,COMPANY,ADDRESS,CREATEDATE,UPDATEDATE,VERSION,FK_CUSTOMER,SEX) values (12001,'bean','larry','bean','manager','41 56 78 96',null,null,'41 56 78 96','45 963 12','contact@email.fr','larry.bean@lauradHolding.lu',null,1,'Laurad Holding
+',null,'Laurad Holding',null,to_timestamp('17/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),to_timestamp('17/07/10 00:00:00,000000000','DD/MM/RR HH24:MI:SS,FF'),0,17,'M');
+
+---------------------------------------------------
+--   END DATA FOR TABLE CONTACTS
+---------------------------------------------------
+--------------------------------------------------------
+--  Constraints for Table ACCESS_RIGHTS
+--------------------------------------------------------
+
+  ALTER TABLE "ACCESS_RIGHTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACCESS_RIGHTS" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACCESS_RIGHTS" MODIFY ("FK_RIGHT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACCESS_RIGHTS" MODIFY ("FK_EMPLOYEE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACCESS_RIGHTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table ACTIVITIES
+--------------------------------------------------------
+
+  ALTER TABLE "ACTIVITIES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACTIVITIES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACTIVITIES" MODIFY ("STARTDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ACTIVITIES" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table BANKS
+--------------------------------------------------------
+
+  ALTER TABLE "BANKS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BANKS" MODIFY ("NAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BANKS" MODIFY ("CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BANKS" MODIFY ("ACCOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BANKS" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BANKS" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "BANKS" ADD UNIQUE ("NAME") ENABLE;
+ 
+  ALTER TABLE "BANKS" ADD UNIQUE ("CODE") ENABLE;
+ 
+  ALTER TABLE "BANKS" ADD UNIQUE ("ACCOUNT") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table BUDGETS
+--------------------------------------------------------
+
+  ALTER TABLE "BUDGETS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("EXP_AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("FIABLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("FK_ASSOCIE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("FK_CONTRACT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("FK_MANAGER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" MODIFY ("FK_EXERCISE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "BUDGETS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table COMMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "COMMENTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMMENTS" MODIFY ("FK_EMPLOYEE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMMENTS" MODIFY ("FK_TIMESHEET" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMMENTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CONTACTS
+--------------------------------------------------------
+
+  ALTER TABLE "CONTACTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("NAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("F_NAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("L_NAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("P_PHONE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("COMPANY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" MODIFY ("FK_CUSTOMER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTACTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CONTRACTS
+--------------------------------------------------------
+
+  ALTER TABLE "CONTRACTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTRACTS" MODIFY ("VAL" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTRACTS" MODIFY ("CUR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTRACTS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTRACTS" MODIFY ("MISSIONTYPE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CONTRACTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CUSTOMERS
+--------------------------------------------------------
+
+  ALTER TABLE "CUSTOMERS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" MODIFY ("CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" MODIFY ("FK_ASSOCIE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" MODIFY ("FK_MANAGER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "CUSTOMERS" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "CUSTOMERS" ADD UNIQUE ("COMPY_NAME") ENABLE;
+ 
+  ALTER TABLE "CUSTOMERS" ADD UNIQUE ("CODE") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table DECLARATIONS
+--------------------------------------------------------
+
+  ALTER TABLE "DECLARATIONS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DECLARATIONS" MODIFY ("DECLARATION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DECLARATIONS" MODIFY ("PASSPORT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DECLARATIONS" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DECLARATIONS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table DOCS_INVOICES
+--------------------------------------------------------
+
+  ALTER TABLE "DOCS_INVOICES" MODIFY ("ID_INVOICE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCS_INVOICES" MODIFY ("ID_DOCUMENT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table DOCS_MISSIONS
+--------------------------------------------------------
+
+  ALTER TABLE "DOCS_MISSIONS" MODIFY ("ID_MISSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCS_MISSIONS" MODIFY ("ID_DOCUMENT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCS_MISSIONS" ADD PRIMARY KEY ("ID_MISSION", "ID_DOCUMENT") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table DOCUMENT_INVOICES
+--------------------------------------------------------
+
+  ALTER TABLE "DOCUMENT_INVOICES" MODIFY ("DOCUMENT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCUMENT_INVOICES" MODIFY ("INVOICE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCUMENT_INVOICES" ADD PRIMARY KEY ("DOCUMENT_ID", "INVOICE_ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table DOCUMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "DOCUMENTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCUMENTS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "DOCUMENTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EMAIL_DATA
+--------------------------------------------------------
+
+  ALTER TABLE "EMAIL_DATA" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMAIL_DATA" MODIFY ("FK_SENDER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMAIL_DATA" MODIFY ("FK_RECEIVER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMAIL_DATA" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EMPLOYEES
+--------------------------------------------------------
+
+  ALTER TABLE "EMPLOYEES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMPLOYEES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMPLOYEES" MODIFY ("PRIXVENTE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMPLOYEES" MODIFY ("PRIXREVIENT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMPLOYEES" MODIFY ("COUTHORAIRE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EMPLOYEES" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "EMPLOYEES" ADD UNIQUE ("LOGIN") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EVENT_PLANNING
+--------------------------------------------------------
+
+  ALTER TABLE "EVENT_PLANNING" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENT_PLANNING" MODIFY ("YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENT_PLANNING" MODIFY ("WEEKNUMBER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENT_PLANNING" MODIFY ("FK_EMPLOYEE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENT_PLANNING" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EVENTS
+--------------------------------------------------------
+
+  ALTER TABLE "EVENTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("MONTH" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("DAY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("STARTHOUR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("ENDHOUR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" MODIFY ("FK_EMPLOYEE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EVENTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EXERCISES
+--------------------------------------------------------
+
+  ALTER TABLE "EXERCISES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("ISAPPPROVED" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("TOT_EXP_AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("INFLATIONPERCENTAGE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" MODIFY ("TOT_REP_AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "EXERCISES" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "EXERCISES" ADD UNIQUE ("YEAR") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table INVOICE_FEES
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICE_FEES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_FEES" MODIFY ("VALUE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_FEES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_FEES" MODIFY ("FK_FACTURE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_FEES" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table INVOICE_REMINDS
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICE_REMINDS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_REMINDS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_REMINDS" MODIFY ("FK_FACTURE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICE_REMINDS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table INVOICES
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("CURRENCY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("LIBELLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("REFERENCE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("PAYS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("BILLADDRESS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("CUSTCODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("CUSTNAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("FK_PARTNER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" MODIFY ("FK_CREATOR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "INVOICES" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICES" ADD UNIQUE ("REFERENCE") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table ITEM_EVENT_PLANNING
+--------------------------------------------------------
+
+  ALTER TABLE "ITEM_EVENT_PLANNING" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ITEM_EVENT_PLANNING" MODIFY ("MISSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ITEM_EVENT_PLANNING" MODIFY ("FK_EVENTPLANNING" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ITEM_EVENT_PLANNING" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table MESSAGE
+--------------------------------------------------------
+
+  ALTER TABLE "MESSAGE" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MESSAGE" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table MISSION_COSTS
+--------------------------------------------------------
+
+  ALTER TABLE "MISSION_COSTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSION_COSTS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSION_COSTS" MODIFY ("AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSION_COSTS" MODIFY ("CURRENCY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSION_COSTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table MISSIONS
+--------------------------------------------------------
+
+  ALTER TABLE "MISSIONS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" MODIFY ("REFER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" MODIFY ("COMMENTS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" MODIFY ("CREATEDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" MODIFY ("TYP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table MISSIONTYPE_TASK
+--------------------------------------------------------
+
+  ALTER TABLE "MISSIONTYPE_TASK" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "MISSIONTYPE_TASK" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table ORIGINS
+--------------------------------------------------------
+
+  ALTER TABLE "ORIGINS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ORIGINS" MODIFY ("NAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ORIGINS" MODIFY ("CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "ORIGINS" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "ORIGINS" ADD UNIQUE ("CODE") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table PAYMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "PAYMENTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("REFERENCE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("CUSTOMERNAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("AMOUNT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("CURRENCY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("PAYMENTDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" MODIFY ("FK_FACTURE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PAYMENTS" ADD PRIMARY KEY ("ID") ENABLE;
+ 
+  ALTER TABLE "PAYMENTS" ADD UNIQUE ("REFERENCE") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table PLANNING_ANNUEL
+--------------------------------------------------------
+
+  ALTER TABLE "PLANNING_ANNUEL" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PLANNING_ANNUEL" MODIFY ("YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PLANNING_ANNUEL" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table PROFILES
+--------------------------------------------------------
+
+  ALTER TABLE "PROFILES" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PROFILES" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PROFILES" MODIFY ("ACTIVE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "PROFILES" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table RIGHTS
+--------------------------------------------------------
+
+  ALTER TABLE "RIGHTS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "RIGHTS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table TASKS
+--------------------------------------------------------
+
+  ALTER TABLE "TASKS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TASKS" MODIFY ("CHARGEABLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TASKS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TASKS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table TIMESHEET_CELLS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEET_CELLS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_CELLS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_CELLS" MODIFY ("VALUE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_CELLS" MODIFY ("FK_ROW" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_CELLS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table TIMESHEET_ROWS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEET_ROWS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_ROWS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_ROWS" MODIFY ("FK_TIMESHEET" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEET_ROWS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table TIMESHEETS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEETS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("VERSION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("CREATEDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("PRIXVENTE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("PRIXREVIENT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("COUTHORAIRE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("WEEKNUMBER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" MODIFY ("USERID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TIMESHEETS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table TRAININGS
+--------------------------------------------------------
+
+  ALTER TABLE "TRAININGS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" MODIFY ("TITLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" MODIFY ("DESCRIPTION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" MODIFY ("STARTDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" MODIFY ("ENDDATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" MODIFY ("COMPANYNAME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "TRAININGS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  Constraints for Table USER_ACTIONS
+--------------------------------------------------------
+
+  ALTER TABLE "USER_ACTIONS" MODIFY ("ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "USER_ACTIONS" MODIFY ("FK_EMPLOYEE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "USER_ACTIONS" ADD PRIMARY KEY ("ID") ENABLE;
+--------------------------------------------------------
+--  DDL for Index SYS_C004998
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C004998" ON "ACCESS_RIGHTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005003
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005003" ON "ACTIVITIES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005009
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005009" ON "BANKS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005010
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005010" ON "BANKS" ("NAME") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005011
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005011" ON "BANKS" ("CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005012
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005012" ON "BANKS" ("ACCOUNT") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005021
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005021" ON "BUDGETS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005969
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005969" ON "COMMENTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005031
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005031" ON "CONTACTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005037
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005037" ON "CONTRACTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005044
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005044" ON "CUSTOMERS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005045
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005045" ON "CUSTOMERS" ("COMPY_NAME") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005046
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005046" ON "CUSTOMERS" ("CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005051
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005051" ON "DECLARATIONS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005056
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005056" ON "DOCS_MISSIONS" ("ID_MISSION", "ID_DOCUMENT") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C004052
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C004052" ON "DOCUMENT_INVOICES" ("DOCUMENT_ID", "INVOICE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005059
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005059" ON "DOCUMENTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005449
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005449" ON "EMAIL_DATA" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005065
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005065" ON "EMPLOYEES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005066
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005066" ON "EMPLOYEES" ("LOGIN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005750
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005750" ON "EVENT_PLANNING" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005077
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005077" ON "EVENTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005085
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005085" ON "EXERCISES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005086
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005086" ON "EXERCISES" ("YEAR") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005249
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005249" ON "INVOICE_FEES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005106
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005106" ON "INVOICE_REMINDS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005101
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005101" ON "INVOICES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005102
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005102" ON "INVOICES" ("REFERENCE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005754
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005754" ON "ITEM_EVENT_PLANNING" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005108
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005108" ON "MESSAGE" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005121
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005121" ON "MISSION_COSTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005116
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005116" ON "MISSIONS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005369
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005369" ON "MISSIONTYPE_TASK" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005125
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005125" ON "ORIGINS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005126
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005126" ON "ORIGINS" ("CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005137
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005137" ON "PAYMENTS" ("REFERENCE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005136
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005136" ON "PAYMENTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005757
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005757" ON "PLANNING_ANNUEL" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005141
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005141" ON "PROFILES" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005143
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005143" ON "RIGHTS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005147
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005147" ON "TASKS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005161
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005161" ON "TIMESHEET_CELLS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005165
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005165" ON "TIMESHEET_ROWS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005156
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005156" ON "TIMESHEETS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005172
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005172" ON "TRAININGS" ("ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index SYS_C005560
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C005560" ON "USER_ACTIONS" ("ID") 
+  ;
+--------------------------------------------------------
+--  Ref Constraints for Table ACCESS_RIGHTS
+--------------------------------------------------------
+
+  ALTER TABLE "ACCESS_RIGHTS" ADD CONSTRAINT "FK541E311220F5D111" FOREIGN KEY ("FK_RIGHT")
+	  REFERENCES "RIGHTS" ("ID") ENABLE;
+ 
+  ALTER TABLE "ACCESS_RIGHTS" ADD CONSTRAINT "FK541E3112D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table ACTIVITIES
+--------------------------------------------------------
+
+  ALTER TABLE "ACTIVITIES" ADD CONSTRAINT "FK970527ED41091C67" FOREIGN KEY ("TASK_ID")
+	  REFERENCES "TASKS" ("ID") ENABLE;
+ 
+  ALTER TABLE "ACTIVITIES" ADD CONSTRAINT "FK970527ED8B5ED24D" FOREIGN KEY ("MISSION_ID")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table BUDGETS
+--------------------------------------------------------
+
+  ALTER TABLE "BUDGETS" ADD CONSTRAINT "FK3846C5AE294B3B2E" FOREIGN KEY ("FK_MANAGER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "BUDGETS" ADD CONSTRAINT "FK3846C5AE3E4ADC37" FOREIGN KEY ("FK_EXERCISE")
+	  REFERENCES "EXERCISES" ("ID") ENABLE;
+ 
+  ALTER TABLE "BUDGETS" ADD CONSTRAINT "FK3846C5AE592FAAB" FOREIGN KEY ("FK_CONTRACT")
+	  REFERENCES "CONTRACTS" ("ID") ENABLE;
+ 
+  ALTER TABLE "BUDGETS" ADD CONSTRAINT "FK3846C5AECD847372" FOREIGN KEY ("FK_ASSOCIE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "COMMENTS" ADD CONSTRAINT "FKABDCDF4D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "COMMENTS" ADD CONSTRAINT "FKABDCDF4E279BDBD" FOREIGN KEY ("FK_TIMESHEET")
+	  REFERENCES "TIMESHEETS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CONTACTS
+--------------------------------------------------------
+
+  ALTER TABLE "CONTACTS" ADD CONSTRAINT "FKCD35053916BD843" FOREIGN KEY ("FK_CUSTOMER")
+	  REFERENCES "CUSTOMERS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CONTRACTS
+--------------------------------------------------------
+
+  ALTER TABLE "CONTRACTS" ADD CONSTRAINT "FK8E852181916BD843" FOREIGN KEY ("FK_CUSTOMER")
+	  REFERENCES "CUSTOMERS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CUSTOMERS
+--------------------------------------------------------
+
+  ALTER TABLE "CUSTOMERS" ADD CONSTRAINT "FK6268C35294B3B2E" FOREIGN KEY ("FK_MANAGER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "CUSTOMERS" ADD CONSTRAINT "FK6268C35CD847372" FOREIGN KEY ("FK_ASSOCIE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "CUSTOMERS" ADD CONSTRAINT "FK6268C35F486AC93" FOREIGN KEY ("FK_ORIGIN")
+	  REFERENCES "ORIGINS" ("ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table DOCS_INVOICES
+--------------------------------------------------------
+
+  ALTER TABLE "DOCS_INVOICES" ADD CONSTRAINT "FK40477C6AC08E7B27" FOREIGN KEY ("ID_DOCUMENT")
+	  REFERENCES "DOCUMENTS" ("ID") ENABLE;
+ 
+  ALTER TABLE "DOCS_INVOICES" ADD CONSTRAINT "FK40477C6AE4504B49" FOREIGN KEY ("ID_INVOICE")
+	  REFERENCES "INVOICES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table DOCS_MISSIONS
+--------------------------------------------------------
+
+  ALTER TABLE "DOCS_MISSIONS" ADD CONSTRAINT "FKD26709EB7A20C807" FOREIGN KEY ("ID_MISSION")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+ 
+  ALTER TABLE "DOCS_MISSIONS" ADD CONSTRAINT "FKD26709EBC08E7B27" FOREIGN KEY ("ID_DOCUMENT")
+	  REFERENCES "DOCUMENTS" ("ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table DOCUMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "DOCUMENTS" ADD CONSTRAINT "FKDE5562982368FFAE" FOREIGN KEY ("OWNER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table EMAIL_DATA
+--------------------------------------------------------
+
+  ALTER TABLE "EMAIL_DATA" ADD CONSTRAINT "FK6D3F1A8D6017A924" FOREIGN KEY ("FK_RECEIVER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "EMAIL_DATA" ADD CONSTRAINT "FK6D3F1A8D6E71FEA" FOREIGN KEY ("FK_SENDER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table EMPLOYEES
+--------------------------------------------------------
+
+  ALTER TABLE "EMPLOYEES" ADD CONSTRAINT "FK4351FF65A24E0AD9" FOREIGN KEY ("FK_POSITION")
+	  REFERENCES "PROFILES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table EVENT_PLANNING
+--------------------------------------------------------
+
+  ALTER TABLE "EVENT_PLANNING" ADD CONSTRAINT "FK3CEC37828E341E3C" FOREIGN KEY ("FK_PLANNING")
+	  REFERENCES "PLANNING_ANNUEL" ("ID") ENABLE;
+ 
+  ALTER TABLE "EVENT_PLANNING" ADD CONSTRAINT "FK3CEC3782D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table EVENTS
+--------------------------------------------------------
+
+  ALTER TABLE "EVENTS" ADD CONSTRAINT "FK7A9AD51941091C67" FOREIGN KEY ("TASK_ID")
+	  REFERENCES "TASKS" ("ID") ENABLE;
+ 
+  ALTER TABLE "EVENTS" ADD CONSTRAINT "FK7A9AD51983C0BEA5" FOREIGN KEY ("FK_ACTIVITY")
+	  REFERENCES "ACTIVITIES" ("ID") ENABLE;
+ 
+  ALTER TABLE "EVENTS" ADD CONSTRAINT "FK7A9AD519AB237DB1" FOREIGN KEY ("FK_MISSION")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+ 
+  ALTER TABLE "EVENTS" ADD CONSTRAINT "FK7A9AD519D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+
+--------------------------------------------------------
+--  Ref Constraints for Table INVOICE_FEES
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICE_FEES" ADD CONSTRAINT "FK53B2279F5F680542" FOREIGN KEY ("FK_FACTURE")
+	  REFERENCES "INVOICES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table INVOICE_REMINDS
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICE_REMINDS" ADD CONSTRAINT "FK4448E4BC5F680542" FOREIGN KEY ("FK_FACTURE")
+	  REFERENCES "INVOICES" ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICE_REMINDS" ADD CONSTRAINT "FK4448E4BC6E71FEA" FOREIGN KEY ("FK_SENDER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table INVOICES
+--------------------------------------------------------
+
+  ALTER TABLE "INVOICES" ADD CONSTRAINT "FK549812E61B8C81A0" FOREIGN KEY ("PROJECT_ID")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICES" ADD CONSTRAINT "FK549812E634D0ABAD" FOREIGN KEY ("FK_CREATOR")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICES" ADD CONSTRAINT "FK549812E6888A4D07" FOREIGN KEY ("BANK_ID")
+	  REFERENCES "BANKS" ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICES" ADD CONSTRAINT "FK549812E69246D9CD" FOREIGN KEY ("CONTACT_ID")
+	  REFERENCES "CONTACTS" ("ID") ENABLE;
+ 
+  ALTER TABLE "INVOICES" ADD CONSTRAINT "FK549812E6C83F0849" FOREIGN KEY ("FK_PARTNER")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table ITEM_EVENT_PLANNING
+--------------------------------------------------------
+
+  ALTER TABLE "ITEM_EVENT_PLANNING" ADD CONSTRAINT "FK51754A2EA46E07E7" FOREIGN KEY ("FK_EVENTPLANNING")
+	  REFERENCES "EVENT_PLANNING" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table MESSAGE
+--------------------------------------------------------
+
+  ALTER TABLE "MESSAGE" ADD CONSTRAINT "FK63B68BE723AB9A5A" FOREIGN KEY ("TO_ID")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "MESSAGE" ADD CONSTRAINT "FK63B68BE758B0CEA" FOREIGN KEY ("PARENT_ID")
+	  REFERENCES "MESSAGE" ("ID") ENABLE;
+ 
+  ALTER TABLE "MESSAGE" ADD CONSTRAINT "FK63B68BE78B5ED24D" FOREIGN KEY ("MISSION_ID")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+ 
+  ALTER TABLE "MESSAGE" ADD CONSTRAINT "FK63B68BE7F9A84ECB" FOREIGN KEY ("FROM_ID")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table MISSION_COSTS
+--------------------------------------------------------
+
+  ALTER TABLE "MISSION_COSTS" ADD CONSTRAINT "FK831F01938036AB22" FOREIGN KEY ("OWNER_ID")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "MISSION_COSTS" ADD CONSTRAINT "FK831F01938B5ED24D" FOREIGN KEY ("MISSION_ID")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table MISSIONS
+--------------------------------------------------------
+
+  ALTER TABLE "MISSIONS" ADD CONSTRAINT "FKE6B7A0677574DF03" FOREIGN KEY ("FK_PARENT")
+	  REFERENCES "MISSIONS" ("ID") ENABLE;
+ 
+  ALTER TABLE "MISSIONS" ADD CONSTRAINT "FKE6B7A0679BED1B27" FOREIGN KEY ("ANNUALBUDGET_ID")
+	  REFERENCES "BUDGETS" ("ID") ENABLE;
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table PAYMENTS
+--------------------------------------------------------
+
+  ALTER TABLE "PAYMENTS" ADD CONSTRAINT "FK810FFF2D5F680542" FOREIGN KEY ("FK_FACTURE")
+	  REFERENCES "INVOICES" ("ID") ENABLE;
+
+
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table TIMESHEET_CELLS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEET_CELLS" ADD CONSTRAINT "FKA6F12B44472A6CF5" FOREIGN KEY ("FK_ROW")
+	  REFERENCES "TIMESHEET_ROWS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TIMESHEET_ROWS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEET_ROWS" ADD CONSTRAINT "FK4FBC2B6683C0BEA5" FOREIGN KEY ("FK_ACTIVITY")
+	  REFERENCES "ACTIVITIES" ("ID") ENABLE;
+ 
+  ALTER TABLE "TIMESHEET_ROWS" ADD CONSTRAINT "FK4FBC2B66E279BDBD" FOREIGN KEY ("FK_TIMESHEET")
+	  REFERENCES "TIMESHEETS" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TIMESHEETS
+--------------------------------------------------------
+
+  ALTER TABLE "TIMESHEETS" ADD CONSTRAINT "FK821E8001D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+ 
+  ALTER TABLE "TIMESHEETS" ADD CONSTRAINT "FK821E8001EB403F21" FOREIGN KEY ("USERID")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TRAININGS
+--------------------------------------------------------
+
+  ALTER TABLE "TRAININGS" ADD CONSTRAINT "FKDC0922B960E76277" FOREIGN KEY ("BENEFICIAIRE_ID")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table USER_ACTIONS
+--------------------------------------------------------
+
+  ALTER TABLE "USER_ACTIONS" ADD CONSTRAINT "FK9BF46469D76EA5E3" FOREIGN KEY ("FK_EMPLOYEE")
+	  REFERENCES "EMPLOYEES" ("ID") ENABLE;
+--------------------------------------------------------
+--  DDL for Procedure ADD_MISSING_RIGHTS
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "ADD_MISSING_RIGHTS" AS
+
+ 
+ v_id NUMBER := 0;
+ACCESS_RIGHTS_ID NUMBER;
+ CURSOR C_EMP is SELECT id  from EMPLOYEES;
+ 
+ v_emp_id C_EMP%ROWTYPE;
+
+
+	BEGIN 
+  dbms_output.enable(1000000);
+	
+     OPEN C_EMP;
+      LOOP
+      v_id  :=  v_id  + 1;
+      FETCH C_EMP INTO v_emp_id; 
+      EXIT WHEN  C_EMP%NOTFOUND;
+
+      SELECT max(id) INTO ACCESS_RIGHTS_ID  from ACCESS_RIGHTS;
+	   
+	   --Incrémenter l'identifiant
+       ACCESS_RIGHTS_ID := ACCESS_RIGHTS_ID + 1;
+
+        INSERT INTO 
+        ACCESS_RIGHTS (
+            ID,
+            ACTIVE,
+            FK_RIGHT,
+            FK_EMPLOYEE) 
+        VALUES(
+            ACCESS_RIGHTS_ID,
+            1,
+            43,
+            v_emp_id.id
+        );
+        
+        --Incrémenter l'identifiant
+       ACCESS_RIGHTS_ID := ACCESS_RIGHTS_ID + 1;
+
+	INSERT INTO 
+        ACCESS_RIGHTS (
+              ID,
+              ACTIVE,
+              FK_RIGHT,
+              FK_EMPLOYEE) 
+        VALUES(
+              ACCESS_RIGHTS_ID,
+              1,
+              44,
+              v_emp_id.id);
+
+--Incrémenter l'identifiant
+       ACCESS_RIGHTS_ID := ACCESS_RIGHTS_ID + 1;
+	INSERT INTO 
+        ACCESS_RIGHTS (
+	ID,
+	ACTIVE,
+	FK_RIGHT,
+	FK_EMPLOYEE) 
+        VALUES(
+        ACCESS_RIGHTS_ID,
+        1,
+        45,
+        v_emp_id.id);
+        
+      END LOOP;
+      
+   CLOSE C_EMP;
+	   
+	
+
+	dbms_output.put_line( 'Total rows : ' || v_id) ;
+	dbms_output.put_line( 'OK 4 ALL ') ;
+	COMMIT;
+  
+   EXCEPTION
+     WHEN NO_DATA_FOUND THEN
+       NULL;
+     WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+	   dbms_output.put_line( 'FAILED ') ;
+	   ROLLBACK;
+   RAISE;
+ 
+END ADD_MISSING_RIGHTS;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure BUILD_CONTACTS_TABLE
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "BUILD_CONTACTS_TABLE" AS
+
+ 
+ v_id NUMBER := 0;
+ CURSOR C_CUST is SELECT id  from CUSTOMERS;
+ 
+ v_cust_id C_CUST%ROWTYPE;
+
+
+	BEGIN 
+  dbms_output.enable(1000000);
+	
+	   OPEN C_CUST;
+      LOOP
+      v_id  :=  v_id  + 1;
+      FETCH C_CUST INTO v_cust_id; 
+      EXIT WHEN  C_CUST%NOTFOUND;
+        INSERT INTO 
+        CONTACTS (ID,
+                  NAME,
+                  F_NAME,
+                  L_NAME,
+                  JOB,
+                  B_PHONE,
+                  B_MOBILE,
+                  B_FAX,
+                  P_PHONE,
+                  P_MOBILE,
+                  B_EMAIL,
+                  P_EMAIL,
+                  B_WEB_ADDR,
+                  ACTIVE,
+                  B_ACTIVITY,
+                  UPDATEDUSER,
+                  COMPANY,
+                  ADDRESS,
+                  CREATEDATE,
+                  UPDATEDATE,
+                  VERSION,
+                  FK_CUSTOMER) 
+        VALUES(
+        v_id,
+        'Contact name',
+        'Durant',
+        'Pierre',
+        'Commercial', 
+        '44 10 12 35 45', 
+        '44 10 12 35 46', 
+        '44 10 12 35 47', 
+        '44 10 12 35 48',
+        '44 10 12 35 49', 
+        'pierre.durant@test.com',
+        'pierre.durant@test.com',
+        NULL,
+        1,
+        'Vente materiels informatique', 
+        NULL,
+        'Contact company name',
+        'Address contact',
+        SYSDATE,
+        SYSDATE,
+        0, 
+        v_cust_id.id
+        );
+        dbms_output.put_line( ' v_id  : ' || v_id ||' v_cust_id  : ' ||  v_cust_id.id ) ;
+      END LOOP;
+      
+   CLOSE C_CUST;
+	   
+	
+
+	dbms_output.put_line( 'Total rows : ' || v_id) ;
+	dbms_output.put_line( 'OK 4 ALL ') ;
+	COMMIT;
+  
+   EXCEPTION
+     WHEN NO_DATA_FOUND THEN
+       NULL;
+     WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+	   dbms_output.put_line( 'FAILED ') ;
+	   ROLLBACK;
+   RAISE;
+END BUILD_CONTACTS_TABLE;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure BUILD_CONTRACTS_TABLE
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "BUILD_CONTRACTS_TABLE" AS
+
+CONT_ID NUMBER;
+BEGIN
+ 
+ FOR customerId IN 656..1105 LOOP
+	
+	--Recuperation de l'identifiant max
+	   SELECT max(id) INTO CONT_ID  from CONTRACTS;
+	   
+	   --Incrémenter l'identifiant
+	   CONT_ID := CONT_ID + 1;
+	   
+	
+	   --Insertion dans la table TURBINE_USER de l'utilisateur
+	   INSERT INTO CONTRACTS (
+     ID,
+     REFERENCE,
+     DESCRIPTION,
+     FROMDATE,
+     TODATE,
+     DURATION,
+     VAL,
+     CUR,
+      VERSION,
+     MISSIONTYPE,
+     AGREED,
+     FK_CUSTOMER,
+    LANGUAGE,
+    STARTDATEOFMISSION,
+    DUEDATEOFMISSION) 	   	   
+	   VALUES(
+     CONT_ID,
+     'CONTRACT' || to_char(CONT_ID,'9999'),
+     'TEST CONTRACT DESCRIPTION',
+     TO_DATE ('01/01/2009', 'dd/mm/yyyy'),
+     TO_DATE ('01/01/2010', 'dd/mm/yyyy'),
+     NULL,
+     1200,
+     'EUR',
+     0,
+     'REVISION',
+     1,
+     customerId,
+     'EN',
+     TO_DATE ('01/01/2009', 'dd/mm/yyyy'),
+     TO_DATE ('31/12/2009', 'dd/mm/yyyy'));
+	   
+	  
+	   
+	END LOOP;
+  dbms_output.put_line( 'OK 4 ALL ') ;
+END BUILD_CONTRACTS_TABLE;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure BUILD_CUSTOMERS_TABLE
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "BUILD_CUSTOMERS_TABLE" AS
+
+CUST_ID NUMBER;
+BEGIN
+ FOR indice IN 1..450 LOOP
+	
+	--Recuperation de l'identifiant max
+	   SELECT max(id) INTO CUST_ID  from CUSTOMERS;
+	   
+	   --Incrémenter l'identifiant
+	   CUST_ID := CUST_ID + 1;
+	   
+	
+	   --Insertion dans la table TURBINE_USER de l'utilisateur
+	   INSERT INTO CUSTOMERS (
+     ID,
+     WEB_ADDRESS,
+     ACTIVE,
+     COUNTRY,
+     MAINADDRESS,
+     MAINBILLINGADDRESS,
+     ACTIVITY,
+     CREATEDATE,
+     UPDATEDATE,
+     UPDATEDUSER,
+     COMPY_NAME,
+     FAX,
+     PHONE,
+     MOBILE,
+     P_PHONE,
+     P_MOBILE,
+     EMAIL,
+     CODE,
+     VERSION,
+     FK_ASSOCIE,
+     FK_ORIGIN,
+     FK_MANAGER) 	   	   
+	   VALUES(CUST_ID,
+     'webaddress@test.lu',
+     1,
+     'LU',
+     'Kirchberg',
+     'Kirchberg',
+     'Test Activity',
+     SYSDATE,
+     SYSDATE,
+     NULL,
+     'Test Company'||to_char(CUST_ID, '9999'),
+     '44 10 12 55 66',
+     '44 10 12 55 67',
+     '44 10 12 55 68',
+     '44 10 12 55 69',
+     '44 10 12 55 67',
+     'test@email.lu',
+     to_char(CUST_ID, '9999'),
+     1,
+     3,
+     2,
+     4);
+	   
+	  
+	   
+	END LOOP;
+  dbms_output.put_line( 'OK 4 ALL ') ;
+END BUILD_CUSTOMERS_TABLE;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure PROCEDURE2
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "PROCEDURE2" IS
+
+ 
+ v_id NUMBER := 0;
+ CURSOR C_EMP is SELECT id  from EMPLOYEES;
+ CURSOR C_RIGHT is SELECT id  from RIGHTS;
+ v_user_id C_RIGHT%ROWTYPE;
+ v_right_id C_EMP%ROWTYPE;
+
+	BEGIN 
+  dbms_output.enable(1000000);
+	OPEN C_EMP;
+	LOOP
+	FETCH C_EMP INTO v_user_id; 
+  EXIT WHEN  C_EMP%NOTFOUND;
+	   OPEN C_RIGHT;
+      LOOP
+      v_id  :=  v_id  + 1;
+      FETCH C_RIGHT INTO v_right_id; 
+      EXIT WHEN  C_RIGHT%NOTFOUND;
+        INSERT INTO ACCESS_RIGHTS (ID,ACTIVE, FK_EMPLOYEE, FK_RIGHT) VALUES(v_id,1,v_user_id.id,v_right_id.id);
+        dbms_output.put_line( ' v_id  : ' || v_id ||' v_user_id  : ' ||  v_user_id.id || ' v_right_id  : ' || v_right_id.id) ;
+      END LOOP;
+      
+   CLOSE C_RIGHT;
+	   
+	 END LOOP; 
+   CLOSE C_EMP;
+
+	dbms_output.put_line( 'Total rows : ' || v_id) ;
+	dbms_output.put_line( 'OK 4 ALL ') ;
+	COMMIT;
+  
+   EXCEPTION
+     WHEN NO_DATA_FOUND THEN
+       NULL;
+     WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+	   dbms_output.put_line( 'FAILED ') ;
+	   ROLLBACK;
+   RAISE;
+
+END PROCEDURE2;
+
+/
+

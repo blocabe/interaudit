@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean name="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="WEB-INF/interAudit-servlet.properties"/>
+	</bean>
+
+	<import resource="applicationContext.xml"/>
+
+	<!-- bean id="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/-->
+	<bean id="localeChangeInterceptor"
+      class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+    <property name="paramName" value="lang"/>
+	</bean>
+	
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+	  
+	  
+	
+	
+	  
+	<!--bean id="httpRequestInterceptor" class="web.interceptors.HttpRequestInterceptor">
+    	<property name="loginPage" value="/login.htm"/>
+	</bean-->
+	  
+	  <bean id="httpRequestInterceptor"
+	  class="com.interaudit.web.controllers.HttpRequestInterceptor">
+		<property name="loginPage" value="login.htm"/>
+		<property name="userService" ref="userService"/>
+	</bean>
+	<!--
+	      Controllers
+	-->
+
+	<bean name="loginController" class="com.interaudit.web.controllers.LoginController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="loginPage"/>
+		<property name="successView" value="redirect:homePage.htm"/>
+		<property name="commandName" value="user"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Employee"/>
+		<property name="validator" ref="loginValidator"/>
+		<property name="userService" ref="userService"/>
+		<property name="exerciseService" ref="exerciseService"/>		
+	</bean>
+
+	<bean name="logoutController" class="com.interaudit.web.controllers.LogoutController">
+		<property name="successView" value="redirect:login.htm"/>
+	</bean>
+		
+	<bean id="loginValidator" class="com.interaudit.web.controllers.LoginValidator"/>
+	
+	<bean id="showHomePageController" class="com.interaudit.web.controllers.ShowHomePageController">		
+		<property name="showHomePageView" value="homePage"/>
+	</bean>
+	
+	<bean id="budgetController" class="com.interaudit.web.controllers.BudgetController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showGeneralBudgetPage.htm">showGeneralBudgetPage</prop>
+						<prop key="/showMissionWorkshopPage.htm">showMissionWorkshopPage</prop>
+						<prop key="/showBudgetGraphicsPage.htm">showGeneralBudgetPage</prop>
+						
+						<prop key="/showDocumentsManagementPage.htm">showDocumentsManagementPage</prop>	
+						
+						<prop key="/showProfitabilityPerCustomerPage.htm">showProfitabilityPerCustomerPage</prop>
+						<prop key="/showBudgetResultsPage.htm">showBudgetResultsPage</prop>
+						<prop key="/showGeneralBudgetPageFromMenu.htm">showGeneralBudgetPageFromMenu</prop>
+						
+						<prop key="/editBudgetItemPage.htm">editBudgetItem</prop>
+						<prop key="/deletesBudgetItemPage.htm">deleteBudgetItem</prop>
+						<prop key="/handleBudgetFormPage.htm">handleBudgetItem</prop>
+						
+						<prop key="/approveExercise.htm">approveExercise</prop>
+						<prop key="/closeExercise.htm">closeExercise</prop>
+						<prop key="/buildNextExercisePage.htm">buildNextExercisePage</prop>
+						<prop key="/referenceBudgetPage.htm">referenceBudgetPage</prop>
+						
+						<prop key="/showBudgetExcelViewPage.htm">showBudgetExcelView</prop>
+						<prop key="/applyInflationPage.htm">applyInflationPage</prop>
+						<prop key="/showObjectifPerAssocieBartChartPage.htm">showObjectifPerAssocieBartChartPage</prop>
+						<prop key="/showObjectifPerManagerBartChartPage.htm">showObjectifPerManagerBartChartPage</prop>
+						<prop key="/showDisplayColumnsPage.htm">showDisplayColumnsPage</prop>
+						<prop key="/showBudgetResultsMensuelsPage.htm">showBudgetResultsMensuelsPage</prop>
+						<prop key="/showBudgetResultsTrimestrielsPage.htm">showBudgetResultsTrimestrielsPage</prop>
+						<prop key="/editBudgetValidContractReferencesAsAjaxStream.htm">editBudgetValidContractReferencesAsAjaxStream</prop>
+						<prop key="/updateExerciceAndBudget.htm">updateExerciceAndBudget</prop>
+						<prop key="/findBudgetsForExpression.htm">findBudgetsForExpression</prop>
+						<prop key="/refreshBudgetsPages.htm">refreshBudgetsPages</prop>
+						
+						<prop key="/showBudgetResultsMensuelsLineChartPage.htm">showBudgetResultsMensuelsLineChartPage</prop>
+                        
+                        <prop key="/deletePendingExercise.htm">deletePendingExercise</prop>
+                        
+                        <prop key="/updateBudgetByQuery.htm">updateBudgetByQuery</prop>
+             		
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="budgetService" ref="budgetService"/>
+		<property name="exerciseService" ref="exerciseService"/>
+		
+	</bean>
+	
+	
+	
+	<bean name="createBudgetController" class="com.interaudit.web.controllers.CreateBudgetController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="budget_register"/>
+		<property name="successView" value="redirect:showGeneralBudgetPage.htm"/>
+		<property name="commandName" value="budget"/>
+		<property name="commandClass" value="com.interaudit.domain.model.AnnualBudget"/>
+		<property name="validator" ref="budgetValidator"/>
+		<property name="budgetService" ref="budgetService"/>
+	</bean>
+	
+	<bean id="budgetValidator" class="com.interaudit.web.controllers.BudgetValidator"/>
+	
+	<bean id="bankController" class="com.interaudit.web.controllers.BankController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showBanksPage.htm">showBanksPage</prop>			
+					</props>
+				</property>
+			</bean>
+		</property>	
+		<property name="bankService" ref="bankService"/>
+	</bean>
+	
+	<bean name="createBankController" class="com.interaudit.web.controllers.CreateBankController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="bank_register"/>
+		<property name="successView" value="redirect:showBanksPage.htm"/>
+		<property name="commandName" value="bank"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Bank"/>
+		<property name="validator" ref="bankValidator"/>
+		<property name="bankService" ref="bankService"/>
+	</bean>
+	
+	<bean id="bankValidator" class="com.interaudit.web.controllers.BankValidator"/>
+	
+	<bean name="createMissionController" class="com.interaudit.web.controllers.CreateMissionController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="mission_register"/>
+		<property name="successView" value="redirect:showMissionsPage.htm?fromRegisterMenu=true"/>
+		<property name="commandName" value="missionForUpdate"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Mission"/>
+		<property name="validator" ref="missionValidator"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="customerService" ref="customerService"/>		
+	</bean>
+	
+	<bean id="missionValidator" class="com.interaudit.web.controllers.MissionValidator"/>
+	
+	
+	
+	<bean id="performanceController" class="com.interaudit.web.controllers.PerformanceController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showPerfOneYearPage.htm">showPerfOneYearPage</prop>
+						<prop key="/showPerfYearsPage.htm">showPerfYearsPage</prop>								
+					</props>
+				</property>
+			</bean>
+		</property>		
+	</bean>
+	 
+	<bean id="invoiceController" class="com.interaudit.web.controllers.InvoiceController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>	
+					
+					    <prop key="/showBalanceAgeePage.htm">showBalanceAgeePage</prop>				
+						<prop key="/showInvoicesPage.htm">showInvoicesPage</prop>
+						<prop key="/findInvoiceByIdPage.htm">findInvoiceByIdPage</prop>
+						<prop key="/showAdvancePropertyPage.htm">showAdvancePropertyPage</prop>
+						<prop key="/showFinalBillPropertyPage.htm">showFinalBillPropertyPage</prop>
+						<prop key="/showInvoiceDocumentsPage.htm">showInvoiceDocumentsPage</prop>
+						<prop key="/showInvoicePaymentPage.htm">showInvoicePaymentPage</prop>
+						<prop key="/showInvoiceReminderPage.htm">showInvoiceReminderPage</prop>
+						<prop key="/showPaymentsPage.htm">showPaymentsPage</prop>
+						<prop key="/changeFieldInvoiceStatus.htm">changeFieldInvoiceStatus</prop>							
+						<prop key="/selectCustomerForInvoicePage.htm">selectCustomerForInvoicePage</prop>	
+						<prop key="/showInvoiceInfos.htm">showInvoiceInfos</prop>
+						<prop key="/checkInvoiceForMissionPage.htm">checkInvoiceForMissionPage</prop>
+						<prop key="/editInvoiceHistoryItemPage.htm">editInvoiceHistoryItemPage</prop>
+						<prop key="/showInvoicesReminderPage.htm">showInvoiceReminderPage</prop>
+						<prop key="/editInvoicePage.htm">editInvoicePage</prop>
+						<prop key="/addFraisToInvoice.htm">addFraisToInvoice</prop>
+						<prop key="/removeFraisFromInvoice.htm">removeFraisFromInvoice</prop>
+                		<prop key="/updateFraisLibelle.htm">updateFraisLibelle</prop>
+                        <prop key="/updateInvoiceLibDelai.htm">updateInvoiceLibDelai</prop>
+                        <prop key="/updateInvoiceLibHonoraires.htm">updateInvoiceLibHonoraires</prop>
+                        <prop key="/updateInvoiceAdresse.htm">updateInvoiceAdresse</prop>
+                        
+                        <prop key="/updateInvoiceLang.htm">updateInvoiceLang</prop>
+                        <prop key="/updateInvoiceTva.htm">updateInvoiceTva</prop>
+                        <prop key="/updateInvoiceHonoraires.htm">updateInvoiceHonoraires</prop>
+                        <prop key="/updateInvoiceFraisValue.htm">updateInvoiceFraisValue</prop>
+                        <prop key="/updateInvoiceDateFacturation.htm">updateInvoiceDateFacturation</prop>
+                        
+                       
+                        <prop key="/addDeductionToInvoice.htm">addDeductionToInvoice</prop>
+                        <prop key="/removeDeductionFromInvoice.htm">removeDeductionFromInvoice</prop>
+                        <prop key="/updateDeductionLibelle.htm">updateDeductionLibelle</prop>
+                        <prop key="/updateInvoiceDeductionValue.htm">updateInvoiceDeductionValue</prop>
+                        <prop key="/approveInvoice.htm">approveInvoice</prop>
+                        <prop key="/markAsSentInvoice.htm">markAsSentInvoice</prop>
+                        <prop key="/markAsSentInvoice.htm">markAsSentInvoice</prop>
+                        <prop key="/deleteInvoice.htm">deleteInvoice</prop> 
+                        <prop key="/deletePayment.htm">deletePayment</prop>
+                        
+                       
+                                          
+                        <prop key="/selectCustomerForNoteCreditPage.htm">selectCustomerForNoteCreditPage</prop>
+                        <prop key="/editPaymentHistoryItemPage.htm">editPaymentHistoryItemPage</prop>
+                        <prop key="/selectCustomerForInvoiceReminderPage.htm">selectCustomerForInvoiceReminderPage</prop>
+                        <prop key="/checkInvoiceReminderForMissionPage.htm">checkInvoiceReminderForMissionPage</prop>
+                        <prop key="/editRemindInvoicePage.htm">editRemindInvoicePage</prop>
+                        <prop key="/markAsSentReminderInvoice.htm">markAsSentReminderInvoice</prop>
+                        <prop key="/closeInvoicePage.htm">closeInvoicePage</prop>
+                        <prop key="/showDraftInvoicesPage.htm">showDraftInvoicesPage</prop> 
+                        
+                        
+                        <prop key="/updateInvoiceCustomer.htm">updateInvoiceCustomer</prop>
+                        <prop key="/loadCustomersForInvoice.htm">loadCustomersForInvoice</prop>
+                        <prop key="/sendInvoicesReminderEmails.htm">sendInvoicesReminderEmails</prop>
+                        
+                        <prop key="/updateInvoiceTvaZeroLibCodeValue.htm">updateInvoiceTvaZeroLibCodeValue</prop>
+                        
+                        <prop key="/changeExcludedFromBalanceAgeeStatus.htm">changeExcludedFromBalanceAgeeStatus</prop>
+                        
+                        
+                                                  
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="service" ref="factureService"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="timesheetService" ref="timesheetService"/>
+		<property name="userActionService" ref="userActionService"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="bankService" ref="bankService"/>
+		<property name="exerciseService" ref="exerciseService"/>
+		<property name="paymentService" ref="paymentService"/>
+		
+			
+					
+	</bean>
+	
+	
+	
+	<bean name="createInvoiceController" class="com.interaudit.web.controllers.CreateInvoiceController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="invoice_register"/>
+		<property name="successView" value="redirect:showInvoicesPage.htm"/>
+		<property name="commandName" value="invoice"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Invoice"/>
+		<property name="validator" ref="invoiceValidator"/>
+		<property name="service" ref="factureService"/>
+		<property name="userService" ref="userService"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="contactService" ref="contactService"/>		
+		<property name="customerService" ref="customerService"/>
+		<property name="bankService" ref="bankService"/>
+		<property name="emailService" ref="emailService"/>
+		<property name="userActionService" ref="userActionService"/>		
+		<property name="secretaryManagerCode" value="${secretary.manager.code}"/>		
+	</bean>
+	
+	<bean id="invoiceValidator" class="com.interaudit.web.controllers.InvoiceValidator"/>
+	
+	<bean id="missionController" class="com.interaudit.web.controllers.MissionController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showMissionsPage.htm">showMissionsPage</prop>
+						<prop key="/showMissionBudgetPage.htm">showMissionBudgetPage</prop>
+						<prop key="/showMissionDepensesPage.htm">showMissionDepensesPage</prop>
+						<prop key="/showMissionDocumentsPage.htm">showMissionDocumentsPage</prop>
+						<prop key="/showMissionPropertiesPage.htm">showMissionPropertiesPage</prop>
+						<prop key="/showMissionHeuresPresteesPage.htm">showMissionHeuresPresteesPage</prop>	
+						<prop key="/showMissionInterventionsPage.htm">showMissionInterventionsPage</prop>
+						<prop key="/showMissionCommunicationsPage.htm">showMissionCommunicationsPage</prop>
+						<prop key="/showMissionChartsPage.htm">showMissionChartsPage</prop>
+						<prop key="/showMissionBartChartPage.htm">showMissionBartChartPage</prop>
+						<prop key="/editMissionInterventionPage.htm">editIntervention</prop>
+						<prop key="/handleMissionInterventionPage.htm">handleMissionIntervention</prop>
+						<prop key="/deleteMissionInterventionPage.htm">deleteMissionIntervention</prop>
+						<prop key="/editMissionDocumentPage.htm">editMissionDocument</prop>
+						<prop key="/handleMissionDocumentPage.htm">handleMissionDocument</prop>
+						<prop key="/deleteMissionDocumentPage.htm">deleteMissionDocument</prop>
+						<prop key="/editMissionCostPage.htm">editMissionCost</prop>
+						<prop key="/handleMissionCostPage.htm">handleMissionCost</prop>
+						
+						<prop key="/showMissionAlertesPage.htm">showMissionAlertes</prop>  
+						<prop key="/handleMissionAlertePage.htm">handleMissionAlerte</prop>
+						<prop key="/deleteMissionAlertePage.htm">deleteMissionAlerte</prop>
+						<prop key="/editMissionAlertePage.htm">editMissionAlerte</prop>
+						
+						
+						<prop key="/deleteMissionCostPage.htm">deleteMissionCost</prop>
+						<prop key="/editMissionMessagePage.htm">editMissionMessage</prop>
+						<prop key="/handleMissionMessagePage.htm">handleMissionMessage</prop>
+						<prop key="/showMissionPropertiesFromBudgetPage.htm">showMissionPropertiesFromBudgetPage</prop>
+						<prop key="/showMissionFacturesPage.htm">showMissionInvoicePage</prop>
+						<prop key="/editMissionInvoicePage.htm">editMissionInvoice</prop>
+						<prop key="/deleteMissionInvoicePage.htm">deleteMissionInvoice</prop>
+						<prop key="/handleMissionInvoicePage.htm">handleMissionInvoice</prop>
+						<prop key="/handleMissionDatesPage.htm">handleMissionDatesPage</prop>
+						<prop key="/downloadMissionDocument.htm">downloadMissionDocument</prop>
+						<prop key="/showPlanningPage.htm">showPlanningPage</prop>
+						<prop key="/showAnnualPlanningPage.htm">showAnnualPlanningPage</prop>
+						<prop key="/scheduleMissionPage.htm">scheduleMissionPage</prop>
+						<prop key="/showMissionPlanningPage.htm">showMissionPlanningPage</prop>
+						<prop key="/showAgendaPage.htm">showAgendaPage</prop>
+						<prop key="/handleEventPage.htm">handleEventPage</prop>
+						<prop key="/handleDragAndDropEventPage.htm">handleEventPage</prop>						
+						<prop key="/editEventPage.htm">editEventPage</prop>
+						<prop key="/deleteEventPage.htm">deleteEvent</prop>
+						<prop key="/handleMultipleEventsPage.htm">handleMultipleEventsPage</prop>																
+						<prop key="/changeFieldMissionStatus.htm">changeFieldMissionStatus</prop>
+						<prop key="/showPlanningExcelView.htm">showPlanningExcelView</prop>	
+						<prop key="/editEventPlanningPage.htm">editEventPlanningPage</prop>	
+						<prop key="/deleteEventPlanningItemsPage.htm">deleteEventPlanningItemsPage</prop>							
+						<prop key="/loadEmployeePlanningPage.htm">loadEmployeePlanningPage</prop>
+						<prop key="/addSingleEventsPage.htm">addSingleEventsPage</prop>						
+						<prop key="/showMessageRecusPage.htm">showMessageRecusPage</prop>
+						<prop key="/showMessageEnvoyesPage.htm">showMessageEnvoyesPage</prop>
+						<prop key="/help.htm">downloadHelpDocument</prop>
+						<prop key="/showTimesheetGlobalSituationsPage.htm">showAnnualTimesheetReportPage</prop>
+						<prop key="/editPlanningActivitiesAsAjaxStream.htm">editPlanningActivitiesAsAjaxStream</prop>
+                        <prop key="/markMissionAsClosed.htm">markMissionAsClosed</prop>
+                        <prop key="/addSingleEventsFromDragAndDropPage.htm">addSingleEventsFromDragAndDropPage</prop>                        
+                        <prop key="/showMissionTeamMembersPage.htm">showMissionTeamMembersPage</prop>
+                        
+                        <prop key="/showAddMemeberForMissionPage.htm">showAddMemeberForMissionPage</prop>
+                        <prop key="/showRemoveMemberForMissionPage.htm">showRemoveMemberForMissionPage</prop>
+                        <prop key="/showUpdatedAnnualPlanningPage.htm">showUpdatedAnnualPlanningPage</prop>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </props>
+				</property>
+			</bean>
+		</property>		
+		<property name="missionService" ref="missionService"/>
+		<property name="activityService" ref="activityService"/>
+		<property name="userService" ref="userService"/>
+		<property name="factureService" ref="factureService"/>
+		<property name="documentService" ref="documentService"/>
+		<property name="emailService" ref="emailService"/>
+		<property name="timesheetService" ref="timesheetService"/>	
+		<property name="exerciseService" ref="exerciseService"/>    
+		<property name="rootDocumentPath" value="${rootDocumentPath2}"/>
+		
+	</bean>
+	
+	<bean id="taskController" class="com.interaudit.web.controllers.TaskController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showTasksPage.htm">showTasksPage</prop>
+						<prop key="/showTaskPropertiesPage.htm">showTaskPropertiesPage</prop>
+						<prop key="/showTaskDocumentsPage.htm">showTaskDocumentsPage</prop>
+						<prop key="/showTaskCommunicationsPage.htm">showTaskCommunicationsPage</prop>
+						<prop key="/showTaskWorkDonePage.htm">showTaskWorkDonesPage</prop>	
+						<prop key="/handleTaskWorkdonePage.htm">handleTaskWorkDone</prop>
+						<prop key="/deleteTaskWorkDonePage.htm">deleteTaskWorkDone</prop>
+						<prop key="/editTaskWorkDonePage.htm">editTaskWorkDone</prop>	
+						<prop key="/editTaskDocumentPage.htm">editTaskDocument</prop>
+						<prop key="/deleteTaskDocumentPage.htm">deleteTaskDocument</prop>
+						<prop key="/handleTaskDocumentPage.htm">handleTaskDocument</prop>
+						<prop key="/editTaskMessagePage.htm">editTaskMessage</prop>
+						<prop key="/handleTaskMessagePage.htm">handleTaskMessage</prop>
+						<prop key="/downloadTaskDocument.htm">downloadTaskDocument</prop>						
+						<prop key="/changeFieldActivityStatus.htm">changeFieldActivityStatus</prop>
+						<prop key="/changeFieldActivityTodo.htm">changeFieldActivityTodo</prop>
+						<prop key="/changeFieldActivityComments.htm">changeFieldActivityComments</prop>						
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="service" ref="activityService"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="userService" ref="userService"/>
+		<property name="documentService" ref="documentService"/>
+	</bean>
+	
+		
+	
+	<bean id="timesheetController" class="com.interaudit.web.controllers.TimesheetController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showTimesheetsPage.htm">showTimesheetsPage</prop>
+						<prop key="/showTimesheetRegisterPage.htm">showTimesheetPage</prop>	
+						<prop key="/addRowToTimesheet.htm">addRowToTimesheet</prop>						
+						<prop key="/saveTimesheet.htm">saveTimesheet</prop>
+						<prop key="/submitTimesheet.htm">submitTimesheet</prop>
+						<prop key="/rejectTimesheet.htm">rejectTimesheet</prop>
+						<prop key="/validateTimesheet.htm">validateTimesheet</prop>	
+						<prop key="/showTimeSheetExcelView.htm">showTimeSheetExcelView</prop>						
+						<prop key="/removeRowToTimesheet.htm">removeRowFromTimesheet</prop>
+						<prop key="/synchronizeTimesheetWithAgenda.htm">synchronizeTimesheetWithAgenda</prop>
+						<prop key="/copyRowFromTimeSheet.htm">copyRowToTimesheet</prop>
+						<prop key="/editRowFromTimeSheet.htm">editTimesheetRowItem</prop> 							
+						<prop key="/editTimesheetCodePrestationAsAjaxStream.htm">editTimesheetCodePrestationAsAjaxStream</prop>
+                        <prop key="/editTimesheetActivitiesAsAjaxStream.htm">editTimesheetActivitiesAsAjaxStream</prop>                        
+                        <prop key="/sendTimesheetReminderEmails.htm">sendTimesheetReminderEmails</prop>                        
+                        <prop key="/addComment.htm">addComment</prop>
+                        <prop key="/downLoadCvsFileData.htm">downLoadCvsFileData</prop>
+                        <prop key="/showDownLoadCvsFileData.htm">showDownLoadCvsFileData</prop>
+                        
+                        
+                                         
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="timesheetService" ref="timesheetService"/>
+		<property name="emailService" ref="emailService"/>	
+		<property name="missionService" ref="missionService"/>
+		<property name="exerciseService" ref="exerciseService"/>
+		<property name="taskService" ref="taskService"/>
+		
+					
+	</bean>
+	 
+	
+	<bean name="createTimesheetController" class="com.interaudit.web.controllers.CreateTimesheetController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="activity_report_workshop"/>
+		<property name="successView" value="redirect:showTimesheetsPage.htm"/>
+		<property name="commandName" value="timesheet"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Timesheet"/>
+		<property name="validator" ref="timesheetValidator"/>
+	</bean>
+	
+	<bean id="timesheetValidator" class="com.interaudit.web.controllers.TimesheetValidator"/>
+			
+			
+	
+	<bean id="customerController" class="com.interaudit.web.controllers.CustomerController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showCustomersPage.htm">showCustomersPage</prop>
+						<prop key="/showCustomerPropertiesPage.htm">showCustomerPropertiesPage</prop>
+						<prop key="/showCustomerDocumentsPage.htm">showCustomerDocumentsPage</prop>
+						<prop key="/findCustomerByIdPage.htm">findCustomerByCodePage</prop>		
+						<prop key="/showCustomerContractsPage.htm">showCustomerContractsPage</prop>
+						<prop key="/showCustomerContactsPage.htm">showCustomerContactsPage</prop>
+						<prop key="/showDeclarationsPage.htm">showDeclarationsPage</prop>
+						<prop key="/editCustomerPage.htm">editCustomerPage</prop>	
+						<prop key="/editCustomersAsAjaxStream.htm">editCustomersAsAjaxStream</prop>
+						<prop key="/registerNewOriginPage.htm">registerNewOriginPage</prop>		
+						
+											
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="customerService" ref="customerService"/>
+		<property name="declarationService" ref="declarationService"/>
+		<property name="originService" ref="originService"/>
+		
+	</bean>
+	
+	<bean name="createCustomerController" class="com.interaudit.web.controllers.CreateCustomerController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="customer_register"/>
+		<property name="successView" value="redirect:showCustomersPage.htm"/>
+		<property name="commandName" value="customer"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Customer"/>
+		<property name="validator" ref="customerValidator"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="originService" ref="originService"/>
+		<property name="userService" ref="userService"/>
+		<property name="contractService" ref="contractService"/>		
+	</bean>
+	
+	<bean id="customerValidator" class="com.interaudit.web.controllers.CustomerValidator"/>
+	
+	<bean id="contactController" class="com.interaudit.web.controllers.ContactController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showContactsPage.htm">showContactsPage</prop>						
+			            <prop key="/editContactPage.htm">editContactPage</prop>
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="contactService" ref="contactService"/>
+	</bean>
+	
+	<bean id="employeesController" class="com.interaudit.web.controllers.EmployeesController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showEmployeesPage.htm">showEmployeesPage</prop>	
+						<prop key="/showEmployeePropertiesPage.htm">showEmployeePropertiesPage</prop>
+						<prop key="/showEmployeeDocumentsPage.htm">showEmployeeDocumentsPage</prop>
+						<prop key="/findEmployeeByCodePage.htm">findEmployeesByCodePage</prop>
+						<prop key="/createEmployeesPage.htm">createEmployeesPage</prop>	
+						<prop key="/showEmployeeFormationsPage.htm">showEmployeeFormationsPage</prop>
+						<prop key="/showEmployeesFinancialDataPage.htm">showEmployeesFinancialDataPage</prop>
+						<prop key="/editEmployeePage.htm">editEmployeePage</prop>
+						
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="userService" ref="userService"/>
+	</bean>
+	
+	
+	<bean name="createEmployeeController" class="com.interaudit.web.controllers.CreateEmployeeController">
+		<property name="sessionForm" value="true"/>
+		<property name="bindOnNewForm" value="true"/>
+		<property name="formView" value="employee_register"/>
+		<property name="successView" value="redirect:showEmployeesPage.htm"/>
+		<property name="commandName" value="employee"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Employee"/>
+		<property name="validator" ref="employeeValidator"/>
+		<property name="userService" ref="userService"/>
+		<property name="roleService" ref="roleService"/>
+	</bean>
+	
+	<bean name="createMessageController" class="com.interaudit.web.controllers.CreateMessageController">
+		<property name="sessionForm" value="true"/>
+		<property name="bindOnNewForm" value="true"/>
+		<property name="formView" value="message_register"/>
+		<property name="successView" value="redirect:showMessageRecusPage.htm"/>
+		<property name="commandName" value="message"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Message"/>
+		<property name="validator" ref="messageValidator"/>
+		
+		<property name="userService" ref="userService"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="emailService" ref="emailService"/>	
+		<property name="exerciseService" ref="exerciseService"/>
+			
+	</bean>
+	
+	
+	
+	<bean id="employeeValidator" class="com.interaudit.web.controllers.EmployeeValidator"/>
+	<bean id="messageValidator" class="com.interaudit.web.controllers.MessageValidator"/>
+		
+	
+	<bean id="ewsController" class="com.interaudit.web.controllers.EwsController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showEwsConfigurationPage.htm">showEwsConfigurationPage</prop>						
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<!-- property name="service" ref="oDBBService"/-->
+	</bean>	
+	
+	<bean id="accessRigthsController" class="com.interaudit.web.controllers.AccessRigthsController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showUserAccessRightsPage.htm">showUserAccessRightsPage</prop>
+						<prop key="/admin-update-right-user.htm">updateUserAccessRightsPage</prop>					
+					</props>
+				</property>
+			</bean>
+		</property>		
+		<property name="userService" ref="userService"/>
+	</bean>		
+	
+	
+	<bean name="createDocumentController" class="com.interaudit.web.controllers.CreateDocumentController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="document_register"/>
+		<property name="successView" value="redirect:showDocumentsManagementPage.htm"/>
+		<property name="commandName" value="document"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Document"/>
+		<property name="validator" ref="documentValidator"/>
+	</bean>
+	
+	<bean id="documentValidator" class="com.interaudit.web.controllers.DocumentValidator"/>
+	
+	<bean name="createPaymentController" class="com.interaudit.web.controllers.CreatePaymentController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="payment_register"/>
+		<property name="successView" value="redirect:showPaymentsPage.htm"/>
+		<property name="commandName" value="payment"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Payment"/>
+		<property name="validator" ref="paymentValidator"/>		
+		<property name="paymentService" ref="paymentService"/>
+		<property name="factureService" ref="factureService"/>
+		<property name="bankService" ref="bankService"/>
+		<property name="userActionService" ref="userActionService"/>
+	</bean>
+	
+	<bean id="paymentValidator" class="com.interaudit.web.controllers.PaymentValidator"/>
+	
+	
+	<bean name="createContactController" class="com.interaudit.web.controllers.CreateContactController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="contact_register"/>
+		<property name="successView" value="redirect:showContactsPage.htm"/>
+		<property name="commandName" value="contact"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Contact"/>
+		<property name="validator" ref="contactValidator"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="contactService" ref="contactService"/>
+	</bean>
+	
+	<bean id="contactValidator" class="com.interaudit.web.controllers.ContactValidator"/>
+	
+	<bean name="createDeclarationController" class="com.interaudit.web.controllers.CreateDeclarationController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="declaration_register"/>
+		<property name="successView" value="redirect:showDeclarationsPage.htm"/>
+		<property name="commandName" value="declaration"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Declaration"/>
+		<property name="validator" ref="declarationValidator"/>		
+		<property name="customerService" ref="customerService"/>
+		<property name="declarationService" ref="declarationService"/>
+		<property name="exerciseService" ref="exerciseService"/>		
+	</bean>
+	
+	<bean id="declarationValidator" class="com.interaudit.web.controllers.DeclarationValidator"/>
+	
+	
+	<bean name="createExpenseController" class="com.interaudit.web.controllers.CreateExpenseController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="expense_register"/>
+		<property name="successView" value="redirect:showMissionDepensesPage.htm"/>
+		<property name="commandName" value="expense"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Cost"/>
+		<property name="validator" ref="expenseValidator"/>
+	</bean>
+	
+	<bean id="expenseValidator" class="com.interaudit.web.controllers.ExpenseValidator"/>
+	
+	<bean name="createContractController" class="com.interaudit.web.controllers.CreateContractController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="contract_register"/>
+		<property name="successView" value="redirect:showContractsPage.htm"/>
+		<property name="commandName" value="contract"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Contract"/>
+		<property name="validator" ref="contractValidator"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="contractService" ref="contractService"/>
+	</bean>
+	
+	<bean id="contractValidator" class="com.interaudit.web.controllers.ContractValidator"/>
+	
+	
+	<bean name="createTrainingController" class="com.interaudit.web.controllers.CreateTrainingController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="training_register"/>
+		<property name="successView" value="redirect:showEmployeeFormationsPage.htm"/>
+		<property name="commandName" value="training"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Training"/>
+		<property name="validator" ref="trainingValidator"/>
+	</bean>
+	
+	<bean id="trainingValidator" class="com.interaudit.web.controllers.TrainingValidator"/>
+	
+	
+	<bean name="createReminderController" class="com.interaudit.web.controllers.CreateReminderController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="invoice_reminder_register"/>
+		<property name="successView" value="redirect:showInvoiceReminderPage.htm"/>
+		<property name="commandName" value="reminder"/>
+		<property name="commandClass" value="com.interaudit.domain.model.RemindInvoice"/>
+		<property name="validator" ref="reminderValidator"/>
+		<property name="factureService" ref="factureService"/>
+	</bean>
+	
+	<bean id="reminderValidator" class="com.interaudit.web.controllers.ReminderValidator"/>
+	
+	
+		
+	
+	<bean id="contractController" class="com.interaudit.web.controllers.ContractController">
+		<property name="methodNameResolver">
+			<bean class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+				<property name="mappings">
+					<props>						
+						<prop key="/showContractsPage.htm">showContractsPage</prop>
+						<prop key="/editContractPage.htm">editContractPage</prop>									
+					</props>
+				</property>
+			</bean>
+		</property>		
+		
+		<property name="contractService" ref="contractService"/>
+	</bean>
+	
+	<bean name="createExerciseController" class="com.interaudit.web.controllers.CreateExerciseController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="exercise_register"/>
+		<property name="successView" value="redirect:showGeneralBudgetPage.htm"/>
+		<property name="commandName" value="exercise"/>
+		<property name="commandClass" value="com.interaudit.domain.model.Exercise"/>
+		<property name="validator" ref="exerciseValidator"/>
+		<property name="exerciseService" ref="exerciseService"/>
+		<property name="contractService" ref="contractService"/>
+	</bean>
+	
+	<bean id="exerciseValidator" class="com.interaudit.web.controllers.ExerciseValidator"/>
+			
+		
+			
+	
+
+	<bean id="handlerMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+            	<ref bean="httpRequestInterceptor"/> 
+            	<ref bean="localeChangeInterceptor"/>
+            </list>
+        </property>
+        <property name="alwaysUseFullPath" value="true"/>
+		<property name="mappings">
+			<props>
+				<prop key="/login.htm">loginController</prop>
+				<prop key="/logout.htm">logoutController</prop>
+				<prop key="/homePage.htm">showHomePageController</prop>
+		
+				<prop key="/showGeneralBudgetPage.htm">budgetController</prop>
+				<prop key="/showMissionWorkshopPage.htm">budgetController</prop>
+				<prop key="/showBudgetGraphicsPage.htm">budgetController</prop>
+				
+				<prop key="/showDocumentsManagementPage.htm">budgetController</prop>
+				<prop key="/showProfitabilityPerCustomerPage.htm">budgetController</prop>
+				
+				<prop key="/showGeneralBudgetPageFromMenu.htm">budgetController</prop>
+				<prop key="/editBudgetItemPage.htm">budgetController</prop>
+				<prop key="/deletesBudgetItemPage.htm">budgetController</prop>
+				<prop key="/handleBudgetFormPage.htm">budgetController</prop>
+				<prop key="/approveExercise.htm">budgetController</prop>
+				<prop key="/closeExercise.htm">budgetController</prop>
+				<prop key="/buildNextExercisePage.htm">budgetController</prop>
+				<prop key="/showBudgetExcelViewPage.htm">budgetController</prop>
+				<prop key="/applyInflationPage.htm">budgetController</prop>
+				<prop key="/showObjectifPerAssocieBartChartPage.htm">budgetController</prop>
+				<prop key="/showObjectifPerManagerBartChartPage.htm">budgetController</prop>
+				<prop key="/showDisplayColumnsPage.htm">budgetController</prop>
+				<prop key="/showBudgetResultsPage.htm">budgetController</prop>
+				<prop key="/showBudgetResultsMensuelsPage.htm">budgetController</prop>
+				<prop key="/showBudgetResultsTrimestrielsPage.htm">budgetController</prop>
+				<prop key="/editBudgetValidContractReferencesAsAjaxStream.htm">budgetController</prop>				
+				<prop key="/referenceBudgetPage.htm">budgetController</prop>
+				<prop key="/updateExerciceAndBudget.htm">budgetController</prop>
+				<prop key="/findBudgetsForExpression.htm">budgetController</prop>
+				<prop key="/refreshBudgetsPages.htm">budgetController</prop>
+				<prop key="/showBudgetResultsMensuelsLineChartPage.htm">budgetController</prop>
+                <prop key="/deletePendingExercise.htm">budgetController</prop>
+                <prop key="/updateBudgetByQuery.htm">budgetController</prop>
+				
+				<prop key="/showBudgetRegisterPage.htm">createBudgetController</prop>
+				
+				<prop key="/showPerfOneYearPage.htm">performanceController</prop>
+				<prop key="/showPerfYearsPage.htm">performanceController</prop>	
+				
+				<prop key="/showBalanceAgeePage.htm">invoiceController</prop>
+				<prop key="/showInvoicesPage.htm">invoiceController</prop>
+				<prop key="/findInvoiceByIdPage.htm">invoiceController</prop>
+				<prop key="/showAdvancePropertyPage.htm">invoiceController</prop>
+				<prop key="/showFinalBillPropertyPage.htm">invoiceController</prop>
+				<prop key="/showInvoiceDocumentsPage.htm">invoiceController</prop>
+				<prop key="/showInvoicePaymentPage.htm">invoiceController</prop>
+				<prop key="/showInvoiceReminderPage.htm">invoiceController</prop>
+				<prop key="/showPaymentsPage.htm">invoiceController</prop>	
+				<prop key="/changeFieldInvoiceStatus.htm">invoiceController</prop>
+				<prop key="/selectCustomerForInvoicePage.htm">invoiceController</prop>
+				<prop key="/showInvoiceInfos.htm">invoiceController</prop>
+				<prop key="/checkInvoiceForMissionPage.htm">invoiceController</prop>	
+				<prop key="/editInvoiceHistoryItemPage.htm">invoiceController</prop>
+				<prop key="/showInvoicesReminderPage.htm">invoiceController</prop>
+				<prop key="/editInvoicePage.htm">invoiceController</prop>  
+				<prop key="/addFraisToInvoice.htm">invoiceController</prop> 
+				<prop key="/removeFraisFromInvoice.htm">invoiceController</prop>				     
+                <prop key="/updateFraisLibelle.htm">invoiceController</prop>
+                <prop key="/updateInvoiceLibDelai.htm">invoiceController</prop>
+                <prop key="/updateInvoiceLibHonoraires.htm">invoiceController</prop>
+                <prop key="/updateInvoiceAdresse.htm">invoiceController</prop>                
+                <prop key="/updateInvoiceLang.htm">invoiceController</prop>
+                <prop key="/updateInvoiceTva.htm">invoiceController</prop>
+                <prop key="/updateInvoiceHonoraires.htm">invoiceController</prop>
+                <prop key="/updateInvoiceFraisValue.htm">invoiceController</prop>
+                <prop key="/updateInvoiceDateFacturation.htm">invoiceController</prop>             
+                <prop key="/addDeductionToInvoice.htm">invoiceController</prop>
+                <prop key="/removeDeductionFromInvoice.htm">invoiceController</prop>
+                <prop key="/updateDeductionLibelle.htm">invoiceController</prop>
+                <prop key="/updateInvoiceDeductionValue.htm">invoiceController</prop>
+                <prop key="/approveInvoice.htm">invoiceController</prop>
+                <prop key="/markAsSentInvoice.htm">invoiceController</prop>
+                <prop key="/selectCustomerForNoteCreditPage.htm">invoiceController</prop>
+                <prop key="/editPaymentHistoryItemPage.htm">invoiceController</prop>
+                <prop key="/selectCustomerForInvoiceReminderPage.htm">invoiceController</prop>
+                <prop key="/checkInvoiceReminderForMissionPage.htm">invoiceController</prop>
+                <prop key="/editRemindInvoicePage.htm">invoiceController</prop>
+                <prop key="/markAsSentReminderInvoice.htm">invoiceController</prop>
+                <prop key="/deleteInvoice.htm">invoiceController</prop>
+                <prop key="/deletePayment.htm">invoiceController</prop>  
+                <prop key="/closeInvoicePage.htm">invoiceController</prop>
+                <prop key="/showDraftInvoicesPage.htm">invoiceController</prop>
+                <prop key="/updateInvoiceCustomer.htm">invoiceController</prop>
+                <prop key="/loadCustomersForInvoice.htm">invoiceController</prop> 
+                <prop key="/sendInvoicesReminderEmails.htm">invoiceController</prop>
+                <prop key="/updateInvoiceTvaZeroLibCodeValue.htm">invoiceController</prop>                
+                <prop key="/changeExcludedFromBalanceAgeeStatus.htm">invoiceController</prop>
+                
+				<prop key="/showInvoiceRegisterPage.htm">createInvoiceController</prop>
+				
+				<prop key="/showMissionsPage.htm">missionController</prop>
+				<prop key="/showMissionBudgetPage.htm">missionController</prop>
+				<prop key="/showMissionDepensesPage.htm">missionController</prop>
+				<prop key="/showMissionDocumentsPage.htm">missionController</prop>
+				<prop key="/showMissionPropertiesPage.htm">missionController</prop>
+				<prop key="/showMissionHeuresPresteesPage.htm">missionController</prop>	
+				<prop key="/showMissionInterventionsPage.htm">missionController</prop>
+				<prop key="/showMissionCommunicationsPage.htm">missionController</prop>
+				<prop key="/editMissionInterventionPage.htm">missionController</prop>
+				<prop key="/handleMissionInterventionPage.htm">missionController</prop>
+				<prop key="/deleteMissionInterventionPage.htm">missionController</prop>
+				<prop key="/editMissionDocumentPage.htm">missionController</prop>
+				<prop key="/handleMissionDocumentPage.htm">missionController</prop>
+				<prop key="/deleteMissionDocumentPage.htm">missionController</prop>
+				<prop key="/editMissionCostPage.htm">missionController</prop>
+				<prop key="/handleMissionCostPage.htm">missionController</prop>
+				<prop key="/deleteMissionCostPage.htm">missionController</prop>
+				<prop key="/editMissionMessagePage.htm">missionController</prop>
+				<prop key="/handleMissionMessagePage.htm">missionController</prop>
+				<prop key="/showMissionPropertiesFromBudgetPage.htm">missionController</prop>
+				<prop key="/showMissionFacturesPage.htm">missionController</prop>
+				<prop key="/editMissionInvoicePage.htm">missionController</prop>
+				<prop key="/deleteMissionInvoicePage.htm">missionController</prop>
+				<prop key="/handleMissionInvoicePage.htm">missionController</prop>
+				<prop key="/handleMissionDatesPage.htm">missionController</prop>
+				<prop key="/downloadMissionDocument.htm">missionController</prop>
+				<prop key="/showPlanningPage.htm">missionController</prop>
+				<prop key="/scheduleMissionPage.htm">missionController</prop>
+				<prop key="/showMissionPlanningPage.htm">missionController</prop>
+				<prop key="/showAnnualPlanningPage.htm">missionController</prop>
+				<prop key="/showAgendaPage.htm">missionController</prop>
+				<prop key="/handleEventPage.htm">missionController</prop>
+				<prop key="/handleDragAndDropEventPage.htm">missionController</prop>
+				<prop key="/editEventPage.htm">missionController</prop>
+				<prop key="/deleteEventPage.htm">missionController</prop>
+				<prop key="/changeFieldMissionStatus.htm">missionController</prop>
+				<prop key="/showMissionChartsPage.htm">missionController</prop>
+				<prop key="/showMissionBartChartPage.htm">missionController</prop>
+				<prop key="/handleMultipleEventsPage.htm">missionController</prop>	
+				<prop key="/showPlanningExcelView.htm">missionController</prop>	
+				<prop key="/editEventPlanningPage.htm">missionController</prop>
+				<prop key="/addSingleEventsFromDragAndDropPage.htm">missionController</prop>
+				<prop key="/deleteEventPlanningItemsPage.htm">missionController</prop>
+				<prop key="/loadEmployeePlanningPage.htm">missionController</prop>
+				<prop key="/addSingleEventsPage.htm">missionController</prop>				
+				<prop key="/showMessageRecusPage.htm">missionController</prop>
+				<prop key="/showMessageEnvoyesPage.htm">missionController</prop>
+				<prop key="/showTimesheetGlobalSituationsPage.htm">missionController</prop>
+				<prop key="/help.htm">missionController</prop>
+				<prop key="/editPlanningActivitiesAsAjaxStream.htm">missionController</prop>                                
+                <prop key="/markMissionAsClosed.htm">missionController</prop>
+                <prop key="/showMissionTeamMembersPage.htm">missionController</prop>
+                <prop key="/showAddMemeberForMissionPage.htm">missionController</prop>
+                <prop key="/showRemoveMemberForMissionPage.htm">missionController</prop>
+                <prop key="/showUpdatedAnnualPlanningPage.htm">missionController</prop>
+                
+                
+                <prop key="/showMissionAlertesPage.htm">missionController</prop>  
+                <prop key="/handleMissionAlertePage.htm">missionController</prop>
+                <prop key="/deleteMissionAlertePage.htm">missionController</prop>
+                <prop key="/editMissionAlertePage.htm">missionController</prop>
+                
+				<prop key="/showAdminitrateMissionPage.htm">createMissionController</prop>
+				
+				<prop key="/createMessagePage.htm">createMessageController</prop>
+				<prop key="/editMessagePage.htm">createMessageController</prop>
+					
+				<prop key="/showTasksPage.htm">taskController</prop>
+				<prop key="/showTaskPropertiesPage.htm">taskController</prop>
+				<prop key="/showTaskDocumentsPage.htm">taskController</prop>
+				<prop key="/showTaskCommunicationsPage.htm">taskController</prop>
+				<prop key="/showTaskWorkDonePage.htm">taskController</prop>
+				<prop key="/handleTaskWorkdonePage.htm">taskController</prop>
+				<prop key="/deleteTaskWorkDonePage.htm">taskController</prop>
+				<prop key="/editTaskWorkDonePage.htm">taskController</prop>
+				<prop key="/editTaskDocumentPage.htm">taskController</prop>
+				<prop key="/deleteTaskDocumentPage.htm">taskController</prop>
+				<prop key="/handleTaskDocumentPage.htm">taskController</prop>
+				<prop key="/editTaskMessagePage.htm">taskController</prop>
+				<prop key="/handleTaskMessagePage.htm">taskController</prop>
+				<prop key="/downloadTaskDocument.htm">taskController</prop>
+				<prop key="/changeFieldActivityStatus.htm">taskController</prop>
+				<prop key="/changeFieldActivityTodo.htm">taskController</prop>
+				<prop key="/changeFieldActivityComments.htm">taskController</prop>
+						
+				<prop key="/showTimesheetsPage.htm">timesheetController</prop>
+				<prop key="/showTimesheetRegisterPage.htm">timesheetController</prop>
+				<prop key="/saveTimesheet.htm">timesheetController</prop>
+				<prop key="/submitTimesheet.htm">timesheetController</prop>
+				<prop key="/rejectTimesheet.htm">timesheetController</prop>
+				<prop key="/validateTimesheet.htm">timesheetController</prop>
+				<prop key="/showTimeSheetExcelView.htm">timesheetController</prop>
+				<prop key="/addRowToTimesheet.htm">timesheetController</prop>				
+				<prop key="/removeRowToTimesheet.htm">timesheetController</prop>
+				<prop key="/synchronizeTimesheetWithAgenda.htm">timesheetController</prop>
+				<prop key="/copyRowFromTimeSheet.htm">timesheetController</prop>
+			    <prop key="/editRowFromTimeSheet.htm">timesheetController</prop> 
+			    <prop key="/editTimesheetCodePrestationAsAjaxStream.htm">timesheetController</prop>
+                <prop key="/editTimesheetActivitiesAsAjaxStream.htm">timesheetController</prop>
+                <prop key="/sendTimesheetReminderEmails.htm">timesheetController</prop>
+                <prop key="/addComment.htm">timesheetController</prop>
+                <prop key="/downLoadCvsFileData.htm">timesheetController</prop>
+                 <prop key="/showDownLoadCvsFileData.htm">timesheetController</prop>
+				
+				<prop key="/showCustomersPage.htm">customerController</prop>
+				<prop key="/showCustomerPropertiesPage.htm">customerController</prop>
+				<prop key="/showCustomerDocumentsPage.htm">customerController</prop>
+				<prop key="/findCustomerByIdPage.htm">customerController</prop>
+				<prop key="/showCustomerContractsPage.htm">customerController</prop>
+				<prop key="/showCustomerContactsPage.htm">customerController</prop>
+				<prop key="/showDeclarationsPage.htm">customerController</prop>
+				<prop key="/editCustomerPage.htm">customerController</prop>
+				<prop key="/editCustomersAsAjaxStream.htm">customerController</prop>
+				<prop key="/registerNewOriginPage.htm">customerController</prop>
+				
+				<prop key="/showCustomerRegisterPage.htm">createCustomerController</prop>
+				
+				
+				
+				<prop key="/showContactsPage.htm">contactController</prop>
+				
+				<prop key="/showEmployeesPage.htm">employeesController</prop>
+				<prop key="/showEmployeePropertiesPage.htm">employeesController</prop>
+				<prop key="/showEmployeeDocumentsPage.htm">employeesController</prop>
+				<prop key="/findEmployeeByCodePage.htm">employeesController</prop>
+				<prop key="/createEmployeesPage.htm">employeesController</prop>
+				<prop key="/showEmployeeFormationsPage.htm">employeesController</prop>
+				<prop key="/showEmployeesFinancialDataPage.htm">employeesController</prop>
+				<prop key="/editEmployeePage.htm">employeesController</prop>
+				
+				
+				<prop key="/showEmployeeRegisterPage.htm">createEmployeeController</prop>
+				
+				
+				<prop key="/showEwsConfigurationPage.htm">ewsController</prop>
+				<prop key="/showUserAccessRightsPage.htm">accessRigthsController</prop>
+				<prop key="/admin-update-right-user.htm">accessRigthsController</prop>
+				
+				<prop key="/showBanksPage.htm">bankController</prop>
+				<prop key="/showBankRegisterPage.htm">createBankController</prop>
+				
+				<prop key="/showContractsPage.htm">contractController</prop>
+				<prop key="/showExerciseRegisterPage.htm">createExerciseController</prop>
+				
+				<prop key="/showDocumentRegisterPage.htm">createDocumentController</prop>
+				<prop key="/showPaymentRegisterPage.htm">createPaymentController</prop>
+				<prop key="/showContactRegisterPage.htm">createContactController</prop>
+				<prop key="/showDeclarationRegisterPage.htm">createDeclarationController</prop>
+				<prop key="/showExpenseRegisterPage.htm">createExpenseController</prop>
+				<prop key="/showContractRegisterPage.htm">createContractController</prop>
+				<prop key="/showTrainingRegisterPage.htm">createTrainingController</prop>
+				<prop key="/showInvoiceReminderRegisterPage.htm">createReminderController</prop>
+				
+				<prop key="/editContactPage.htm">contactController</prop>
+			    <prop key="/editContractPage.htm">contractController</prop>
+								
+			</props>
+		</property>
+	</bean>
+	
+	
+	<!--
+	      Exception handling
+	-->
+	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">error</prop>
+			</props>
+		</property>
+	</bean>
+
+  
+  <!-- View Resolver -->
+	
+	<bean id="viewResolver" name="viewResolver"
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix">
+			<value>/WEB-INF/jsp/views/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>	
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename"><value>views</value></property>
+	</bean>
+	
+	<!-- Resource Bundle -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames"> 
+			<list>
+				<value>application</value>
+				<value>messages</value>
+				<value>pagetext</value>
+				<value>links</value>
+				<value>images</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Resource Bundle 
+	<bean id="messageSource" name="messageSource"
+		  class="web.utils.ExpandingMessageSource">
+		<property name="basenames">
+			<list>
+				<value>application</value>
+				<value>messages</value>
+				<value>pagetext</value>
+				<value>links</value>
+				<value>images</value>
+			</list>
+		</property>
+	</bean>
+ 	-->
+ 	<!--
+	      File Upload
+	 -->
+	 
+	 
+
+	<bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="6004857600"/>
+        <property name="maxInMemorySize" value="1004857600"/>            
+    </bean>	
+    
+    
+    
+    <bean id="ewsManagerJob" name="ewsManagerJob"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="txManager"/>
+		</property>
+		<property name="target">
+			<ref bean="ewsManager"/>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRES_NEW
+				</prop>
+				<prop key="*">PROPAGATION_REQUIRES_NEW
+				</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="processTimesheetReminderJobTrigger" name="processTimesheetReminderJobTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="cronExpression">
+            <value>0 15 10 ? * FRI</value>
+        </property>
+		<property name="jobDetail">
+			<ref bean="processTimesheetReminderJobDetail" />
+		</property>
+	</bean>
+
+    <bean id="processBudgetsToCloseJobTrigger" name="processBudgetsToCloseJobTrigger"
+        class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="cronExpression">
+            <value>0 45 10 ? * FRI</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processBudgetsToCloseJobDetail" />
+        </property>
+    </bean>
+
+  <bean id="processGeneralMailSendingJobTrigger" name="processGeneralMailSendingJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>10000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>43200000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processGeneralMailSendingJobDetail" />
+        </property>
+    </bean>
+    
+    <bean id="processRefreshRepositoryJobTrigger" name="processRefreshRepositoryJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>60000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>30000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processRefreshRepositoryJobDetail" />
+        </property>
+    </bean>
+    
+    <bean id="processRefreshRepositoryJobDetail" name="processRefreshRepositoryJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processRefreshRepository" />
+    </bean>
+
+    <!--bean id="processPendingMessageJobTrigger" name="processPendingMessageJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>10000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>50000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processPendingMessageJobDetail" />
+        </property>
+    </bean-->
+
+    <bean id="processPendingEmailDataJobTrigger" name="processPendingEmailDataJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>10000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>300000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processPendingEmailDataJobDetail" />
+        </property>
+    </bean>
+
+    <!--bean id="processPendingCommentsJobTrigger" name="processPendingCommentsJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>10000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>50000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processPendingCommentsJobDetail" />
+        </property>
+    </bean-->
+
+
+
+    <bean id="processGeneralMailSendingJobDetail" name="processGeneralMailSendingJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processGeneralMailSending" />
+    </bean>
+
+    <bean id="processTimesheetReminderJobDetail" name="processTimesheetReminderJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processTimesheetReminderJob" />
+    </bean>
+
+    <bean id="processBudgetsToCloseJobDetail" name="processBudgetsToCloseJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processBudgetsToCloseJob" />
+    </bean>
+    
+    <bean id="processPendingEmailDataJobDetail" name="processPendingEmailDataJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processPendingEmailDataJob" />
+    </bean>
+
+	
+	<!--bean id="processPendingMessageJobDetail" name="processPendingMessageJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="ewsManagerJob" />
+		<property name="targetMethod" value="processPendingMessageJob" />
+	</bean>
+
+	
+	
+	
+	
+	
+	
+	<bean id="processPendingCommentsJobDetail" name="processPendingCommentsJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processPendingCommentsJob" />
+    </bean-->
+    
+    <bean id="processEmailsForInvoiceReminderJobDetail" name="processEmailsForInvoiceReminderJobDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ewsManagerJob" />
+        <property name="targetMethod" value="processEmailsForInvoiceReminderJob" />
+    </bean>
+
+    <!--bean id="processEmailsForInvoiceReminderJobTrigger" name="processEmailsForInvoiceReminderJobTrigger"
+        class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="startDelay">
+            <value>50000</value>
+        </property>
+        <property name="repeatInterval">
+            <value>43200000</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processEmailsForInvoiceReminderJobDetail" />
+        </property>
+    </bean-->
+    
+     <bean id="processEmailsForInvoiceReminderJobTrigger" name="processEmailsForInvoiceReminderJobTrigger"
+        class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="cronExpression">
+            <value>0 45 10 ? * FRI</value>
+        </property>
+        <property name="jobDetail">
+            <ref bean="processEmailsForInvoiceReminderJobDetail" />
+        </property>
+    </bean>
+    
+    
+	
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>				
+				<ref bean="processEmailsForInvoiceReminderJobTrigger"/>
+				<!--ref bean="processPendingCommentsJobTrigger"/>
+				<ref bean="processPendingMessageJobTrigger"/-->
+				<ref bean="processPendingEmailDataJobTrigger"/>
+				<ref bean="processRefreshRepositoryJobTrigger"/>								
+				<ref bean="processGeneralMailSendingJobTrigger"/>
+				<ref bean="processTimesheetReminderJobTrigger"/>
+                <ref bean="processBudgetsToCloseJobTrigger"/>										
+			</list>
+		</property>
+	</bean>
+
+
+	</beans>

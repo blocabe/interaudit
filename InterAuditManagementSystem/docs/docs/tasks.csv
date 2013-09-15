@@ -1,0 +1,41 @@
+1,00;Planning-budget;Planning-budget;4001;1;PLB;0,00
+2,00;Preparation des confirmations;banques , avocats, cadastre;4002;1;PDC;0,00
+3,00;Preparation lancement du dossier (DA,LS);Preparation lancement du dossier (DA,LS);4003;1;PLDD;0,00
+4,00;Dossier administratif;Dossier administratif;4004;1;DA;0,00
+5,00;Compte annuels;controle: report,sommes pointage B/G;4005;1;CA;0,00
+6,00;Prise de connaissance du dossier - repartition du travail;Prise de connaissance du dossier - repartition du travail;4006;1;PCDRT;0,00
+7,00;Suivi du dossier chez le client/Supervision;Suivi du dossier chez le client/Supervision;4007;1;SDCS;0,00
+8,00;Frais d'établissement;Frais d'établissement;4008;1;FRE;0,00
+9,00;Immobilisations incorporelles;Immobilisations incorporelles;4009;1;IMINC;0,00
+10,00;Immobilisations corporelles;Immobilisations corporelles;4010;1;IMCP;0,00
+11,00;Immobilisations financieres;Immobilisations financieres;4011;1;IMFI;0,00
+12,00;Stock-Inventaire physique;Stock-Inventaire physique;4012;1;SIPH;0,00
+13,00;Stock-Audit de la section;Stock-Audit de la section;4013;1;SAS;0,00
+14,00;Client-Preparation et suivi de la circularisation;Client-Preparation et suivi de la circularisation;4014;1;CPSC;0,00
+15,00;Client-Audit de la section;Client-Audit de la section;4015;1;CAS;0,00
+16,00;Creances sur des entreprises liees;Creances sur des entreprises liees;4016;1;CEL;0,00
+17,00;Autres creances;Autres creances;4017;1;ATC;0,00
+18,00;Valeurs mobilieres;Valeurs mobilieres;4018;1;VMB;0,00
+19,00;Avoirs en banques et encaisses;Avoirs en banques et encaisses;4019;1;ABEC;0,00
+20,00;Compte de regularisation actif;Compte de regularisation actif;4020;1;CPRA;0,00
+21,00;Capitaux propres;Capitaux propres;4021;1;CPP;0,00
+22,00;Provisions pour risques et charges;Provisions pour risques et charges;4022;1;PRRC;0,00
+23,00;Dettes envers ets de credit;Dettes envers ets de credit;4023;1;DECR;0,00
+24,00;Fournisseurs-preparation et suivi de la circularisation;Fournisseurs-preparation et suivi de la circularisation;4024;1;FNPSC;0,00
+25,00;Fournisseurs-audit de la section;Fournisseurs-audit de la section;4025;1;FNAS;0,00
+26,00;Dettes sur des entreprises liees;Dettes sur des entreprises liees;4026;1;DEL;0,00
+27,00;Autres dettes;Autres dettes;4027;1;ADTS;0,00
+28,00;Compte de regularisation passif;Compte de regularisation passif;4028;1;CPRP;0,00
+29,00;Compte de pertes et profits;Compte de pertes et profits;4029;1;CPP;0,00
+30,00;Compte de pertes et profits-Resultats brut;Compte de pertes et profits-Resultats brut;4030;1;CPPRB;0,00
+31,00;Compte de pertes et profits-Frais de personnel;Compte de pertes et profits-Frais de personnel;4031;1;CPPFP;0,00
+32,00;Compte de pertes et profits-Autres charges déxploitation;Compte de pertes et profits-Autres charges déxploitation;4032;1;CPP-ACD;0,00
+33,00;Compte de pertes et profits-Produits provenant de participations;Compte de pertes et profits-Produits provenant de participations;4033;1;CPP-PPP;0,00
+34,00;Compte de pertes et profits-Resultat financier;Compte de pertes et profits-Resultat financier;4034;1;CPPRF;0,00
+35,00;Compte de pertes et profits-Resultat exceptionel;Compte de pertes et profits-Resultat exceptionel;4035;1;CPPRE;0,00
+36,00;Compte de pertes et profits-Impots;Compte de pertes et profits-Impots;4036;1;CPPRI;0,00
+37,00;Engagements hors bilan;Engagements hors bilan;4037;1;EGHB;0,00
+38,00;Review;Review;4038;1;RVW;0,00
+39,00;Copie de controle;Copie de controle;4039;1;CDCT;0,00
+40,00;Travail specifique ;Travail specifique;4040;1;TRSP;0,00
+;;;;;;

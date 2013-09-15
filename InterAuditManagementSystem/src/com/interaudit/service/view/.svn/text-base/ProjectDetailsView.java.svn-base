@@ -1,0 +1,210 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.Contact;
+import lu.intrasoft.jaspers.entities.Country;
+import lu.intrasoft.jaspers.entities.DocumentType;
+import lu.intrasoft.jaspers.entities.JaspersEntity;
+import lu.intrasoft.jaspers.entities.JaspersUser;
+import lu.intrasoft.jaspers.entities.Office;
+import lu.intrasoft.jaspers.entities.Project;
+import lu.intrasoft.jaspers.entities.ProjectCEState;
+import lu.intrasoft.jaspers.entities.ProjectEvolution;
+import lu.intrasoft.jaspers.entities.ProjectRiskLevel;
+import lu.intrasoft.jaspers.entities.ProjectStatus;
+import lu.intrasoft.jaspers.entities.ProjectTargetFund;
+import lu.intrasoft.jaspers.entities.ProjectType;
+import lu.intrasoft.jaspers.entities.Sector;
+import lu.intrasoft.jaspers.entities.StandardTask;
+import lu.intrasoft.jaspers.entities.SubSector;
+import lu.intrasoft.jaspers.entities.TaskType;
+
+public class ProjectDetailsView /* implements DocumentedEntityView<Project> */ {
+
+	private Project project;
+	private List<Country> countries;
+	private List<Sector> sectors;
+	private List<SubSector> subsectors;
+	private List<ProjectTargetFund> projectTargetFunds;
+	private List<ProjectRiskLevel> projectRiskLevels;
+	private List<JaspersUser> jaspersUsers;
+	private List<JaspersUser> teamJaspersUsers;
+	private List<ProjectCEState> projectCEStates;
+	private List<ProjectStatus> projectStatuses;
+	private List<ProjectEvolution> projectEvolutions;
+	private List<TaskType> taskTypes;
+	private List<StandardTask> standardTasks;
+	private List<Office> offices;
+//    private JaspersEntity jaspersEntity;
+    private List<DocumentType> documentTypes;
+    private List<JaspersEntity> jaspersEntities;
+    private List<ProjectType> projectTypes;
+    private List<Contact> contacts;
+
+	public Project getProject() {
+		return project;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}
+
+	public List<ProjectRiskLevel> getProjectRiskLevels() {
+		return projectRiskLevels;
+	}
+
+	public void setProjectRiskLevels(List<ProjectRiskLevel> projectRiskLevels) {
+		this.projectRiskLevels = projectRiskLevels;
+	}
+
+	public List<JaspersUser> getJaspersUsers() {
+		return jaspersUsers;
+	}
+
+	public void setJaspersUsers(List<JaspersUser> jaspersUsers) {
+		this.jaspersUsers = jaspersUsers;
+	}
+
+	public List<ProjectCEState> getProjectCEStates() {
+		return projectCEStates;
+	}
+
+	public void setProjectCEStates(List<ProjectCEState> projectCEStates) {
+		this.projectCEStates = projectCEStates;
+	}
+
+	public List<ProjectStatus> getProjectStatuses() {
+		return projectStatuses;
+	}
+
+	public void setProjectStatuses(List<ProjectStatus> projectStatuses) {
+		this.projectStatuses = projectStatuses;
+	}
+
+	public List<ProjectEvolution> getProjectEvolutions() {
+		return projectEvolutions;
+	}
+
+	public void setProjectEvolutions(List<ProjectEvolution> projectEvolutions) {
+		this.projectEvolutions = projectEvolutions;
+	}
+
+	public List<Country> getCountries() {
+		return countries;
+	}
+
+	public void setCountries(List<Country> countries) {
+		this.countries = countries;
+	}
+
+	public List<Sector> getSectors() {
+		return sectors;
+	}
+
+	public void setSectors(List<Sector> sectors) {
+		this.sectors = sectors;
+	}
+
+	public List<SubSector> getSubsectors() {
+		return subsectors;
+	}
+
+	public void setSubsectors(List<SubSector> subsectors) {
+		this.subsectors = subsectors;
+	}
+
+	public List<ProjectTargetFund> getProjectTargetFunds() {
+		return projectTargetFunds;
+	}
+
+	public void setProjectTargetFunds(List<ProjectTargetFund> projectTargetFunds) {
+		this.projectTargetFunds = projectTargetFunds;
+	}
+
+	public List<TaskType> getTaskTypes() {
+		return taskTypes;
+	}
+
+	public void setTaskTypes(List<TaskType> taskTypes) {
+		this.taskTypes = taskTypes;
+	}
+
+	public List<StandardTask> getStandardTasks() {
+		return standardTasks;
+	}
+
+	public void setStandardTasks(List<StandardTask> standardTasks) {
+		this.standardTasks = standardTasks;
+	}
+
+	public List<JaspersUser> getTeamJaspersUsers() {
+		return teamJaspersUsers;
+	}
+
+	public void setTeamJaspersUsers(List<JaspersUser> teamJaspersUsers) {
+		this.teamJaspersUsers = teamJaspersUsers;
+	}
+
+    public List<Office> getOffices() {
+        return offices;
+    }
+
+    public void setOffices(List<Office> offices) {
+        this.offices = offices;
+    }
+//
+//    @Override
+//    public JaspersEntity getCurrentJaspersEntity() {
+//        
+//        return this.jaspersEntity;
+//    }
+//    public void setCurrentJaspersEntity(JaspersEntity jaspersEntity) {
+//        this.jaspersEntity = jaspersEntity;
+//    }
+    
+//    @Override
+    public List<DocumentType> getDocumentTypes() {
+        return this.documentTypes;
+    }
+
+    public void setDocumentTypes(List<DocumentType> documentTypes){
+        this.documentTypes = documentTypes;
+    }
+    
+//    @Override
+//    public Project getDocumentedEntity() {
+//        return this.project;
+//    }
+
+//    @Override
+//    public boolean getHasTeam() {
+//        return true;
+//    }
+
+//    @Override
+    public List<JaspersEntity> getJaspersEntities() {
+        
+        return this.jaspersEntities;
+    }
+    public void setJaspersEntities(List<JaspersEntity> jaspersEntities) {
+        this.jaspersEntities = jaspersEntities;
+    }
+
+	public List<ProjectType> getProjectTypes() {
+		return projectTypes;
+	}
+
+	public void setProjectTypes(List<ProjectType> projectTypes) {
+		this.projectTypes = projectTypes;
+	}
+
+	public List<Contact> getContacts() {
+		return contacts;
+	}
+
+	public void setContacts(List<Contact> contacts) {
+		this.contacts = contacts;
+	}
+	
+}

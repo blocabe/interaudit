@@ -1,0 +1,1 @@
+<div id="header"><h4><span style="color:#039;">Task</span> : <span style="color:orange;">${activityDetails.interventionData.activityReference} ( ${activityDetails.interventionData.customerName} ) ${activityDetails.interventionData.year}</span></h4></div>

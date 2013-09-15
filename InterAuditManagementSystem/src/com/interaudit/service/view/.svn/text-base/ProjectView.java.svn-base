@@ -1,0 +1,81 @@
+package lu.intrasoft.jaspers.service.view;
+
+import java.util.List;
+
+import lu.intrasoft.jaspers.entities.Country;
+import lu.intrasoft.jaspers.entities.JaspersUser;
+import lu.intrasoft.jaspers.entities.Office;
+import lu.intrasoft.jaspers.entities.Project;
+import lu.intrasoft.jaspers.entities.ProjectTargetFund;
+import lu.intrasoft.jaspers.entities.ProjectType;
+import lu.intrasoft.jaspers.entities.Sector;
+import lu.intrasoft.jaspers.entities.SubSector;
+
+public class ProjectView {
+    
+    private Project project;
+    private List<Sector> sectors;
+    private List<SubSector> subsectors;
+    private List<JaspersUser> jaspersUsers;
+    private List<Country> countries;
+    private List<String> years;
+    private List<Office> offices;
+    private List<ProjectTargetFund> projectTargetFunds;
+    private List<ProjectType> projectTypes;
+    
+    public Project getProject() {
+        return project;
+    }
+    public void setProject(Project project) {
+        this.project = project;
+    }
+    public List<Sector> getSectors() {
+        return sectors;
+    }
+    public void setSectors(List<Sector> sectors) {
+        this.sectors = sectors;
+    }
+    public List<SubSector> getSubsectors() {
+        return subsectors;
+    }
+    public void setSubsectors(List<SubSector> subsectors) {
+        this.subsectors = subsectors;
+    }
+    public List<JaspersUser> getJaspersUsers() {
+        return jaspersUsers;
+    }
+    public void setJaspersUsers(List<JaspersUser> jaspersUsers) {
+        this.jaspersUsers = jaspersUsers;
+    }
+    public List<Country> getCountries() {
+        return countries;
+    }
+    public void setCountries(List<Country> countries) {
+        this.countries = countries;
+    }
+    public List<String> getYears() {
+        return years;
+    }
+    public void setYears(List<String> years) {
+        this.years = years;
+    }
+    public List<Office> getOffices() {
+        return offices;
+    }
+    public void setOffices(List<Office> offices) {
+        this.offices = offices;
+    }
+    public List<ProjectTargetFund> getProjectTargetFunds() {
+        return projectTargetFunds;
+    }
+    public void setProjectTargetFunds(List<ProjectTargetFund> projectTargetFunds) {
+        this.projectTargetFunds = projectTargetFunds;
+    }
+	public List<ProjectType> getProjectTypes() {
+		return projectTypes;
+	}
+	public void setProjectTypes(List<ProjectType> projectTypes) {
+		this.projectTypes = projectTypes;
+	}
+    
+}

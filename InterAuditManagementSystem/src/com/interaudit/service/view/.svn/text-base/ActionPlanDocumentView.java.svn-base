@@ -1,0 +1,49 @@
+package lu.intrasoft.jaspers.service.view;
+
+import lu.intrasoft.jaspers.entities.ActionPlan;
+import lu.intrasoft.jaspers.entities.Document;
+import lu.intrasoft.jaspers.entities.JaspersEntity;
+
+public class ActionPlanDocumentView {
+    private Document document;
+    private ActionPlan documentParentActionPlan;
+    private ActionPlan actionPlan;
+    private JaspersEntity jaspersEntity;
+
+    public Document getDocument() {
+        return document;
+    }
+
+    public void setDocument(Document document) {
+        this.document = document;
+    }
+
+    public ActionPlan getDocumentParentActionPlan() {
+        return documentParentActionPlan;
+    }
+
+    public void setDocumentParentActionPlan(ActionPlan documentParentActionPlan) {
+        this.documentParentActionPlan = documentParentActionPlan;
+    }
+
+    public ActionPlan getDocumentParent() {
+        return (documentParentActionPlan == null) ? actionPlan
+                : documentParentActionPlan;
+    }
+
+    public ActionPlan getActionPlan() {
+        return actionPlan;
+    }
+
+    public void setActionPlan(ActionPlan actionPlan) {
+        this.actionPlan = actionPlan;
+    }
+
+    public JaspersEntity getJaspersEntity() {
+        return jaspersEntity;
+    }
+
+    public void setJaspersEntity(JaspersEntity jaspersEntity) {
+        this.jaspersEntity = jaspersEntity;
+    }
+}

@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calendrier</title>
+
+<style type="text/css">
+body {margin:0px}
+#af {margin-left:auto;margin-right:auto;text-align:center}
+#af1, #af2 {clear:left;text-align:center;font-weight:bold;font-size:15px}
+strong {color:#ffff00;margin-left:auto;margin-right:auto;
+width:100px;background-color:#000000;font-size:25px;border:2px solid white}
+h1 {padding:0px;margin:0px;width:100px;color:#000000;background-color:#ff0000;font-size:20px}
+.mois {margin-top:15px;padding:0px;border:1px solid #ffffff;width:100px;float:left;}
+</style>
+
+<script type="text/javascript">
+
+//***********
+// variables*
+//***********
+var s=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+var moi=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+
+var aff, aff1, aff2, an, mois, jour, boucle, mo, d1, it, sem;
+var today=new Date();
+var a=today.getUTCFullYear();
+var today2=Date.UTC(a,today.getUTCMonth(),today.getUTCDate());// date du jour en temps universel
+
+//************************************
+// génération de l'année sélectionnée*
+//************************************
+function calendrier(){
+
+if(a>=1970 && a<=2030){
+   document.getElementById("af3").firstChild.data=a
+}
+else{
+   alert("année invalide");document.getElementById("choix").value="";return false;
+};
+
+document.getElementById("af1").style.marginLeft=(screen.availWidth - 612) /2;
+document.getElementById("af2").style.marginLeft=(screen.availWidth - 612) /2;
+while(document.getElementById("af1").lastChild){
+document.getElementById("af1").removeChild(document.getElementById("af1").lastChild)
+};
+while(document.getElementById("af2").lastChild){
+document.getElementById("af2").removeChild(document.getElementById("af2").lastChild)
+};
+
+for(k=0;k!=12;k++){// chaque mois
+   sem=0;
+   mois=document.createElement("div");mois.className="mois";
+   mo=document.createElement("h1");mo.appendChild(document.createTextNode(moi[k]));
+   mois.appendChild(mo);
+
+   d1=Date.UTC(a,k,1);
+
+   for(i=0;i!=31;i++){// chaque jour
+      it=document.createElement("div");it.style.backgroundColor="gray";it.style.width="100px";
+      boucle=new Date(d1+1000*3600*24*i);
+      if(Date.parse(boucle)==today2){it.style.backgroundColor="#ffff00"};
+
+      it.prop=s[boucle.getUTCDay()]+" "+boucle.getUTCDate()+" "+moi[k]+" "+a;
+      it.bckg=it.style.backgroundColor;
+
+      if(boucle.getUTCMonth()==k){
+         jour=document.createTextNode(s[boucle.getUTCDay()].substring(0,3)+' '+boucle.getUTCDate());
+         it.onmouseover=function(){this.style.backgroundColor="#ffffff";this.title=this.prop};
+         it.onmouseout=function(){this.style.backgroundColor=this.bckg};
+      }
+      else {
+         it.style.color="gray";jour=document.createTextNode(".")
+      };
+
+      it.appendChild(jour);
+      if(it.firstChild.data.substring(0,3)=="dim"){sem++;it.style.borderBottom="2px solid #ffff00"};
+      mois.appendChild(it);
+
+   };
+   if(sem==4){
+      plus=document.createElement("div");
+      plus.style.cssText="font-size:0px;background-color:gray;height:2px;width:100px";
+      mois.appendChild(plus);
+   };
+   if(k<6){document.getElementById("af1").appendChild(mois)}else{document.getElementById("af2").appendChild(mois)}
+}
+
+}
+
+</script>
+
+</head>
+<body onload="calendrier()">
+
+<div>
+
+<div id="af">
+<p style="padding-top:20px">
+<input type="button" value="année précédente" onclick="if(a>1970){a-=1;calendrier()}" />
+<strong id="af3">?</strong>
+<input type="button" value="année suivante" onclick="if(a<2030){a++;calendrier()}" />
+</p>
+<p>
+<label for="choix" style="font-weight:bold">saisir directement une année, entre 1970 et 2030</label><br />
+<input type="text" size="2" maxlength="4" id="choix" />
+<input type="button" value="ok" onclick="a=this.previousSibling.value;calendrier()" />
+
+<div id="af1"></div>
+<div id="af2"></div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+ 
+  function show_hide_column(col_no, do_show) {
+
+    var stl;
+    if (do_show) stl = 'block'
+    else         stl = 'none';
+
+    var tbl  = document.getElementById('id_of_table');
+    var rows = tbl.getElementsByTagName('tr');
+
+    for (var row=0; row<rows.length;row++) {
+      var cels = rows[row].getElementsByTagName('td')
+      cels[col_no].style.display=stl;
+    }
+  }
+
+</script>
+
+</head>
+<body>
+
+<table id='id_of_table' border=1>
+  <tr><td>  1</td><td>   one</td><td>     un</td><td>     eins</td></tr>
+  <tr><td>  2</td><td>   two</td><td>   deux</td><td>     zwei</td></tr>
+  <tr><td>  3</td><td> three</td><td>  trois</td><td>     drei</td></tr>
+  <tr><td>  4</td><td>  four</td><td>quattre</td><td>     vier</td></tr>
+  <tr><td>  5</td><td>  five</td><td>   cinq</td><td>f&uuml;nf</td></tr>
+  <tr><td>  6</td><td>   six</td><td>    six</td><td>    sechs</td></tr>
+</table>
+
+
+<form>
+
+  Enter column no: <input type='text' name=col_no>
+  <br>             <input type='button' onClick='javascript:show_hide_column(col_no.value,  true);' value='show'>
+                   <input type='button' onClick='javascript:show_hide_column(col_no.value, false);' value='hide'>
+
+</form>

@@ -1,0 +1,1362 @@
+/* ---------------------------------------------------- */
+/* --- DEDICATED SECTION STYLESHEET --- */
+/* --------------------------------------------------- */
+
+
+
+
+/* --- LEFT COLUMN --- */
+
+
+/* --- RIGHT COLUMN --- */
+.greyBoxBackgroundRight {
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxContentBgRight.png') repeat;
+	background-position: top right;
+	width: 100%;
+	height: 100%;
+}
+.rightHeaderOuter {
+	height: 36px;
+	display: table;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.greyBox {
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxContentBgRight.png') repeat;
+	background-position: top right;
+	height: 100%;
+	padding: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.rightNewsOuter {
+	padding-top: 4px;
+	padding-bottom: 3px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/buttonNew.png') no-repeat;
+	background-position: 0px center;
+}
+
+
+
+/* --- MIDDLE COLUMN --- */
+.middleContainer {
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: justify;
+}
+.searchPortletResult {
+}
+.middleContainer .searchPortletResult table {
+	font-size:1px;
+	line-height:1px;
+}
+.middleSeparator {
+  height: 4px;
+  overflow: hidden; 
+}
+.middleContainer2Cols {
+  padding-left: 7px;
+  text-align: justify;
+}
+.noPaddingRight {
+	padding-right: 0;
+}
+.contentCenter{
+	background-color: #FFFFFF;
+	padding: 0 0 0 4px;
+	/*color: #5d6368;*/
+	color: #000000;
+	border-left: solid #CECECE 2px;
+	border-right: solid #CECECE 2px;
+	border-top: solid #CECECE 2px;
+}
+.contentArea {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+.greyBlockBottomMiddle {
+	height: 10px;
+	border-left: solid #CECECE 2px;
+	border-right: solid #CECECE 2px;
+	border-bottom: solid #CECECE 2px;
+	background-color: #FFFFFF;
+}
+
+/* --- COMMON --- */
+.blueBoxContainer {
+  background-color: #4C87BF;
+  padding: 2px;
+}
+.headerBoxOuter {
+	display: table;
+	position: relative;
+	overflow: hidden;
+	height: 31px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxBg.png') repeat;
+	width: 100%;
+}
+.headerBoxMiddle {
+	display: table-cell;
+	#position: absolute;
+	top: 50%;
+	vertical-align: middle;
+}
+.headerBoxInner {
+	position: relative;
+	top: -50%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 7px;
+}
+.headerBoxInnerIcon {
+  padding-left: 30px;
+}
+.greyBoxSeparator {
+  border-top: 1px solid #686868; 
+  height: 1px;
+  overflow: hidden; 
+}
+.greyBoxContainer {
+  background-color: #CECECE;
+  padding: 2px;
+  padding-bottom: 1px;
+  margin-top: 2px;
+}
+.iconInner {
+	padding-left: 28px;
+}
+.textImage {
+  float: left;
+  margin: 3px;
+  border: 1px solid #C1C1BF;
+}
+
+
+/* --- NAVTREE STYLES  --- */
+.hide{
+  display: none;
+}
+.menu2 {
+	padding: 0;
+	margin: 0;
+}
+.menu3 {
+	padding: 0;
+	margin: 0;
+}
+.menu3 .leftInner {
+	padding-left: 25px;
+}
+.menu4 {
+	padding: 0;
+	margin: 0;
+}
+.menu4 .leftInner {
+	padding-left: 50px;
+}
+.menu5 {
+	padding: 0;
+	margin: 0;
+}
+.menu5 .leftInner {
+	padding-left: 75px;
+}
+.blueBoxContainerNavtree {
+  background-color: #4C87BF;
+  padding: 2px;
+}
+.headerBoxOuterNavtree {
+	width: 100%;
+	display: table;
+	position: relative;
+	overflow: hidden;
+	height: 31px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxBg.png') repeat;
+}
+.headerBoxMiddleNavtree {
+	display: table-cell;
+	#position: absolute;
+	top: 50%;
+	vertical-align: middle;
+}
+.headerBoxInnerNavtree {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	top: -50%;
+	padding-left: 15px;
+	padding-right: 7px;
+}
+.leftInside{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxContentBgLeft.png') repeat-y;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border-left: solid #CECECE 2px;
+	border-right: solid #CECECE 2px;
+	padding-top: 5px;
+}
+.leftOuter {
+	padding: 0px 10px 1px 10px;
+	text-align: center;
+}
+.leftInner {
+	padding-bottom: 1px;
+	padding-left: 13px;
+	border-bottom: 1px dotted #AAAAAA;
+	text-align: left;
+	font-weight: normal;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgArrow.gif') no-repeat top left;
+}
+.leftOuter a, .leftOuter a:active, .leftOuter a:visited, .leftOuter a:link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.greyBlockBottomLeft {
+	height: 10px;
+	border-left: solid #CECECE 2px;
+	border-right: solid #CECECE 2px;
+	border-bottom: solid #CECECE 2px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/boxContentBgLeft.png') repeat;
+}
+.noBg {
+	background: none;
+}
+
+
+/* --- STATISTICS STYLES  --- */
+div.statContainer {
+	width: 100%;
+	text-align: left;
+}
+div.statDiv {
+	width: 33%;
+	float: left;
+	margin: 0 auto;
+}
+div.clear {
+	clear: both;
+}
+div.statContents {
+	margin: 10px;
+	margin-top: 0px;
+}
+div.statHeader {
+}
+div.statLinks {
+	margin-left: 10px;
+}
+div.statLinks ul {
+	margin-top: 0;
+}
+div.statLinks li{
+	padding: 0;
+	margin: 1px;
+}
+div.statLinks ul ul{
+	list-style: disc;
+}
+div.aToZMenu {
+	width: 100%;
+	text-align: center;
+	background-color: #E9EDF0;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+div.aToZLinks ul li{
+	margin: 0;
+}
+div.aToZLinksBox {
+	width: 33%; 
+	float: left;
+}
+
+
+/* --- TOP --- */
+div#top {
+	color: #fff;
+	width: 999px;
+	height: 107px;
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+}
+div#topLeft {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/logo.png');
+	background-repeat: no-repeat;
+	width: 263px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topLeft_FR {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/logo_FR.png');
+	background-repeat: no-repeat;
+	width: 334px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topLeft_DE {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/logo_DE.png');
+	background-repeat: no-repeat;
+	width: 321px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topRight {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgTopRight.png');
+	background-repeat: no-repeat;
+	width: 736px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topRight_FR {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgTopRight.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 665px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topRight_DE {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgTopRight.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 678px;
+	height: 87px; 
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+div#topRightContent {
+	height: 17px; 
+	padding: 0;
+	margin: 0 2px 0 0;
+	float: right;
+}
+.selectTopRightContent {
+	width: 130px;
+	height: 18px;
+	padding: 0;
+	margin: 0 0 0 2px;
+	background-color: #fff;
+	border: hidden;	
+	font-size: 10px;
+	color: #074a8b;
+}
+div#topBottom {
+	height: 14px; 
+	padding: 3px 0 3px 10px;
+	margin: 0;
+	float: left;
+}
+
+/*
+---------------- LINK SECTION --------------------------
+*/
+a:link
+{
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	/*color: #2281c4;*/
+	color: #104A96;
+}
+a:visited
+{
+	font-weight: normal;
+	text-decoration: none;
+	background: transparent;
+	color: #104A96;	
+ }
+a:hover
+{
+	font-weight: normal;
+	color: #104A96;
+	text-decoration: underline;
+	background: transparent;
+}
+a:active
+{
+	font-weight: normal;
+	color: #104A96;
+	text-decoration: underline;
+}
+#menuDS a:hover, #menuDS a:active {
+	text-decoration: none;
+}
+a.white:link,a.white:visited
+{
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+}
+a.white:hover,a.white:active
+{
+	font-weight: normal;
+	color: #fff;
+	text-decoration: underline;
+	background: transparent;
+}
+a.whiteBold:link,a.whiteBold:visited
+{
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	background: transparent;
+}
+a.whiteBold:hover,a.whiteBold:active
+{
+	font-weight: bold;
+	color: #fff;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.grey:link,a.grey:visited 
+{
+	font-weight: normal;
+	font-family: verdana;
+	color: #5d6368;
+	text-decoration: none;
+	background: transparent;
+}
+a.grey:active,a.grey:hover
+{
+	color: #5d6368;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.greyBold:link,a.greyBold:visited 
+{
+	font-weight: bold;
+	font-family: verdana;
+	color: #48463d;
+	text-decoration: none;
+	background: transparent;
+}
+a.greyBold:active,a.greyBold:hover
+{
+	font-weight: bold;
+	color: #48463d;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.brown:link,a.brown:visited 
+{
+	font-weight: normal;
+	color: #48463d;
+	text-decoration: none;
+	background: transparent;	
+}
+a.brown:hover,a.brown:active
+{
+	font-weight: normal;
+	color: #48463d;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.blue:link,a.blue:visited 
+{
+	font-weight: normal;
+	color: #104A96;
+	text-decoration: none;
+	background: transparent;	
+}
+a.blueDS:hover,a.blueDS:active
+{
+	font-weight: normal;
+	/*color: #3f77ac;*/
+	color: #104A96;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.blueDS:link,a.blueDS:visited 
+{
+	font-weight: normal;
+	color: #104A96;
+	text-decoration: none;
+	background: transparent;	
+}
+a.blue:hover,a.blue:active
+{
+	font-weight: normal;
+	color: #104A96;
+	text-decoration: underline;
+	background: transparent;	
+}
+a.blueBold:link,a.blueBold:visited
+{
+	color: #104A96;
+	font-weight: bold;
+	background: transparent;
+}
+a.blueBold:hover,a.blueBold:active
+{
+	color: #104A96;
+	font-weight: bold;
+	background: transparent;
+	text-decoration: underline;	
+}
+#bottomInclude a:link, #bottomInclude a:visited
+{
+	color: #074a8b;
+	text-decoration: none;
+	background: transparent;	
+}
+#bottomInclude a:hover, #bottomInclude a:active
+{
+	color: #074a8b;
+	text-decoration: underline;
+	background: transparent;	
+}
+/*
+----------------		END LINK SECTION --------------------------
+*/
+
+
+
+
+/*
+----------------		GENERAL SECTION --------------------------
+*/
+
+
+html {
+	overflow: auto;
+}
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: Verdana, Tahoma, Arial, serif, sans-serif;
+	font-size: 11px;
+	text-align: justify;
+	color: #5d6368;
+}
+
+img,p,div,option {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+li {
+	margin-bottom: 10px;
+}
+div#global {
+	background-image: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bg.png');
+	background-repeat: repeat-x;
+	width: 1000px;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto 0 auto;
+	text-align: justify;
+}
+
+
+div#menu {
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	/*font-size: 13px;*/
+}
+#menuContent{
+	width: 700px;
+	height: 40px;
+	margin: 0 0 0 235px;
+	padding: 5px 0 0 0;
+}
+#menuDS{
+	width: 700px;
+	margin: 0 0 0 215px;
+	padding: 5px 0 0 0;
+}
+#menuContentDS{
+	width: 110px;
+	float: left;
+}
+.menuHome{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHome.png') no-repeat top left;
+	width: 111px;
+	height: 24px;
+	margin: 0;
+	padding: 5px 0 0 0;
+	float: left;
+	text-align: center;
+}
+#main{
+	margin-top:0;
+	padding-top:0;
+	background-color: #FFFBDD;
+
+}
+#portalIFrame {
+	font-size: 1px;
+	display: none;
+}
+#bottom{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+#bottomInclude{
+	width: 100%;
+	height: 24px;
+	background: #f3f3f3;
+	text-align: center;
+	padding-top: 7px;
+	color: #074a8b;
+	border-top: 1px solid #e0e1e2;
+	border-bottom: 2px solid #bababa;	
+}
+.imgEvent{
+	float: left;
+	padding-right: 5px;
+}
+/*
+----------------		END GENERAL SECTION --------------------------
+*/
+
+
+
+/*
+----------------		MENU SECTION --------------------------
+*/
+.menuElement{
+	height: 29px;
+	float: left;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.static1{
+	width: 7px;
+	height: 29px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuLeft.png') no-repeat;
+	float: left;	
+}
+.static2{
+	height: 24px;
+	padding: 5px 14px 0 14px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuContent.png') repeat-x;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: verdana;
+	color: #e8eef3;	
+}
+.static3{
+	width: 7px;
+	height: 29px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuRight.png') no-repeat;
+	float: left;	
+}
+.active1{
+	width: 7px;
+	height: 29px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuLeftA.png') no-repeat;
+	float: left;
+}
+.active2{
+	height: 24px;
+	padding: 5px 14px 0 14px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuContentA.png') repeat-x;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: verdana;
+	color: #000;
+}
+.active3{
+	width: 7px;
+	height: 29px;
+	text-align: center;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgMenuRightA.png') no-repeat;
+	float: left;	
+}
+/*
+----------------		END MENU SECTION --------------------------
+*/
+
+
+
+
+/*
+----------------		LEFT SECTION --------------------------
+*/
+#mainLeft{
+	width: 208px;
+	float: left;
+}
+#mainLeftDS{
+	width: 278px;
+	float: left;
+}
+.leftHeader{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderLeft.png') no-repeat;
+	width: 195px;
+	height: 23px;
+	padding: 10px 0 0 13px;
+	color: #fff;
+	font-weight: bold;
+}
+.leftHeaderDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderLeftDS.png') no-repeat;
+	width: 265px;
+	height: 23px;
+	padding: 10px 0 0 13px;
+	color: #fff;
+	font-weight: bold;
+}
+.leftHeader2DS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderLeftDS.png') no-repeat;
+	width: 265px;
+	height: 23px;
+	padding: 10px 0 0 13px;
+	color: #fff;
+	font-weight: bold;
+}
+.leftBottom{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomLeft.png') no-repeat;
+	width: 208px;
+	height: 9px;
+	color: #fff;
+	font-weight: bold;
+}
+.leftBottomDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomLeftDS.png') no-repeat;
+	width: 278px;
+	height: 9px;
+	color: #fff;
+	font-weight: bold;
+}
+.leftHeaderDatabase{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderLeftDatabase.png') no-repeat;
+	width: 158px;
+	height: 29px;
+	padding: 15px 0 0 50px;
+}
+/*.leftInside{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgInside.png') repeat-y;
+	width: 208px;
+	height: 100%;
+}*/
+.leftInsideDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgInsideDS.png') repeat-y green;
+	width: 278px;
+	height: 100%;
+}
+.menuLi {
+	padding: 5px 10px 5px 10px;
+}
+
+.menuLi ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 180px;
+}
+		
+.menuLi li {
+	margin: 0;
+	padding: 4px 0 4px 25px;
+	text-indent: -1em;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgLi.png') no-repeat top left;
+}
+.menuLiDS li {
+	margin: 0;
+	padding: 4px 0 4px 25px;
+	text-indent: -1em;
+	background: red;
+}
+.event{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgEvent.png') no-repeat;
+	width: 176px;
+	height: 83px;
+	padding: 11px 16px 11px 16px;
+	font-size: 9px;
+}
+.DS1{
+	width: 230px;
+	clear: both;
+}
+.DS2{
+	clear: both;
+	width: 230px;	
+	margin-left: 10px;
+	font-size: 9px;
+	padding: 4px 0 4px 0;
+}
+
+/*
+----------------		END LEFT SECTION --------------------------
+*/
+
+
+/*
+----------------		CENTER SECTION --------------------------
+*/
+#mainCenter{
+	width: 547px;
+	height: 100%;	
+	float: left;
+	margin: 0 16px 0 19px;
+}
+#mainCenterDS{
+	width: 503px;
+	height: 100%;	
+	float: left;
+	margin: 0 3px 0 3px;
+}
+#mainCenterDS2{
+	width: 718px;
+	height: 100%;	
+	float: left;
+	margin: 0 0px 0 3px;
+}
+#mainCenterStats-A-Z{
+	width: 525px;
+	height: 100%;	
+	float: left;
+	margin: 0 0 0 4px;
+}
+#mainCenterStats-by-theme{
+	width: 784px;
+	height: 100%;	
+	float: left;
+	margin: 0 0 0 4px;
+}
+#mainCenterStats-Populations{
+	width: 575px;
+	height: 100%;	
+	float: left;
+	margin: 0 1px 0 1px;
+}
+#mainCenterStatsAboutEurostat{
+	width: 574px;
+	height: 100%;	
+	float: left;
+	margin: 0 2px 0 2px;
+	color: #121212;
+}
+.headerCenter{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderCenter.png') no-repeat top left;
+	width: 525px;
+	height: 27px;
+	padding: 5px 0 0 20px;
+	color: #fff;
+	font-size: 11px;
+}
+.headerCenterDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderCenterDS.png') no-repeat top left;
+	width: 485px;
+	height: 22px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+}
+.headerCenterDS2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderCenterDS2.png') no-repeat top left;
+	height: 22px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStatsAboutEurostat{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderCenterAboutEurostat.png') no-repeat top left;
+	width: 554px;
+	height: 24px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStats-A-Z{
+	background: url('img/bgHeaderCenterStats-A-Z.png') no-repeat;
+	width: 505px;
+	height: 57px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStats-A-Z2{
+	background: url('img/bgHeaderCenterStats-A-Z2.png') no-repeat;
+	width: 505px;
+	height: 78px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStatsMetadata{
+	background: url('img/bgHeaderCenterStats-A-Z.png') no-repeat;
+	width: 505px;
+	height: 22px;
+	padding: 10px 0 0 20px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStatsMetadata2{
+	background: url('img/bgHeaderCenterStatsMetadata2.png') no-repeat;
+	width: 525px;
+	height: 15px;
+}
+.headerCenterStats-by-theme{
+	background: url('img/bgHeaderCenterStats-by-theme.png') no-repeat;
+	width: 730px;
+	height: 22px;
+	padding: 10px 0 0 54px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStats-by-theme2{
+	background: url('img/bgHeaderCenterStats-by-theme2.png') no-repeat;
+	width: 784px;
+	height: 15px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.headerCenterStats-A-Zsubmenu{
+	margin-top: 20px;
+	color: #074a8b;
+}
+.headerCenterStats-A-Zsubmenu2{
+	margin-top: 20px;
+	color: #000;
+	line-height: 16px;
+}
+.headerCenterStats-Populations{
+	background: url('img/bgHeaderCenterStats-Pupulations.png') no-repeat;
+	width: 555px;
+	height: 30px;
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 5px 0 0 20px;
+}
+.headerCenter2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderCenter.png') no-repeat top left;
+	width: 525px;
+	height: 27px;
+	margin: 7px 0 0 0;
+	padding: 5px 0 0 20px;
+	color: #fff;
+}
+/*.contentCenter{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgContentCenter.png') repeat-y;
+	width: 545px;
+	padding: 0 0 0 4px;
+	color: #5d6368;
+}*/
+.contentCenterDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgContentCenterDS.png') repeat-y;
+	width: 465px;
+	padding: 20px;
+	color: #5d6368;
+}
+.contentCenterDS2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgContentCenterDS2.png') repeat-y;
+	padding: 20px;
+	color: #5d6368;
+}
+.bottomCenter{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomCenter.gif') no-repeat top left;
+	width: 546px;
+	height: 22px;
+	/*padding: 15px 35px 0 0;*/
+	padding: 15px 0 0 0;
+	text-align: right;
+}
+.bottomCenterFR{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomCenter_FR.gif') no-repeat top left;
+	width: 546px;
+	height: 22px;
+	/*padding: 15px 35px 0 0;*/
+	padding: 15px 0 0 0;
+	text-align: right;
+}
+.bottomCenterDE{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomCenter_DE.gif') no-repeat top left;
+	width: 546px;
+	height: 22px;
+	/*padding: 15px 35px 0 0;*/
+	padding: 15px 0 0 0;
+	text-align: right;
+}
+.contentBottomDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgContentBottomDS.png') no-repeat top left;
+	width: 505px;
+	height: 9px;
+	padding: 0;
+}
+.contentBottomDS2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgContentBottomDS2.png') no-repeat top left;
+	height: 9px;
+	padding: 0;
+}
+.headerNoContent{
+	width: 540px;
+	height: 32px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderNoContent.png') no-repeat;
+	margin-top: 7px;
+}
+.tdDesc{
+	vertical-align: top;
+	padding-top: 10px;
+}
+.divCenter table {
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgTr2.png') bottom left no-repeat;
+	padding-bottom:6px;
+	padding-top:3px;
+}
+.divCenter td {
+	border: none;
+	padding: 7px;
+	margin: 0;
+	font-size: 10px;
+	line-height: normal;
+	background-image: none;
+}
+.divCenter .date {
+	text-align: center;
+	border-left: 1px #CECECE solid;
+	border-right: 1px #CECECE solid;
+}
+.divCenter2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgTr2.png') no-repeat bottom;
+	height: 75px;
+	width: 537px;
+	font-size: 10px;	
+}
+.subtitle {
+    font-weight: bold;
+    background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_COMMON_IMAGES/bullet.gif') no-repeat 0 2px;
+    padding: 5px;
+    padding-left: 22px;
+}
+.subtitle2 {
+    font-weight: bold;
+    background: url('/portal/pls/portal/docs/1/1108350.GIF') no-repeat 0 0px;
+    padding-bottom: 3px;
+	padding-left: 20px;
+}
+.subsubtitle {
+      font-weight: bold;
+	  color: #000000;
+      padding-left: 44px;
+}
+
+.blueText {
+      color: #104A96;
+}
+
+.blackText {
+      color: #000000;
+}
+
+
+/*
+----------------		END CENTER SECTION --------------------------
+*/
+
+
+
+/*
+----------------		RIGHT SECTION --------------------------
+*/
+#mainRight{
+	width: 208px;
+	height: 100%;
+	float: left;
+}
+.rightHeader{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderRight.png') no-repeat;
+	background-color: red;
+	width: 195px;
+	height: 23px;
+	padding: 10px 0 0 0;
+	color: #fff;
+	font-weight: bold;
+}
+.rightHeader2{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderRight2.png') no-repeat top left;
+	width: 203px;
+	height: 32px;
+	padding: 10px 0 0 5px;
+	color: #104A96;
+	font-weight: bold;
+}
+.rightHeader3{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderRight2.png') no-repeat top left;
+	width: 203px;
+	height: 35px;
+	padding: 10px 0 0 5px;
+	color: #104A96;
+	font-weight: bold;
+}
+.rightHeaderAboutEurostat{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgHeaderRightAboutEurostat.png') no-repeat top left;
+	width: 208px;
+	height: 15px;
+}
+.rightTop{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgRightTop.png') no-repeat;
+	width: 208px;
+	height: 5px;
+	color: #fff;
+}
+.rightInside{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgInside2.png') repeat-y;
+	width: 188px;
+	padding: 10px;
+}
+.rightInsideDS{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgInside2.png') repeat-y;
+	width: 203px;
+	padding: 0 5px 0 0;
+}
+.rightInsideAboutEurostat{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgInside2.png') repeat-y;
+	width: 188px;
+	padding: 0 10px 10px 10px;
+	font-size: 7.5pt;
+}
+.rightBottom{
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgBottomRight.png') no-repeat;
+	width: 208px;
+	height: 9px;
+	color: #fff;
+	font-weight: bold;
+}
+.imgDesc{
+	font-size: 9px;
+	text-align: center;
+	color: #5d6368;
+}
+.comingSoon{
+	height: 60px;
+	background: url('/portal/page/portal/PGP_ADM_IMAGES/PGE_IMAGES_TEMPLATES/bgArrow.png') no-repeat top left;
+	padding-left: 10px;
+	color: #00749b;
+}
+.map{
+	width: 148px;
+	margin: 0 auto 0 auto;
+}
+#inTheSpotLight{
+	width: 175px;
+	text-align: justify;
+	font-size: 10px;
+}
+html>body #inTheSpotLight{
+	width: 175px;
+	text-align: justify;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+.search{
+	height: 17px;
+	width: 100px;
+	border: 1px solid #cbcccd;
+	color: #5d6368;
+}
+/*
+----------------		END RIGHT SECTION --------------------------
+*/
+.auto{
+	height: 13px;
+	margin-top: 3px;
+	float: left;
+}
+.auto1{
+	width: 215px;
+	height: 13px;
+	margin-top: 3px;
+	float: left;
+	text-align: right;
+}
+.auto2{
+	width: 275px;
+	height: 13px;
+	margin-top: 3px;
+	float: left;
+	text-align: right;
+}
+.auto3{
+	height: 13px;
+	margin-top: 3px;
+}
+.floatleft{
+	float: left;
+	padding-left: 5px;
+}
+.floatleft2{
+	float: left;
+}
+.centerNews{
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.floatleft3{
+	float: left;
+	margin-left: 25px;
+}
+.newsColumn1{
+	float: left;
+}
+.newsColumn2{
+	float: left;
+	padding-left: 30px;
+}
+.newsColumn3{
+	float: left;
+	padding-left: 30px;
+	padding-right: 10px;
+	width: 300px;
+}
+
+
+/*
+---------- PUBLICATION PAGE ----------
+*/
+div.middleContainer1Col {
+	padding: 0;
+	text-align: justify;
+}
+div#publicationDetails {
+	width: 100%;
+}
+div#publicationDetails * {
+	text-align: justify;
+}
+div#publicationDetailsSummary {
+	width: 100%;
+	background-color: #E9EDF0;
+}
+div#publicationDetailsSummaryText {
+	float: left;
+	width: 82%;
+	padding: 15px;
+}
+span#publicationTitle {
+	font-weight: bold;
+	margin: 3px;
+}
+div#publicationDetailsSummaryImage {
+	float: right;
+	text-align: center;
+	width: 14%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+div#publicationDetailsElectronicFormat {
+	width: 100%;
+	margin-top: 5px;
+}
+div.publicationDetailsContents {
+	padding-left: 50px;
+	line-height:18px;
+}
+div.publicationDetailsContents div.subtitle {
+	line-height: normal;
+}
+div.publicationDetailsContentsFloatLeft {
+	padding-left: 50px;
+	float: left;
+	width: 40%;
+	line-height:15px;
+}
+div.publicationDetailsContentsFloatLeft div.subtitle {
+	line-height: normal;
+}
+div#publicationDetailsPaperFormat {
+	width: 100%;
+	margin-top: 5px;
+}
+div#publicationDetailsAdditionalInfo {
+	width: 100%;
+	margin-top: 5px;
+}
+div.publicationOuterBox {
+	background-color: #CECECE;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+div.publicationInnerBox {
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+.publicationImage {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.leftSeparator {
+	margin-left: 30px;
+	text-align: left;
+}
+.bold {
+	font-weight: bold;
+}
+.listNoTopAndBottomMargin {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+img.vAlign {
+	vertical-align: middle;
+}
+img.imgBorder {
+  border: 1px solid #808080; 
+}
+
+/* ----------------------- */
+/* --- RSS PAGE STYLES --- */
+/* ----------------------- */
+
+.floatRight {
+	float: right;
+}
+.wide10 {
+	width: 10%;
+}
+.wide20 {
+	width: 20%;
+}
+.wide25 {
+	width: 25%;
+}
+.wide49 {
+	width: 49%;
+}
+.wide50 {
+	width: 50%;
+}

@@ -1,0 +1,16 @@
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+1, 'InterFiduciaire', 'IF'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+2, 'InterAudit', 'IA'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+3, 'Atoz', 'AT'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+4, 'Fideos', 'FD'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+5, 'Bob Bernard', 'BB'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+6, 'Signes', 'SG'); 
+INSERT INTO ORIGINS ( ID, NAME, CODE ) VALUES ( 
+7, 'Inconnue', 'IC'); 
+commit;
+ 

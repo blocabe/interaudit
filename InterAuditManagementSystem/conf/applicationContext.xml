@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+	<!-- couches applicatives -->
+	<bean id="userDao" class="com.interaudit.domain.dao.impl.UserDao" />
+	<bean id="userService" class="com.interaudit.service.impl.UserService">
+		<property name="userDao" ref="userDao"/>
+		<property name="roleService" ref="roleService"/>
+	</bean>
+	
+	<bean id="customerDao" class="com.interaudit.domain.dao.impl.CustomerDao"/>
+	<bean id="customerService" class="com.interaudit.service.impl.CustomerService">
+		<property name="customerDao" ref="customerDao"/>
+		<property name="userService" ref="userService"/>
+		<property name="originService" ref="originService"/>
+	</bean>
+	
+	<bean id="eventDao" class="com.interaudit.domain.dao.impl.EventDao"/>
+	<bean id="eventService" class="com.interaudit.service.impl.EventService">
+		<property name="eventDao" ref="eventDao"/>
+	</bean>
+	
+	<bean id="taskDao" class="com.interaudit.domain.dao.impl.TaskDao"/>
+	<bean id="taskService" class="com.interaudit.service.impl.TaskService">
+		<property name="taskDao" ref="taskDao"/>
+	</bean>
+	
+	<bean id="roleDao" class="com.interaudit.domain.dao.impl.RoleDao"/>
+	<bean id="roleService" class="com.interaudit.service.impl.RoleService">
+		<property name="roleDao" ref="roleDao"/>
+	</bean>
+	
+	<bean id="bankDao" class="com.interaudit.domain.dao.impl.BankDao"/>
+	<bean id="bankService" class="com.interaudit.service.impl.BankService">
+		<property name="bankDao" ref="bankDao"/>
+	</bean>
+	
+	<bean id="declarationDao" class="com.interaudit.domain.dao.impl.DeclarationDao"/>
+	<bean id="declarationService" class="com.interaudit.service.impl.DeclarationService">
+		<property name="declarationDao" ref="declarationDao"/>
+	</bean>
+	
+	<bean id="originDao" class="com.interaudit.domain.dao.impl.OriginDao"/>
+	<bean id="originService" class="com.interaudit.service.impl.OriginService">
+		<property name="originDao" ref="originDao"/>
+	</bean>
+	
+	<bean id="contractDao" class="com.interaudit.domain.dao.impl.ContractDao"/>
+	<bean id="contractService" class="com.interaudit.service.impl.ContractService">
+		<property name="contractDao" ref="contractDao"/>
+		<property name="customerService" ref="customerService"/>
+	</bean>
+	
+	<bean id="missionDao" class="com.interaudit.domain.dao.impl.MissionDao"/>
+	<bean id="missionService" class="com.interaudit.service.impl.MissionService">
+		<property name="missionDao" ref="missionDao"/>
+		<property name="userService" ref="userService"/>
+		<property name="roleService" ref="roleService"/>
+		<property name="taskService" ref="taskService"/>
+		<property name="exerciseDao" ref="exerciseDao"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="eventService" ref="eventService"/>
+		<property name="activityService" ref="activityService"/>
+		<property name="timesheetService" ref="timesheetService"/>
+		<property name="timesheetRowDao" ref="timesheetRowDao"/>				
+	</bean>
+	
+	<bean id="budgetDao" class="com.interaudit.domain.dao.impl.BudgetDao"/>
+	<bean id="budgetService" class="com.interaudit.service.impl.BudgetService">
+		<property name="budgetDao" ref="budgetDao"/>
+		<property name="missionDao" ref="missionDao"/>
+		<property name="originService" ref="originService"/>
+		<property name="userService" ref="userService"/>
+		<property name="exerciseDao" ref="exerciseDao"/>
+		<property name="contractService" ref="contractService"/>
+	</bean>
+	
+	<bean id="exerciseDao" class="com.interaudit.domain.dao.impl.ExerciseDao"/>
+	<bean id="exerciseService" class="com.interaudit.service.impl.ExerciseService">
+		<property name="exerciseDao" ref="exerciseDao"/>
+		<property name="contractService" ref="contractService"/>
+		<property name="factureService" ref="factureService"/>
+		<property name="budgetService" ref="budgetService"/>
+		<property name="missionService" ref="missionService"/>
+		<property name="activityService" ref="activityService"/>
+		<property name="taskService" ref="taskService"/>
+		<property name="roleService" ref="roleService"/>
+		<property name="userService" ref="userService"/>
+	</bean>
+	
+	<bean id="activityDao" class="com.interaudit.domain.dao.impl.ActivityDao"/>
+	<bean id="activityService" class="com.interaudit.service.impl.ActivityService">
+		<property name="activityDao" ref="activityDao"/>
+		<property name="userService" ref="userService"/>
+		<property name="exerciseDao" ref="exerciseDao"/>
+		<property name="customerService" ref="customerService"/>
+		<property name="taskService" ref="taskService"/>
+		<property name="roleService" ref="roleService"/>
+		<property name="timesheetDao" ref="timesheetDao"/>
+		<property name="timesheetRowService" ref="timesheetRowService"/>
+	</bean>
+	
+	<bean id="contactDao" class="com.interaudit.domain.dao.impl.ContactDao"/>
+	<bean id="contactService" class="com.interaudit.service.impl.ContactService">
+		<property name="contactDao" ref="contactDao"/>
+		<property name="userService" ref="userService"/>
+		<property name="customerService" ref="customerService"/>
+	</bean>
+	
+	<bean id="paymentDao" class="com.interaudit.domain.dao.impl.PaymentDao"/>
+	<bean id="paymentService" class="com.interaudit.service.impl.PaymentService">
+		<property name="paymentDao" ref="paymentDao"/>
+		<property name="factureService" ref="factureService"/>
+	</bean>
+	
+	<bean id="documentDao" class="com.interaudit.domain.dao.impl.DocumentDao"/>
+	<bean id="documentService" class="com.interaudit.service.impl.DocumentService">
+		<property name="documentDao" ref="documentDao"/>
+	</bean>
+	
+	<bean id="timesheetRowDao" class="com.interaudit.domain.dao.impl.TimesheetRowDao"/>
+	<bean id="timesheetDao" class="com.interaudit.domain.dao.impl.TimesheetDao"/>
+	<bean id="timesheetCellDao" class="com.interaudit.domain.dao.impl.TimesheetCellDao"/>
+	<bean id="timesheetRowService" class="com.interaudit.service.impl.TimesheetRowService">
+		<property name="timesheetRowDao" ref="timesheetRowDao"/>
+	</bean>
+	
+	<bean id="timesheetService" class="com.interaudit.service.impl.TimesheetService">
+		<property name="timesheetDao" ref="timesheetDao"/>
+		<property name="userService" ref="userService"/>
+		<property name="timesheetRowDao" ref="timesheetRowDao"/>
+		<property name="timesheetCellDao" ref="timesheetCellDao"/>
+		<property name="timesheetRowService" ref="timesheetRowService"/>
+		<property name="activityService" ref="activityService"/>
+		<property name="eventService" ref="eventService"/>		
+	</bean>   
+	
+	
+	<bean id="projectDao" class="com.interaudit.domain.dao.impl.ProjectDao"/>
+	<bean id="factureDao" class="com.interaudit.domain.dao.impl.FactureDao"/>
+	<bean id="factureService" class="com.interaudit.service.impl.FactureService">
+		<property name="factureDao" ref="factureDao"/>
+		<property name="timesheetRowDao" ref="timesheetRowDao"/>
+		<property name="projectDao" ref="missionDao"/>
+		<property name="exerciseDao" ref="exerciseDao"/>
+		<property name="paymentDao" ref="paymentDao"/>
+		<property name="bankDao" ref="bankDao"/>
+		<property name="budgetDao" ref="budgetDao"/>
+		<property name="contractDao" ref="contractDao"/>		
+	</bean>
+	
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+				<!-- -->
+					<property name="showSql" value="true" />
+				
+				<property name="databasePlatform" value="org.hibernate.dialect.OracleDialect" />
+				<property name="generateDdl" value="true" />
+			</bean>
+		</property>
+		<property name="loadTimeWeaver">
+			<bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+		</property>
+	</bean>
+
+	<!-- la source de donnéees DBCP -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+		
+		<property name="url" value="jdbc:oracle:thin:@10.20.0.44:1521:CXT2" />
+		<property name="username" value="CXAS" />
+		<property name="password" value="CXAS" />
+		<!--		
+		
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="interaudit" />
+		<property name="password" value="interaudit" />
+		-->
+	</bean>
+	
+	
+	<!-- bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <property name="jndiName">
+      <value>INTER_AUDIT</value>
+    </property>
+  </bean-->
+
+	<!-- le gestionnaire de transactions -->
+	<tx:annotation-driven transaction-manager="txManager" />
+	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- traduction des exceptions -->
+	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<!-- persistence -->
+	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+	
+	
+
+</beans>

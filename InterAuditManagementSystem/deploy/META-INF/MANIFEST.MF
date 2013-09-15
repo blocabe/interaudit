@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.3
+Created-By: 1.7.0_09-b05 (Oracle Corporation)
+Specification-Title: InterAudit
+Specification-Version: 1
+Specification-Vendor: Blocail Enterprise Software
+Implementation-Title: InterAudit
+Implementation-Version: 1.0.49 Built 24-08-2013
+Implementation-Vendor: Blocail Enterprise Software
+

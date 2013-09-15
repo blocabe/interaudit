@@ -1,0 +1,82 @@
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>interaudit</shortname>
+
+<tag>
+	<name>noCache</name>
+	<tagclass>com.interaudit.util.NoCacheTag</tagclass>
+	<bodycontent>empty</bodycontent>
+</tag>
+
+<tag>
+	<name>eval</name>
+	<tagclass>com.interaudit.util.taglibs.EvalTag</tagclass>
+	<teiclass>com.interaudit.util.EvalTagExtraInfo</teiclass>
+	<bodycontent>JSP</bodycontent>
+	<attribute>
+	  <name>id</name>
+	  <required>true</required>
+	  <rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+	<name>loggedIn</name>
+	<tagclass>com.interaudit.util.LoggedInTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+</tag>
+
+<tag>
+	<name>notLoggedIn</name>
+	<tagclass>com.interaudit.util.NotLoggedInTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+</tag>
+
+<tag>
+	<name>internetExplorerBrowser</name>
+	<tagclass>com.interaudit.util.InternetExplorerBrowserTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+</tag>
+
+<tag>
+	<name>notInternetExplorerBrowser</name>
+	<tagclass>com.interaudit.util.NotInternetExplorerBrowserTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+</tag>
+
+<tag>
+	<name>accessRightSet</name>
+	<tagclass>com.interaudit.util.AccessRightSetTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+	<attribute>
+	  <name>right</name>
+	  <required>true</required>
+	  <rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+	<name>accessRightNotSet</name>
+	<tagclass>com.interaudit.util.AccessRightNotSetTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+	<attribute>
+	  <name>right</name>
+	  <required>true</required>
+	  <rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+	<name>atLeastOneAccessRightSet</name>
+	<tagclass>com.interaudit.util.AtLeastOneAccessRightSetTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+	<attribute>
+	  <name>rights</name>
+	  <required>true</required>
+	  <rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+</taglib>
